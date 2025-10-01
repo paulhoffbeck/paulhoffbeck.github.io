@@ -4686,9 +4686,3 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-	}
-	.post.centered {
-    margin: 0 auto;
-    max-width: 900px; /* largeur raisonnable */
-    text-align: justify; /* ou center si tu veux vraiment centrer le texte */
-}
