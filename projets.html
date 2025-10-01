@@ -15,179 +15,187 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-				<!-- Header -->
-					<header id="header">
-						<a href="english/index.html" class="logo">English version</a>
+			<!-- Header -->
+			<header id="header">
+				<a href="english/index.html" class="logo">English version</a>
+			</header>
+			<br>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Accueil</a></li>
+					<li class="active"><a href="projets.html">Projets</a></li>
+					<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+					<li><a href="cv_rzo.html">CV & Réseau</a></li>
+					<li><a href="rse.html">RSE</a></li>
+					<li><a href="mobilite.html">Mobilité</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Featured Post -->
+				<article class="post featured">
+					<header class="major">
+						<h2>Projets Scolaires</h2>
+						<p>Projets effectués dans le cadre de mon IUT dans le but de valider l'acquisition pratique de compétences en fin de cycle. L'aspect technique n'était pas le seul aspect évalué, car ces projets étaient souvent accompagnés d'un rapport et d'une soutenance orale. C'est évidemment la partie la plus développée de mes projets car c'est à l'école que j'en ai fait le plus.</p>
 					</header>
-					<br>
+				</article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li class="active"><a href="projets.html">Projets</a></li>
-							<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-							<li><a href="cv_rzo.html">CV & Réseau</a></li>
-							<li><a href="rse.html">RSE</a></li>
-							<li><a href="mobilite.html">Mobilité</a></li>
+				<!-- Posts -->
+				<section class="posts">
+
+					<article>
+						<header>
+							<h2><a href="#">DevCloud</a></h2>
+						</header>
+						<p>Le parcours Développement et Cloud choisi en deuxième année m'a permis d'effectuer des projets centrés sur la virtualisation et la conteneurisation.</p>
+						
+						<h3>1. Création d'un réseau virtualisé</h3>
+						<p>Ce projet a été effectué dans le cadre d'un module sur l'approfondissement de la virtualisation. Il nous a été demandé de concevoir et mettre en place un réseau local composé d'un pare-feu, d'un serveur DNS et Active Directory, d'un serveur Web et de plusieurs postes clients. L'aspect de virtualisation et la gestion d'hyperviseur ont aussi été une part importante du projet. Cela a mobilisé nos compétences en conception (construction de la table des flux pour les pare-feux) et en mise en application afin de produire un réseau fonctionnel. Le projet a été clos par un rapport ainsi qu'une soutenance orale.</p>
+						<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
+						<h6>Schéma du projet à réaliser</h6>
+
+						<h3>2. Création d'une application conteneurisée de gestion de projets</h3>
+						<p>Ce projet a été réalisé à l'issue d'un module sur la conteneurisation. Nous avons dû concevoir une application conteneurisée qui gère et met en page les SBOM des projets que nous créons. Il fallait mettre en place la création du projet, la création du SBOM, sa mise en page ainsi que la gestion des utilisateurs associés (création, modification, etc). Cette application devait respecter le principe de micro-services : chaque service devait fonctionner de manière autonome et retourner des codes d'erreurs interprétables.</p>
+						<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
+						<h6>Schéma des micro-services utilisés dans le projet</h6>
+						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
+					</article>
+
+					<article>
+						<header>
+							<h2><a href="#">Programmation</a></h2>
+						</header>
+
+						<h3>Création d'un site Web dynamique avec gestion d'utilisateurs</h3>
+						<p>Ce projet a été produit à la fin d'un module sur la programmation web incluant du HTML/CSS pour la partie statique et du PHP pour la partie dynamique. Nous avons dû créer un site vitrine d'entreprise ainsi qu'un intranet avec possibilité de se connecter. Il y a donc eu une partie graphique (le site devait être attractif et fournir des informations spécifiques) et une partie fonctionnelle (gestion d'utilisateurs ayant un impact direct sur le site vitrine). Une grosse partie sécurité et hébergement a aussi été réalisée. La gestion de projet a également été importante avec répartition des tâches, planification et utilisation de Github pour le suivi en temps réel.</p>
+						<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Capture d'écran du site vitrine" /></a>
+						<h6>Capture d'écran du site vitrine</h6>
+						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
+
+						<h3>Création d'une application Android de gestion de tâches</h3>
+						<p>Ce projet est le projet final de deux ans de modules dédiés au langage Java. Nous avons conçu une application Android avec fonction d'agenda et de gestion de tâches. Elle gérait l'ajout, la modification et la suppression de tâches constituées d'une date de fin, description, utilisateurs impliqués, etc. Ce projet incluait aussi un document de conception et un guide utilisateur. L'accent a beaucoup été mis sur la conception, l'anticipation et le dépassement des attendus de base.</p>
+						<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Capture d'écran de l'application Android" /></a>
+						<h6>Capture d'écran de l'application</h6>
+						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
+					</article>
+
+					<article>
+						<header>
+							<h2><a href="#">Réseau</a></h2>
+						</header>
+
+						<h3>Création d'un réseau multi-site avec MPLS et VPN</h3>
+						<p>Ce projet a été réalisé dans le cadre d’un module dédié aux réseaux avancés. L’objectif était de concevoir et déployer un réseau multisite comprenant un opérateur et deux entreprises clientes. Nous avons mis en place des solutions permettant la connexion sécurisée et fiable entre différents sites distants, en utilisant diverses technologies réseau adaptées à chaque besoin. Le projet a aussi porté sur l’évolution de l’infrastructure : automatisation du routage, passage à l’IPv6 et mise en place de tunnels sécurisés pour chaque client. Ce projet a mobilisé des compétences en conception, configuration et gestion d’un réseau complexe, ainsi qu’un suivi rigoureux de la documentation et du travail en groupe.</p>
+
+						<h3>Création d'un réseau local d'entreprise fonctionnel</h3>
+						<p>Ce projet réalisé dans le cadre du BUT Réseaux & Télécommunications consistait à concevoir et déployer un réseau local d'entreprise complet : installation d'un pare-feu, d'un serveur DNS et Active Directory, d'un serveur web et de postes clients, définition de la topologie et des règles de sécurité avec élaboration de la table des flux, configuration des machines virtuelles et des services, et tests de connectivité. L'accent a été mis sur la virtualisation et la gestion d'hyperviseur pour garantir une infrastructure flexible et maintenable. Le projet s'est conclu par une documentation technique détaillée et une soutenance orale présentant les choix et résultats.</p>
+					</article>
+
+				</section>
+
+				<!-- Projets Professionnels -->
+				<article class="post featured">
+					<header class="major">
+						<h2>Projets Professionnels</h2>
+						<p>Projets effectués dans le cadre de stages ou de mon alternance. Mes stages de 1ère et 2ème année d'IUT ont permis de mettre en pratique mes compétences dans un cadre professionnel et de découvrir le panel de tâches possibles. Les projets faits dans le cadre de mon alternance ingénieur ont aussi permis de me spécialiser et d’apporter une réelle valeur à l’entreprise.</p>
+					</header>
+				</article>
+
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="#">Stage de 2ème année</a></h2>
+						</header>
+						<p>Ce stage donnera un aperçu concret de mon parcours professionnel.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button">Télécharger mon CV</a></li>
 						</ul>
-						<ul class="icons">
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Alternance</a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/pic03.jpg" alt="Illustration de l'alternance" /></a>
+						<p>L'Elevator Speech est une vidéo d’1 à 2 minutes qui présente mon identité, mon parcours, ma valeur ajoutée et mon objectif professionnel.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button">Accéder à la vidéo</a></li>
+						</ul>
+					</article>
+				</section>
+
+				<!-- Projets Personnels -->
+				<article class="post featured">
+					<header class="major">
+						<h2>Projets Personnels</h2>
+						<p>Projets réalisés dans le cadre de mon temps libre. Ils ont été effectués en autonomie afin de développer ma créativité et ma capacité à gérer un projet sans demande ni encadrement.</p>
+					</header>
+				</article>
+
+				<section class="posts">
+					<article>
+						<header>
+							<h2><a href="#">Gestionnaire de mot de passe</a></h2>
+						</header>
+						<p>Ce projet illustre ma capacité à développer une application personnelle de sécurité et gestion d’informations sensibles.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button">Télécharger mon CV</a></li>
+						</ul>
+					</article>
+					<article>
+						<header>
+							<h2><a href="#">Mini-projets Python</a></h2>
+						</header>
+						<a href="#" class="image fit"><img src="images/pic03.jpg" alt="Exemples de projets Python" /></a>
+						<p>Série de petits projets personnels en Python pour expérimenter, apprendre de nouvelles bibliothèques et renforcer ma logique de programmation.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button">Accéder à la vidéo</a></li>
+						</ul>
+					</article>
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section class="split contact">
+					<section class="alt">
+						<h3>Contact</h3>
+						<p>hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr</p>
+					</section>
+					<section>
+						<h3>Réseaux Sociaux</h3>
+						<ul class="icons alt">
 							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
-					</nav>
+					</section>
+				</section>
+			</footer>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Projets Scolaires<br/></h2>
-									<p>Projets effectués dans le cadre de mon IUT dans le but de valider l'acquisition pratiques de compétences en fin de cycle. L'aspect technique n'était pas le seul aspect évalué car ces projets étaient souvent accompagnés d'un rapport et d'une soutenance orale à effectuer. C'est évidemment la partie la plus développé de mes projets car c'est à l'école que j'en ai fait le plus.</p>
-								</header>
-							</article>
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">DevCloud</a><br />
-									</header>
-									<p>Le parcours Developpement et Cloud choisis en deuxième année m'a permis d'effectuer des projets centrés sur la virtualisation et la conteneurisation.</p>
-									<h3>1. Création d'un réseau virtualisé</h3>
-									<p>Ce projet a été effectué dans le cadre d'un module sur l'approfondissement de la virtualisation. Il nous a été demandé de designer et mettre en place un réseau local composé d'un pare-feu, d'un serveur DNS et Active-Directory ainsi qu'un serveur Web et plusieurs postes clients. L'aspect de virtualisation et de gesion d'hyperviseur a aussi été une part importante du projet. Cela a mis en oeuvre nos compétences en conception en construisant la table des flux pour les pares-feux, etc mais aussi nos compétences en mis en application afin de produire un réseau fonctionnel. Ce projet a ausi été clos par un rapport ainsi qu'une soutenance orale.</p>
-									<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="" /></a>
-									<h6>Schéma du projet a réaliser</h6>
-									<br>
-									<h3>2. Création d'une application conteneurisée de gestion de projets</h3>
-									<p> Ce projet a été réalisé à l'issu d'un module sur la conteneurisation. Nous avons du concevoir une application conteneurisée qui gère et met en page les SBOM des projets que nous crééons. Nous avons donc du mettre en place la création du projet, la création du SBOM, sa mise en page ainsi que la gestion des utilisateurs associés à ces projets (création, modification, etc). Cette application devait de plus respecter le principe de micro-services : l'application était composée d'un assemblage de plusieurs micro-services qui devaient pouvoir fonctionner de manière autonome et qui devaient retourner des codes d'erreurs pouvant être interprétés selon le type d'erreur.</p>
-									<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="" /></a>
-									<h6>Schéma des micro-services utilisés dans le projet</h6>
-									<a href="english/index.html" class="logo">Liens vers le répo Github</a>
-
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Programmation<br />
-									</header>
-									<h3>Création d'un site Web dynamique avec gestion d'utilisateurs</h3>
-									<p>Ce projet a été produit à la fin d'un module sur la programmation WEB incluant du HTML/CSS pour la partie statique et du PHP pour la partie dynamique. Nous avons du faire un site vitrine d'entreprise ainsi qu'un intranet avec possibilité de se connecter. Il y a donc eu une partie graphique : le site devait être attractif et fournir des informations spécifiques. Mais aussi une partie fonctionnelle avec de la gestion d'utilisateur qui devait avoir un impact direct sur le site vitrine. Une grosse partie sécurité et hébergement a aussi été effectué. L'accent a aussi été mis sur la partie gestion de projet avec la répartition des groupe, la plannification des tâches etc. L'utilisation de Github a donc été très utile afin de suivre en temps réel la répartition du travail.</p>
-									<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="" /></a>
-									<h6>Capture d'écran du site vitrine</h6>
-									<a href="english/index.html" class="logo">Liens vers le répo Github</a>
-
-
-									<h3>Création d'une application Android des gestion de tâches</h3>
-									<p>Ce projet est le projet final de deux ans de modules dédié au language de programmation Java. Nous avons du concevoir une application compatible aux téléphones Android qui avait une fonction d'agenda et de gestion de tâches. Cette application gérait l'ajout, la modification et la suppression de tâches. Ces tâches étaient constituées d'une date de fin, d'une description, d'utilisateurs impliqués, etc. Ce projet incluait aussi la création d'un document de conception ainsi qu'un guide pour les utilisateurs. L'accent a beaucoup été mis sur la conception, l'anticipation mais aussi le fait d'aller plus loin que les attendus de base.</p>
-									<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="" /></a>
-									<h6>Capture d'écran de l'application</h6>
-									<a href="english/index.html" class="logo">Liens vers le répo Github</a>
-
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Réseau<br />
-									</header>
-									<h3>Création d'un réseau multi-site avec MPLS et VPN</h3>
-										<p>Ce projet a été réalisé dans le cadre d’un module dédié aux réseaux avancés. L’objectif était de concevoir et déployer un réseau multisite comprenant un opérateur et deux entreprises clientes. Nous avons dû mettre en place des solutions permettant la connexion sécurisée et fiable entre différents sites distants, en utilisant diverses technologies réseau adaptées à chaque besoin. Une partie importante du projet a également concerné l’évolution de l’infrastructure avec des améliorations progressives : automatisation du routage, passage à l’IPv6, et mise en place de tunnels sécurisés spécifiques pour chaque client. Ce projet a mobilisé des compétences en conception, configuration et gestion d’un réseau complexe, ainsi qu’un suivi rigoureux de la documentation et de la méthodologie de travail en groupe.</p>
-
-									<h3>Création d'un réseau local d'entreprise fonctionnel</h3>
-									<p>Ce projet réalisé dans le cadre du BUT Réseaux & Télécommunications consistait à concevoir et déployer un réseau local d'entreprise complet : installation d'un pare-feu, d'un serveur DNS et d'Active Directory, d'un serveur web et de postes clients, définition de la topologie et des règles de sécurité avec élaboration de la table des flux, configuration des machines virtuelles et des services, et tests de connectivité ; l'accent a été mis sur la virtualisation et la gestion d'hyperviseur pour garantir une infrastructure flexible et maintenable, le tout clôturé par une documentation technique détaillée et une soutenance présentant les choix et résultats.</p>
-								</article>
-								</section>
-								<article class="post featured">
-								<header class="major">
-									<h2>Projets Professionnels<br /></h2>
-									<p>Projets Effectués dans le cadre de stages ou de mon alternance. Mes stages effectuées lors de ma 1er et 2eme année d'IUT ont eu pour but de mettre en pratique mes compétences acquises à l'IUT dans un cadre professionnel mais aussi de découvrir le pannel de tâches possibles. Les projets faits dans le cadre de mon alternance ingénieur ont aussi le but de mettre en pratique mes compétences mais aussi de me spécialiser dans un domaine et avoir un véritable apport pour l'entreprise.</p>
-								</header>
-								</article>
-								<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Stage de 2ème année<br />
-									</header>
-									<p>Ce dernier donnera un apperçu de mon parcours professionnel.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Télécharger mon CV</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Alternance<br />
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>L'Elevator Speech est une vidéo d’1 à 2 minutes qui présente mon identité, parcours, valeur ajoutée et objectif professionnel.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Accéder à la vidéo</a></li>
-									</ul>
-								</article>
-								</section>
-								<article class="post featured">
-								<header class="major">
-									<h2>Projets Personnels<br /></h2>
-									<p>Projets effectués dans le cadre de mon temps libre. Ceux-ci ont été effectué en total autonomie afin que je puisse développer une certaine créativité de développement : savoir gérer des projets sans demandes et sans encadrement.</p>
-									<p></p>
-								</header>
-								</article>
-								<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">Gestionnaire de mot de passe<br />
-									</header>
-									<p>Ce dernier donnera un apperçu de mon parcours professionnel.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Télécharger mon CV</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Mini-projets Python<br />
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>L'Elevator Speech est une vidéo d’1 à 2 minutes qui présente mon identité, parcours, valeur ajoutée et objectif professionnel.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Accéder à la vidéo</a></li>
-									</ul>
-								</article>
-								</section>
-						<!-- Footer -->
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Contact</h3>
-								<p>hoffbeck.paul@gmail.com<br />
-								paul.hoffbeck@etu.toulouse-inp.fr</p>
-							</section>
-							<section>
-								<h3>Réseaux Sociaux</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<li>Design par: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
+			<!-- Copyright -->
+			<div id="copyright">
+				<p>Design par: <a href="https://html5up.net">HTML5 UP</a></p>
 			</div>
+		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
