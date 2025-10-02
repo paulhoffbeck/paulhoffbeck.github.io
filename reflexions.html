@@ -11,6 +11,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+	.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: auto;
+	}
+	.timeline::after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	background-color: #bbb;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -2px;
+	}
+	.container {
+	padding: 20px 40px;
+	position: relative;
+	width: 50%;
+	}
+	.container::after {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: -10px;
+	background-color: white;
+	border: 4px solid #2196F3;
+	top: 25px;
+	border-radius: 50%;
+	z-index: 1;
+	}
+	.left { left: 0; }
+	.right { left: 50%; }
+	.right::after { left: -10px; }
+	.content {
+	padding: 20px;
+	background-color: #2196F3;
+	color: white;
+	border-radius: 6px;
+	}
+	@media screen and (max-width: 600px) {
+	.timeline::after { left: 31px; }
+	.container { width: 100%; padding-left: 70px; padding-right: 25px; }
+	.right { left: 0; }
+	}
+	</style>
 	</head>
 	<body class="is-preload">
 
@@ -68,61 +116,11 @@
 										<li><p>test 1</p></li>
 									</ul>
 									</header>
-									<h3>3. Mon évolution professionnelle</h3>
-										<style>
-							.timeline {
-							position: relative;
-							max-width: 800px;
-							margin: auto;
-							}
-							.timeline::after {
-							content: '';
-							position: absolute;
-							width: 4px;
-							background-color: #bbb;
-							top: 0;
-							bottom: 0;
-							left: 50%;
-							margin-left: -2px;
-							}
-							.container {
-							padding: 20px 40px;
-							position: relative;
-							width: 50%;
-							}
-							.container::after {
-							content: '';
-							position: absolute;
-							width: 20px;
-							height: 20px;
-							right: -10px;
-							background-color: white;
-							border: 4px solid #2196F3;
-							top: 25px;
-							border-radius: 50%;
-							z-index: 1;
-							}
-							.left { left: 0; }
-							.right { left: 50%; }
-							.right::after { left: -10px; }
-							.content {
-							padding: 20px;
-							background-color: #2196F3;
-							color: white;
-							border-radius: 6px;
-							}
-							@media screen and (max-width: 600px) {
-							.timeline::after { left: 31px; }
-							.container { width: 100%; padding-left: 70px; padding-right: 25px; }
-							.right { left: 0; }
-							}
-							</style>
-
-							<div class="timeline">
+									<h3>3. Mon évolution professionnelle</h3>							<div class="timeline">
 							<div class="container left">
 								<div class="content">
 								<h3>2022</h3>
-								<h4>Début BUT R&T</h4>
+								<h6>Début BUT R&T</h6>
 								<p>bla bla bla</p>
 								</div>
 							</div>
