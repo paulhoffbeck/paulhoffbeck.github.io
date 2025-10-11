@@ -1,240 +1,252 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="fr">
 	<head>
 		<title>E-Portfolio Paul HOFFBECK</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-color: #f8f9fa;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
 
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+		<style>
+			/* --- CV Style --- */
+			.cv-container {
+				max-width: 900px;
+				margin: 40px auto;
+				background: #ffffff;
+				padding: 40px;
+				border-radius: 12px;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+				color: #333;
+				line-height: 1.6;
+			}
 
-    h1 {
-      text-align: center;
-      font-size: 2.2em;
-      margin-bottom: 5px;
-      color: #003366;
-    }
+			.cv-header {
+				text-align: center;
+				margin-bottom: 30px;
+			}
 
-    .subtitle {
-      text-align: center;
-      color: #555;
-      font-size: 1.1em;
-      margin-bottom: 20px;
-    }
+			.cv-header h1 {
+				color: #003366;
+				font-size: 2.4em;
+				margin-bottom: 5px;
+			}
 
-    .contact {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 0.95em;
-    }
+			.cv-header .subtitle {
+				color: #666;
+				font-size: 1.1em;
+			}
 
-    .contact a {
-      color: #0066cc;
-      text-decoration: none;
-    }
+			.contact {
+				text-align: center;
+				margin: 20px 0 40px 0;
+				font-size: 0.95em;
+			}
 
-    section {
-      margin-bottom: 35px;
-    }
+			.contact a {
+				color: #0066cc;
+				text-decoration: none;
+				transition: 0.2s;
+			}
 
-    h2 {
-      color: #003366;
-      border-bottom: 2px solid #003366;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
+			.contact a:hover {
+				text-decoration: underline;
+			}
 
-    h3 {
-      margin-bottom: 5px;
-      color: #222;
-    }
+			.cv-section {
+				margin-bottom: 35px;
+			}
 
-    h4 {
-      margin-top: 0;
-      color: #555;
-      font-weight: normal;
-    }
+			.cv-section h2 {
+				color: #003366;
+				font-size: 1.4em;
+				border-bottom: 2px solid #003366;
+				display: inline-block;
+				padding-bottom: 5px;
+				margin-bottom: 15px;
+			}
 
-    ul {
-      margin-top: 0;
-      padding-left: 20px;
-    }
+			h3 {
+				margin-bottom: 5px;
+				color: #222;
+				font-size: 1.05em;
+			}
 
-    li {
-      margin-bottom: 5px;
-    }
+			h4 {
+				margin-top: 0;
+				color: #555;
+				font-weight: normal;
+				font-size: 0.95em;
+			}
 
-    .two-columns {
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
+			ul {
+				padding-left: 20px;
+				margin-top: 0;
+			}
 
-    @media (max-width: 600px) {
-      .two-columns {
-        flex-direction: column;
-      }
-    }
-  </style>
+			ul li {
+				margin-bottom: 6px;
+			}
+
+			.two-columns {
+				display: flex;
+				gap: 40px;
+				flex-wrap: wrap;
+			}
+
+			.two-columns > div {
+				flex: 1 1 260px;
+			}
+
+			.icon {
+				margin-right: 5px;
+			}
+
+			@media (max-width: 600px) {
+				.cv-container {
+					padding: 25px;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
+			<!-- Header -->
+			<header id="header">
+				<a href="english/index.html" class="logo">English version</a>
+			</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="english/index.html" class="logo">English version</a>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="projets.html">Projets</a></li>
+					<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+					<li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
+					<li><a href="rse.html">RSE</a></li>
+					<li><a href="mobilite.html">Mobilité</a></li>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+				<article class="post featured">
+					<header class="major">
+						<h2>Mon CV</h2>
 					</header>
-					<br>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="projets.html">Projets</a></li>
-							<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-							<li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
-							<li><a href="rse.html">RSE</a></li>
-							<li><a href="mobilite.html">Mobilité</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+					<div class="cv-container">
+						<div class="cv-header">
+							<h1>Paul HOFFBECK</h1>
+							<p class="subtitle">Apprenti Ingénieur Informatique & Réseaux</p>
+						</div>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Mon CV<br /></h2>
-								</header>
-								<div class="container">
-    <h1>Paul HOFFBECK</h1>
-    <p class="subtitle">Apprenti Ingénieur Informatique & Réseaux</p>
+						<div class="contact">
+							📞 07.68.66.27.34 | ✉️ <a href="mailto:hoffbeck.paul@gmail.com">hoffbeck.paul@gmail.com</a><br>
+							💻 <a href="https://github.com/paulhoffbeck">github.com/paulhoffbeck</a> | 
+							🔗 <a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5/">LinkedIn</a>
+						</div>
 
-    <div class="contact">
-      📞 07.68.66.27.34 | ✉️ <a href="mailto:hoffbeck.paul@gmail.com">hoffbeck.paul@gmail.com</a><br>
-      💻 <a href="https://github.com/paulhoffbeck">github.com/paulhoffbeck</a> | 
-      🔗 <a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5/">LinkedIn</a>
-    </div>
+						<section class="cv-section">
+							<h2>Diplômes</h2>
+							<h3>Diplôme d'ingénieur Informatique & Réseaux par apprentissage | 2025-2026</h3>
+							<h4>ENSEEIHT, Toulouse (31)</h4>
 
-    <section>
-      <h2>Diplômes</h2>
-      <h3>Diplôme d'ingénieur Informatique & Réseaux par apprentissage | 2025-2026</h3>
-      <h4>ENSEEIHT, Toulouse (31)</h4>
+							<h3>BUT Réseaux & Télécommunications | 2023-2025</h3>
+							<h4>IUT de Saint-Malo (35)</h4>
+							<ul>
+								<li>Parcours Développement et Cloud, Parcours Ingénieur (P1)</li>
+							</ul>
 
-      <h3>BUT Réseaux & Télécommunications | 2023-2025</h3>
-      <h4>IUT de Saint-Malo (35)</h4>
-      <ul>
-        <li>Parcours Développement et Cloud, Parcours Ingénieur (P1)</li>
-      </ul>
+							<h3>Baccalauréat Général - Mention Bien - Section Euro Anglais | 2023</h3>
+							<h4>Lycée Saint-Charles (22)</h4>
+							<ul>
+								<li>Spécialités : Mathématiques, Physique, NSI</li>
+								<li>Options : DNL et Classe Sécurité Défense Globales</li>
+							</ul>
+						</section>
 
-      <h3>Baccalauréat Général - Mention Bien - Section Euro Anglais | 2023</h3>
-      <h4>Lycée Saint-Charles (22)</h4>
-      <ul>
-        <li>Spécialités : Mathématiques, Physique, NSI</li>
-        <li>Options : DNL et Classe Sécurité Défense Globales</li>
-      </ul>
-    </section>
+						<section class="cv-section">
+							<h2>Expériences Professionnelles</h2>
 
-    <section>
-      <h2>Expériences Professionnelles</h2>
+							<h3>Alternant Ingénieur Solution Client Réseau / Sécurité / Cloud | 2025</h3>
+							<h4>Orange Business, Cesson-Sévigné</h4>
 
-      <h3>Alternant Ingénieur Solution Client Réseau / Sécurité / Cloud | 2025</h3>
-      <h4>Orange Business, Cesson-Sévigné</h4>
+							<h3>Stagiaire Réseau et Télécommunication | Avril 2025 & Juillet 2024</h3>
+							<h4>DSI, Saint-Brieuc Armor Agglomération</h4>
+							<ul>
+								<li>Configuration, installation et migration d’infrastructures réseau</li>
+								<li>Support Couche Liaison / Réseau</li>
+								<li>Mise en place de liaisons optiques et wifi</li>
+							</ul>
 
-      <h3>Stagiaire Réseau et Télécommunication | Avril 2025 & Juillet 2024</h3>
-      <h4>DSI, Saint-Brieuc Armor Agglomération</h4>
-      <ul>
-        <li>Configuration, installation et migration d’infrastructures réseau</li>
-        <li>Support Couche Liaison / Réseau</li>
-        <li>Mise en place de liaisons optiques et wifi</li>
-      </ul>
+							<h3>Aide à domicile | Juillet 2023</h3>
+							<h4>CIAS, Saint-Brieuc Armor Agglomération</h4>
+							<ul>
+								<li>Accompagnement de personnes âgées en autonomie</li>
+								<li>Aide repas, toilettes, ménage, courses</li>
+								<li>Soutien moral et relationnel</li>
+							</ul>
+						</section>
 
-      <h3>Aide à domicile | Juillet 2023</h3>
-      <h4>CIAS, Saint-Brieuc Armor Agglomération</h4>
-      <ul>
-        <li>Accompagnement de personnes âgées (autonomie totale)</li>
-        <li>Aide repas, toilettes, ménage, courses</li>
-        <li>Soutien moral et relationnel</li>
-      </ul>
-    </section>
+						<section class="cv-section">
+							<h2>Engagements</h2>
 
-    <section>
-      <h2>Engagements</h2>
+							<h3>Responsable Relations Entreprises | 2024-2025</h3>
+							<h4>BDE IUT Saint-Malo</h4>
+							<ul>
+								<li>Prise de contact avec les entreprises partenaires</li>
+								<li>Organisation d’événements (remise de diplôme, galas)</li>
+							</ul>
 
-      <h3>Responsable Relations Entreprises | 2024-2025</h3>
-      <h4>BDE IUT Saint-Malo</h4>
-      <ul>
-        <li>Prise de contact avec les entreprises partenaires</li>
-        <li>Organisation d’événements (remise de diplôme, galas)</li>
-      </ul>
+							<h3>Arbitre & Table de Marque | 2017 - 2023</h3>
+							<h4>Élan Basket Saint-Brieuc</h4>
+							<ul>
+								<li>Engagement hebdomadaire</li>
+								<li>Prise de décision, gestion de matchs</li>
+							</ul>
 
-      <h3>Arbitre & Table de Marque | 2017 - 2023</h3>
-      <h4>Élan Basket Saint-Brieuc</h4>
-      <ul>
-        <li>Engagement hebdomadaire</li>
-        <li>Prise de décision, gestion de matchs</li>
-      </ul>
+							<h3>Bénévole | Resto du Cœur - Juillet 2022</h3>
+							<h4>Centre de distribution de Saint-Brieuc Lamaze</h4>
+							<ul>
+								<li>Collecte et tri de denrées alimentaires</li>
+								<li>Contact avec les bénéficiaires</li>
+							</ul>
+						</section>
 
-      <h3>Bénévole | Resto du Cœur - Juillet 2022</h3>
-      <h4>Centre de distribution de Saint-Brieuc Lamaze</h4>
-      <ul>
-        <li>Collecte et tri de denrées alimentaires</li>
-        <li>Contact avec les bénéficiaires</li>
-      </ul>
-    </section>
+						<section class="cv-section">
+							<h2>Centres d'intérêt</h2>
+							<div class="two-columns">
+								<div>
+									<h3>Basketball</h3>
+									<h4>Élan Basket Saint-Brieuc | 7 ans</h4>
+								</div>
+								<div>
+									<h3>Informatique</h3>
+									<ul>
+										<li>Root-me, TryHackMe, CTF Flag-Malo</li>
+										<li>DefHack 2024</li>
+										<li>Veille technologique et événements cybersécurité</li>
+									</ul>
+								</div>
+								<div>
+									<h3>Histoire</h3>
+									<ul>
+										<li>Musées, documentaires, conférences</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</div>
+				</article>
+			</div>
 
-    <section>
-      <h2>Centres d'intérêt</h2>
-      <div class="two-columns">
-        <div>
-          <h3>Basketball</h3>
-          <h4>Élan Basket Saint-Brieuc | 7 ans</h4>
-        </div>
-        <div>
-          <h3>Informatique</h3>
-          <ul>
-            <li>Root-me, TryHackMe, CTF Flag-Malo</li>
-            <li>DefHack 2024</li>
-            <li>Veille technologique et événements cybersécurité</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Histoire</h3>
-          <ul>
-            <li>Musées, documentaires, conférences</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
+		</div>
 	</body>
 </html>
