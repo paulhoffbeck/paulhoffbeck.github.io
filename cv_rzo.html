@@ -1,90 +1,164 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-	<head>
-		<title>E-Portfolio Paul HOFFBECK</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<head>
+	<title>E-Portfolio Paul HOFFBECK</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-	<body class="is-preload">
+	<!-- Styles personnalisés -->
+	<style>
+		/* Section principale */
+		.post.featured {
+			text-align: center;
+			max-width: 1000px;
+			margin: 0 auto;
+		}
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+		iframe {
+			border: none;
+			border-radius: 10px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		}
 
-			<!-- Header -->
-			<header id="header">
-				<a href="english/index.html" class="logo">English version</a>
-			</header>
+		/* Style des blocs ingénieurs */
+		.engineer-card {
+			background-color: #f2f7fb;
+			border-radius: 15px;
+			padding: 20px 25px;
+			margin: 20px auto;
+			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+			max-width: 800px;
+			text-align: justify;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="projets.html">Projets</a></li>
-					<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-					<li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
-					<li><a href="rse.html">RSE</a></li>
-					<li><a href="mobilite.html">Mobilité</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+		.engineer-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+			background-color: #e8f2fa;
+		}
 
-			<!-- Main -->
-			<div id="main">
-				<article class="post featured">
-					<header class="major">
-						<h2>Mon CV</h2>
-					</header>
-					<iframe 
-						src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fpaulhoffbeck.github.io%2Fimages%2FCV%2520CAM.pdf"
-						width="100%" 
-						height="1300px"
-						style="border:none;">
-					</iframe>
-					<header class="major">
-						<h2>Ingénieurs contactés</h2>
-						<p>J'ai pu entrer en contact avec divers ingénieurs de mon entourage proche (famille, collegue) ou rencontrés lors de divers évènements. J'ai affiché les éléments tirés de nos discussions qui m'ont le plus touchés pour chacun d'entre eux.</p>
-					</header>
-					<article class="posts">
-									<h3><a href="#">Fabien HILBERG<br /></a></h3>
-										<p style="text-align:center;"><b>Ingénieur R&D chez KNDS Allemagne</b></p>
-										<h6>Réflexions apportées :</h6>
-										<p>"Être ingénieur c'est travailler sur des technologies de pointes dans des secteurs qui ont vraiment de l'importance. Il permet aussi de pouvoir travailler partout dans le monde car l'esprit d'adaptation est très développé chez nous."</p>
-							</article>
-							<article class="posts">
+		.engineer-card h3 {
+			text-align: center;
+			color: #2a6ebc;
+			margin-bottom: 0.2em;
+		}
 
-									<h3><a href="#">Denis GOUDAY<br /></a></h3>
-										<p style="text-align:center;"><b>Ingénieur projet chez MBDA</b></p>
-										<h6>Réflexions apportées :</h6>
-										<p>"Ce qui me plait dans le métier d'ingénieur c'est la gestion de projet et la gestion d'équipe : nous sommes ammenés à travailler sur de multiples projets. J'ai pu par exemple aller assez souvent en Egypte et dans de nombreux pays."</p>
-							</article>
-							<article class="posts">
-					
-									<h3><a href="#">Laurent COURTE<br /></a></h3>
-										<p style="text-align:center;"><b>Ingénieur Solution chez Orange Business</b></p>
-										<h6>Réflexions apportées :</h6>
-										<p>"Ce métier permet de choisir dans la mesure du possible ce qu'on veut faire et où on veut aller. Dans des entreprises qui demandant beaucoup d'investissement ou sur des postes qui laissent plus de place à la vie de famille. Le métier d'ingénieur est à mon sens différent à chaque étape de sa vie et selon ce qu'on veut en faire."</p>
-		
-							</article>
-							<article class="posts">
-		
-									<h3><a href="#">Sophian RUBEAU<br /></a></h3>
-										<p style="text-align:center;"><b>Responsable des Ventes Réseaux IP & Cybersécurité chez Orange</b></p>
-										<h6>Réflexions apportées :</h6>
-										<p>"Ces diplômes permettent d'accéder à des postes à responsabilité mais aussi à faire de l'enseignement. Je prends souvent plaisir à revenir là ou j'ai pu étudier afin de transmettre à mon tour. J'ai aussi pu diriger de nombreux projets de pointe qui ont déjà eu un gros impact global. Si je devais donner un conseil c'est d'être curieux et de chercher à se démarquer. De nombreuses oportunités professionnelles m'ont été données grâce à ce que j'avais fait en plus des études."</p>
+		.engineer-card p strong {
+			display: block;
+			text-align: center;
+			margin-bottom: 0.6em;
+			color: #333;
+		}
 
-							</article>
-			</div>
+		.engineer-card h6 {
+			margin-top: 1em;
+			margin-bottom: 0.3em;
+			font-size: 0.95em;
+			color: #2a6ebc;
+			font-weight: 600;
+		}
+
+		.engineer-card p {
+			font-size: 0.95em;
+			line-height: 1.5;
+			color: #444;
+		}
+
+		/* En-tête */
+		header.major h2 {
+			margin-top: 1.5em;
+			color: #1f3b63;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="english/index.html" class="logo">English version</a>
+		</header>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+				<li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li><a href="rse.html">RSE</a></li>
+				<li><a href="mobilite.html">Mobilité</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<article class="post featured">
+				<header class="major">
+					<h2>Mon CV</h2>
+				</header>
+
+				<!-- CV intégré -->
+				<iframe 
+					src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fpaulhoffbeck.github.io%2Fimages%2FCV%2520CAM.pdf"
+					width="100%" 
+					height="1200px">
+				</iframe>
+
+				<header class="major">
+					<h2>Ingénieurs contactés</h2>
+					<p>J’ai échangé avec plusieurs ingénieurs de mon entourage professionnel et personnel. Voici les réflexions les plus marquantes issues de nos discussions.</p>
+				</header>
+
+				<!-- Blocs d'ingénieurs -->
+				<div class="engineer-card">
+					<h3>Fabien HILBERG</h3>
+					<p><strong>Ingénieur R&D chez KNDS Allemagne</strong></p>
+					<h6>Réflexion apportée :</h6>
+					<p>« Être ingénieur, c’est travailler sur des technologies de pointe dans des secteurs à fort impact. Ce métier ouvre de nombreuses portes à l’international grâce à la polyvalence et à l’esprit d’adaptation qu’il développe. »</p>
+				</div>
+
+				<div class="engineer-card">
+					<h3>Denis GOUDAY</h3>
+					<p><strong>Ingénieur Projet chez MBDA</strong></p>
+					<h6>Réflexion apportée :</h6>
+					<p>« Ce qui me plaît dans le métier d’ingénieur, c’est la gestion de projets et d’équipes. Nous travaillons sur des missions variées, souvent à l’international. J’ai eu par exemple la chance de participer à plusieurs projets en Égypte et dans d’autres pays. »</p>
+				</div>
+
+				<div class="engineer-card">
+					<h3>Laurent COURTE</h3>
+					<p><strong>Ingénieur Solution chez Orange Business</strong></p>
+					<h6>Réflexion apportée :</h6>
+					<p>« Ce métier permet de choisir la voie que l’on souhaite emprunter : entre postes exigeants et carrières équilibrées. Être ingénieur, c’est aussi savoir faire évoluer sa trajectoire professionnelle selon les étapes de sa vie. »</p>
+				</div>
+
+				<div class="engineer-card">
+					<h3>Sophian RUBEAU</h3>
+					<p><strong>Responsable des Ventes Réseaux IP & Cybersécurité chez Orange</strong></p>
+					<h6>Réflexion apportée :</h6>
+					<p>« Les diplômes d’ingénieur ouvrent des portes vers des postes à responsabilité, mais aussi vers l’enseignement. La curiosité et l’envie de se démarquer sont des qualités clés : beaucoup d’opportunités sont venues de ce que j’ai accompli en dehors du cadre académique. »</p>
+				</div>
+			</article>
 		</div>
-	</body>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
