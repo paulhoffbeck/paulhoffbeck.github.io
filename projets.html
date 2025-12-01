@@ -22,15 +22,59 @@
 		.image-fit {
 			display: block;
 			margin: 1em auto;
-			max-width: 50%; /* Taille réduite */
+			max-width: 50%;
 			border-radius: 10px;
 			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 		}
-		/* Supprime les puces uniquement pour la première liste */
-		.header-list {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
+		h2 {
+			color: #1f3b63;
+			text-align: center;
+			margin-bottom: 0.6em;
+		}
+		h3 {
+			color: #2a6ebc;
+			margin-top: 1.2em;
+			font-size: 1.1em;
+		}
+		h6 {
+			text-align: center;
+			color: #666;
+			font-weight: normal;
+			margin-top: 0.5em;
+		}
+		p {
+			text-align: justify;
+			line-height: 1.6;
+			font-size: 1em;
+			color: #444;
+		}
+		.image.fit img {
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+			transition: transform 0.3s ease;
+		}
+		.image.fit img:hover {
+			transform: scale(1.03);
+		}
+		article {
+			margin-bottom: 2.5em;
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid #ddd;
+			transition: transform 0.2s ease;
+		}
+		article:hover {
+			transform: translateY(-3px);
+		}
+		section.posts {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+			gap: 2.5em;
+			align-items: start;
+		}
+		@media screen and (max-width: 900px) {
+			section.posts {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 </head>
@@ -65,7 +109,7 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Projets Scolaires -->
+			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
 					<h2>1. Projets Scolaires</h2>
@@ -77,7 +121,9 @@
 
 				<!-- DevCloud -->
 				<article>
-					<header><h2>DevCloud</h2></header>
+					<header>
+						<h2>DevCloud</h2>
+					</header>
 					<p>Le parcours Développement et Cloud choisi en deuxième année m'a permis de réaliser des projets centrés sur la virtualisation et la conteneurisation.</p>
 
 					<h3>1. Création d'un réseau virtualisé</h3>
@@ -94,7 +140,9 @@
 
 				<!-- Programmation -->
 				<article>
-					<header><h2>Programmation</h2></header>
+					<header>
+						<h2>Programmation</h2>
+					</header>
 					<h3>Site web dynamique avec gestion d'utilisateurs</h3>
 					<p>Création d'un site vitrine et d'un intranet en PHP/HTML/CSS avec gestion d'utilisateurs et sécurité intégrée.</p>
 					<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture du site vitrine" /></a>
@@ -110,7 +158,9 @@
 
 				<!-- Réseau -->
 				<article>
-					<header><h2>Réseau</h2></header>
+					<header>
+						<h2>Réseau</h2>
+					</header>
 					<h3>Réseau multi-site avec MPLS et VPN</h3>
 					<p>Conception d'un réseau multi-site intégrant tunnels VPN, routage IPv6 et documentation technique complète.</p>
 					<a href="images/saer.png" class="image fit"><img src="images/saer.png" alt="Schéma du réseau multi-site" /></a>
@@ -124,7 +174,9 @@
 
 				<!-- Stage -->
 				<article>
-					<header><h2>Stage de 2ème année</h2></header>
+					<header>
+						<h2>Stage de 2ème année</h2>
+					</header>
 					<p>Modernisation du réseau d'un site industriel : remplacement de switchs, recâblage et mise à jour de documentation technique.</p>
 					<a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration du stage" /></a>
 					<p>Configuration d'une solution SD-WAN pour améliorer la résilience et la flexibilité réseau.</p>
@@ -132,11 +184,15 @@
 
 				<!-- Alternance -->
 				<article>
-					<header><h2>Alternance</h2></header>
+					<header>
+						<h2>Alternance</h2>
+					</header>
 					<a href="#" class="image fit"><img src="images/ingeclient.jpg" alt="Alternance" /></a>
 					<p>En tant qu'ingénieur solution client, j'interviens sur la conception, le déploiement et le support d'infrastructures réseau, cloud et sécurité.</p>
 				</article>
+
 			</section>
+
 		</div>
 
 		<!-- Footer -->
@@ -146,6 +202,7 @@
 					<h3>Contact</h3>
 					<p>hoffbeck.paul@gmail.com<br />paul.hoffbeck@etu.toulouse-inp.fr</p>
 				</section>
+
 				<section>
 					<h3>Réseaux Sociaux</h3>
 					<ul class="icons alt">
@@ -162,6 +219,7 @@
 
 	</div>
 
+	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -169,5 +227,6 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
 </body>
 </html>
