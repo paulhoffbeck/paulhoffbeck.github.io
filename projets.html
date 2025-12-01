@@ -1,177 +1,253 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>E-Portfolio Paul HOFFBECK</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
+<html lang="fr">
+<head>
+	<title>E-Portfolio Paul HOFFBECK</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- Styles personnalisés -->
+	<style>
 		.post.centered {
 			margin: 0 auto;
 			max-width: 900px;
 			text-align: justify;
 		}
+
+		/* Titres principaux */
+		h2 {
+			color: #1f3b63;
+			text-align: center;
+			margin-bottom: 0.6em;
+		}
+
+		/* Style des sous-titres */
+		h3 {
+			color: #2a6ebc;
+			margin-top: 1.2em;
+			font-size: 1.1em;
+		}
+
+		h6 {
+			text-align: center;
+			color: #666;
+			font-weight: normal;
+			margin-top: 0.5em;
+		}
+
+		/* Style des paragraphes */
+		p {
+			text-align: justify;
+			line-height: 1.6;
+			font-size: 1em;
+			color: #444;
+		}
+
+		/* Encadrement des images */
+		.image.fit img {
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+			transition: transform 0.3s ease;
+		}
+		.image.fit img:hover {
+			transform: scale(1.03);
+		}
+
+		/* Lien GitHub stylisé */
+		a.logo {
+			display: inline-block;
+			margin-top: 0.5em;
+			text-decoration: none;
+			background-color: #2a6ebc;
+			color: white;
+			padding: 8px 14px;
+			border-radius: 20px;
+			font-size: 0.9em;
+			transition: background-color 0.3s ease;
+		}
+		a.logo:hover {
+			background-color: #1f3b63;
+		}
+
+		/* Organisation visuelle */
+		article {
+			margin-bottom: 2.5em;
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid #ddd;
+		}
+
+		section.posts {
+			display: flex;
+			flex-direction: column;
+			gap: 2.5em;
+		}
+
+		/* Animation légère sur les articles */
+		article:hover {
+			transform: translateY(-3px);
+			transition: 0.2s ease;
+		}
 	</style>
-	</head>
-	<body class="is-preload">
+</head>
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+<body class="is-preload">
 
-			<!-- Header -->
-			<header id="header">
-				<a href="english/index.html" class="logo">English version</a>
-			</header>
-			<br>
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="index.html">Accueil</a></li>
-					<li class="active"><a href="projets.html">Projets</a></li>
-					<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-					<li><a href="cv_rzo.html">CV & Réseau</a></li>
-					<li><a href="rse.html">RSE</a></li>
-					<li><a href="mobilite.html">Mobilité</a></li>
-				</ul>
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
+		<!-- Header -->
+		<header id="header">
+			<a href="english/index.html" class="logo">English version</a>
+		</header>
 
-			<!-- Main -->
-			<div id="main">
+		<br>
 
-				<!-- Featured Post -->
-				<article class="post featured">
-					<header class="major">
-						<h2>1. Projets Scolaires</h2>
-						<p>Projets effectués dans le cadre de mon IUT dans le but de valider l'acquisition pratique de compétences en fin de cycle. L'aspect technique n'était pas le seul aspect évalué, car ces projets étaient souvent accompagnés d'un rapport et d'une soutenance orale. C'est évidemment la partie la plus développée de mes projets car c'est à l'école que j'en ai fait le plus.</p>
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li class="active"><a href="projets.html">Projets</a></li>
+				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+				<li><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li><a href="rse.html">RSE</a></li>
+				<li><a href="mobilite.html">Mobilité</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Projets Scolaires -->
+			<article class="post featured">
+				<header class="major">
+					<h2>1. Projets Scolaires</h2>
+					<p>Ces projets ont été réalisés dans le cadre de mon IUT afin de valider l’acquisition de compétences techniques et transversales. Ils combinent mise en œuvre pratique, rédaction de rapport et soutenance orale.</p>
+				</header>
+			</article>
+
+			<section class="posts">
+				<!-- DevCloud -->
+				<article>
+					<header>
+						<h2>DevCloud</h2>
 					</header>
+					<p>Le parcours Développement et Cloud choisi en deuxième année m’a permis de réaliser des projets centrés sur la virtualisation et la conteneurisation.</p>
+
+					<h3>1. Création d’un réseau virtualisé</h3>
+					<p>Conception et déploiement d’un réseau local comprenant un pare-feu, un serveur DNS/AD, un serveur web et plusieurs postes clients. Le projet a impliqué des compétences en virtualisation, sécurité et documentation technique.</p>
+					<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
+					<h6>Schéma du projet à réaliser</h6>
+
+					<h3>2. Application conteneurisée de gestion de projets</h3>
+					<p>Développement d’une application basée sur des micro-services conteneurisés (Docker) pour gérer et visualiser les SBOM des projets. L’objectif était de concevoir une architecture modulaire, sécurisée et évolutive.</p>
+					<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
+					<h6>Schéma des micro-services utilisés</h6>
+					<a href="https://github.com/paulhoffbeck" class="logo">Voir sur GitHub</a>
 				</article>
 
-				<!-- Posts -->
-				<section class="posts">
-
-					<article>
-						<header>
-							<h2><a href="#">DevCloud</a></h2>
-						</header>
-						<p>Le parcours Développement et Cloud choisi en deuxième année m'a permis d'effectuer des projets centrés sur la virtualisation et la conteneurisation.</p>
-						
-						<h3>1. Création d'un réseau virtualisé</h3>
-						<p>Conception et mise en place d’un réseau local virtualisé comprenant un pare-feu, un serveur DNS/AD, un serveur Web et plusieurs postes clients. Le projet a mobilisé des compétences en virtualisation, configuration réseau et sécurité, et s’est conclu par un rapport et une soutenance.</p>
-						<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
-						<h6>Schéma du projet à réaliser</h6>
-
-						<h3>2. Création d'une application conteneurisée de gestion de projets</h3>
-						<p>Développement d’une application basée sur des micro-services conteneurisés pour gérer et afficher les SBOM de projets. Le travail a porté sur la conception, la gestion d’utilisateurs et la mise en place d’une architecture modulaire et robuste.</p>
-						<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
-						<h6>Schéma des micro-services utilisés dans le projet</h6>
-						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
-					</article>
-
-					<article>
-						<header>
-							<h2><a href="#">Programmation</a></h2>
-						</header>
-
-						<h3>Création d'un site Web dynamique avec gestion d'utilisateurs</h3>
-						<p>Création d’un site vitrine et d’un intranet en PHP/HTML/CSS. Projet combinant design attractif, gestion d’utilisateurs et sécurité. La gestion de projet a été facilitée par Github et un suivi en équipe.</p>
-						<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture d'écran du site vitrine" /></a>
-						<h6>Capture d'écran du site vitrine</h6>
-						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
-
-						<h3>Création d'une application Android de gestion de tâches</h3>
-						<p>Développement d’une application Android en Java avec fonctions d’agenda et de suivi des tâches. Le projet a mis l’accent sur la conception logicielle, l’ergonomie et la documentation technique.</p>
-						<a href="images/sae302.png" class="image fit"><img src="images/sae302.png" alt="Capture d'écran de l'application Android" /></a>
-						<h6>Capture d'écran de l'application</h6>
-						<a href="https://github.com/paulhoffbeck" class="logo">Lien vers le répo Github</a>
-					</article>
-
-					<article class="post centered">
-						<header>
-							<h2><a href="#">Réseau<br /></a></h2>
-						</header>
-
-						<h3>Création d'un réseau multi-site avec MPLS et VPN</h3>
-						<p>Conception et déploiement d’un réseau multisite intégrant un opérateur et deux clients. Le projet a inclus la mise en place de connexions sécurisées, l’évolution vers IPv6 et des tunnels VPN dédiés par client.</p>
-						<a href="images/saer.png" class="image fit"><img src="images/saer.png" alt="Capture d'écran de l'application Android" /></a>
-						<h6>Schéma du réseau</h6>
-						<h3>Création d'un réseau local d'entreprise fonctionnel</h3>
-						<p>Mise en place d’un réseau local complet avec pare-feu, serveur DNS/AD, serveur Web et postes clients. Accent mis sur la virtualisation, la sécurité et la documentation technique.</p>						
-						<a href="images/tpr.png" class="image fit"><img src="images/tpr.png" alt="Capture d'écran du TP" /></a>
-						<h6>Schéma du réseau</h6>
-					</article>
-
-				</section>
-
-				<!-- Projets Professionnels -->
-				<article class="post featured">
-					<header class="major">
-						<h2> 2. Projets Professionnels</h2>
-						<p>Projets effectués dans le cadre de stages ou de mon alternance. Mes stages de 1ère et 2ème année d'IUT ont permis de mettre en pratique mes compétences dans un cadre professionnel et de découvrir le panel de tâches possibles. Les projets faits dans le cadre de mon alternance ingénieur ont aussi permis de me spécialiser et d’apporter une réelle valeur à l’entreprise.</p>
+				<!-- Programmation -->
+				<article>
+					<header>
+						<h2>Programmation</h2>
 					</header>
+
+					<h3>Site web dynamique avec gestion d’utilisateurs</h3>
+					<p>Création d’un site vitrine et d’un intranet en PHP/HTML/CSS. Le projet a intégré la gestion d’utilisateurs et la sécurité, tout en appliquant une approche collaborative via GitHub.</p>
+					<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture d'écran du site vitrine" /></a>
+					<h6>Capture d’écran du site vitrine</h6>
+					<a href="https://github.com/paulhoffbeck" class="logo">Voir sur GitHub</a>
+
+					<h3>Application Android de gestion de tâches</h3>
+					<p>Développement d’une application Android en Java avec fonctions d’agenda et de suivi. L’accent a été mis sur l’ergonomie, la conception logicielle et la documentation.</p>
+					<a href="images/sae302.png" class="image fit"><img src="images/sae302.png" alt="Capture d'écran de l'application Android" /></a>
+					<h6>Interface de l’application Android</h6>
+					<a href="https://github.com/paulhoffbeck" class="logo">Voir sur GitHub</a>
 				</article>
 
-				<section class="posts">
-					<article>
-						<header>
-							<h2><a href="#">Stage de 2ème année</a></h2>
-						</header>
-						<p>Lors de mon stage, j’ai participé à la modernisation du réseau informatique d’un site. Ce projet a impliqué le remplacement des anciens switchs par du matériel plus performant, le recâblage de certaines parties du réseau afin d’optimiser la qualité des connexions, ainsi que la réorganisation de la répartition des ports pour améliorer la gestion et la fiabilité de l’infrastructure. Cette expérience m’a permis d’appliquer mes compétences techniques en administration et en câblage réseau, tout en respectant les contraintes liées au fonctionnement quotidien de l’entreprise.</p>
-						<a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration de l'alternance" /></a>
-						<p> J'ai aussi eu l'occasion de faire de la configuration SDWAN pour du routage multisite.</p>
-					</article>
-					<article>
-						<header>
-							<h2><a href="#">Alternance</a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="images/ingeclient.jpg" alt="Illustration de l'alternance" /></a>
-						<p>En tant qu’ingénieur solution client en réseau, cloud et sécurité dans le cadre de mon alternance, j’interviens sur la conception, le déploiement et le support d’infrastructures adaptées aux besoins des clients. Mon rôle inclut l’intégration de solutions réseau sécurisées, l’accompagnement sur des architectures cloud, ainsi que la mise en œuvre de politiques de sécurité adaptées. Cette expérience me permet de développer à la fois mes compétences techniques et mes aptitudes relationnelles en travaillant directement avec les clients sur leurs projets stratégiques.</p>
-					</article>
-				</section>
-			</div>
+				<!-- Réseau -->
+				<article class="post centered">
+					<header>
+						<h2>Réseau</h2>
+					</header>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<section class="split contact">
-					<section class="alt">
-						<h3>Contact</h3>
-						<p>hoffbeck.paul@gmail.com<br />
-						paul.hoffbeck@etu.toulouse-inp.fr</p>
-					</section>
-					<section>
-						<h3>Réseaux Sociaux</h3>
-						<ul class="icons alt">
-							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</section>
-				</section>
-			</footer>
+					<h3>Réseau multi-site avec MPLS et VPN</h3>
+					<p>Conception d’un réseau multi-site intégrant un opérateur et deux clients. Le projet comprenait la mise en œuvre de tunnels VPN, l’évolution IPv6 et une documentation complète.</p>
+					<a href="images/saer.png" class="image fit"><img src="images/saer.png" alt="Schéma du réseau multi-site" /></a>
+					<h6>Schéma du réseau</h6>
 
-			<!-- Copyright -->
-			<div id="copyright">
-				<p>Design par: <a href="https://html5up.net">HTML5 UP</a></p>
-			</div>
+					<h3>Réseau local d’entreprise</h3>
+					<p>Déploiement d’un réseau complet avec serveur DNS/AD, pare-feu et web server. Ce projet a permis d’appliquer les principes de virtualisation et de sécurité dans un contexte d’entreprise simulé.</p>
+					<a href="images/tpr.png" class="image fit"><img src="images/tpr.png" alt="Schéma du réseau local" /></a>
+					<h6>Schéma du réseau local</h6>
+				</article>
+			</section>
+
+			<!-- Projets Professionnels -->
+			<article class="post featured">
+				<header class="major">
+					<h2>2. Projets Professionnels</h2>
+					<p>Ces projets ont été réalisés lors de mes stages et de mon alternance. Ils m’ont permis d’appliquer mes connaissances dans un cadre réel, d’améliorer mes compétences techniques et d’acquérir une véritable expérience en entreprise.</p>
+				</header>
+			</article>
+
+			<section class="posts">
+				<!-- Stage -->
+				<article>
+					<header>
+						<h2>Stage de 2ème année</h2>
+					</header>
+					<p>Participation à la modernisation du réseau d’un site industriel : remplacement de switchs, recâblage, optimisation de la répartition des ports et mise à jour de la documentation technique.</p>
+					<a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration du stage" /></a>
+					<p>J’ai également configuré une solution SD-WAN pour le routage multisite, permettant d’améliorer la résilience et la flexibilité du réseau.</p>
+				</article>
+
+				<!-- Alternance -->
+				<article>
+					<header>
+						<h2>Alternance</h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/ingeclient.jpg" alt="Illustration de l’alternance" /></a>
+					<p>En tant qu’ingénieur solution client en réseau, cloud et sécurité, j’interviens sur la conception, le déploiement et le support d’infrastructures adaptées aux besoins des clients. Mon rôle comprend la configuration de solutions réseau sécurisées, la mise en place d’architectures cloud et le suivi technique de projets stratégiques. Cette alternance me permet de combiner compétences techniques et relation client.</p>
+				</article>
+			</section>
 		</div>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>hoffbeck.paul@gmail.com<br />
+					paul.hoffbeck@etu.toulouse-inp.fr</p>
+				</section>
+				<section>
+					<h3>Réseaux Sociaux</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
 
-	</body>
+		<div id="copyright">
+			<p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
