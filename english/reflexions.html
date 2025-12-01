@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>E-Portfolio Paul HOFFBECK</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
+	<!-- Custom Styles -->
+	<style>
+		/* --- Elegant Timeline --- */
+		.timeline {
+			position: relative;
+			max-width: 800px;
+			margin: 2em auto;
+		}
+		.timeline::after {
+			content: '';
+			position: absolute;
+			width: 3px;
+			background-color: #b3cce5;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -1.5px;
+		}
+		.container {
+			padding: 15px 25px;
+			position: relative;
+			width: 50%;
+		}
+		.container::after {
+			content: '';
+			position: absolute;
+			width: 14px;
+			height: 14px;
+			right: -7px;
+			background-color: white;
+			border: 3px solid #5b9bd5;
+			top: 22px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		.left { left: 0; }
+		.right { left: 50%; }
+		.right::after { left: -7px; }
+
+		.content {
+			padding: 15px 20px;
+			background-color: #5b9bd5;
+			color: white;
+			border-radius: 10px;
+			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+			transition: transform 0.2s ease;
+		}
+		.content:hover {
+			transform: translateY(-3px);
+			background-color: #4a8ac7;
+		}
+
+		.timeline h3 {
+			margin: 0 0 5px 0;
+			font-size: 1.1em;
+			font-weight: 600;
+		}
+		.timeline h6 {
+			margin: 0;
+			font-size: 0.9em;
+			font-weight: normal;
+		}
+
+		@media screen and (max-width: 600px) {
+			.timeline::after { left: 31px; }
+			.container { width: 100%; padding-left: 60px; padding-right: 25px; }
+			.right { left: 0; }
+		}
+
+		/* --- Layout --- */
+		.post.centered {
+			margin: 0 auto;
+			max-width: 900px;
+			text-align: justify;
+		}
+		ul, li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.skill-list h6 {
+			display: inline-block;
+			background-color: #5b9bd5;
+			color: white;
+			padding: 6px 14px;
+			margin: 5px;
+			border-radius: 20px;
+			font-size: 0.9em;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			transition: background-color 0.2s ease;
+		}
+		.skill-list h6:hover {
+			background-color: #4a8ac7;
+		}
+		h2, h5 {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="../index.html" class="logo">Version française</a>
+		</header>
+
+		<br>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="../english/index.html">Home</a></li>
+				<li><a href="../english/projects.html">Projects</a></li>
+				<li class="active"><a href="../english/reflections.html">Reflections & Professional Growth</a></li>
+				<li><a href="../english/cv_network.html">Resume & Network</a></li>
+				<li><a href="../english/rse.html">CSR</a></li>
+				<li><a href="../english/mobility.html">Mobility</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Personal Reflection and Professional Development</h2>
+					<p>This page presents my strengths, areas for improvement, and professional evolution as I perceive them at the beginning of my engineering journey. These elements will continue to evolve throughout my studies and career.</p>
+				</header>
+			</article>
+
+			<section class="posts">
+
+				<article>
+					<header>
+						<h2>My Strengths</h2>
+					</header>
+					<p>My academic background has allowed me to acquire strong technical skills in networking, programming, and telecommunications. At the same time, I have developed human qualities essential to my future career as an engineer.</p>
+
+					<h5>My Soft Skills</h5>
+					<div class="skill-list">
+						<h6>Determined</h6>
+						<h6>Adaptable</h6>
+						<h6>Curious</h6>
+					</div>
+					<p>These qualities have been strengthened through my academic experience, community involvement, and travels in semi-autonomy.</p>
+				</article>
+
+				<article>
+					<header>
+						<h2>My Areas for Improvement</h2>
+						<p>These represent the aspects I have identified as requiring particular attention to progress further in my career.</p>
+					</header>
+					<div class="skill-list">
+						<h6>Public Speaking</h6>
+						<h6>Oral English</h6>
+					</div>
+				</article>
+
+				<article class="post centered">
+					<h2>My Professional Journey</h2>
+
+					<div class="timeline">
+						<div class="container left">
+							<div class="content">
+								<h3>September 2023</h3>
+								<h6>Start of the Bachelor's Degree in Networks & Telecommunications</h6>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h3>July 2024</h3>
+								<h6>1st Year Internship — Network Modernization</h6>
+							</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h3>April 2025</h3>
+								<h6>2nd Year Internship — Network Maintenance & Modernization</h6>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h3>September 2025</h3>
+								<h6>Start of my Engineering Degree</h6>
+							</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h3>September 2025</h3>
+								<h6>Engineering Apprenticeship — Orange Business</h6>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h3>2027</h3>
+								<h6>International Mobility</h6>
+							</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h3>2028</h3>
+								<h6>Engineering Degree Graduation</h6>
+							</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h3>2028 and beyond</h3>
+								<h6>Network Architect in France or Abroad</h6>
+							</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h3>2028 and beyond</h3>
+								<h6>Possibility to work in the Defense Sector</h6>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
+				</section>
+				<section>
+					<h3>Social Media</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<div id="copyright">
+			<li>Design by: <a href="https://html5up.net">HTML5 UP</a></li>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

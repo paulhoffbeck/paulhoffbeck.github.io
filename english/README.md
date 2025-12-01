@@ -1,1 +1,0 @@
-# paulhoffbeck.github.io
