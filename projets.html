@@ -9,75 +9,28 @@
 
 	<!-- Styles personnalisés -->
 	<style>
-		h2 {
-			color: #1f3b63;
+		.no-bullets {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+		.subsection-title {
 			text-align: center;
-			margin-bottom: 0.6em;
+			margin-top: 1.5em;
+			margin-bottom: 0.7em;
 		}
-		h3 {
-			color: #2a6ebc;
-			margin-top: 1.2em;
-			font-size: 1.1em;
-		}
-		h6 {
-			text-align: center;
-			color: #666;
-			font-weight: normal;
-			margin-top: 0.5em;
-		}
-		p {
-			text-align: justify;
-			line-height: 1.6;
-			font-size: 1em;
-			color: #444;
-		}
-		.image.fit img {
+		.image-fit {
+			display: block;
+			margin: 1em auto;
+			max-width: 50%; /* Taille réduite */
 			border-radius: 10px;
-			box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-			transition: transform 0.3s ease;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 		}
-		.image.fit img:hover {
-			transform: scale(1.03);
-		}
-
-		/* Bouton English version comme HTML5UP */
-		#header .logo {
-			display: inline-block;
-			background: #2a6ebc;
-			color: #fff !important;
-			padding: 0.6em 1.2em;
-			border-radius: 30px;
-			font-size: 0.9em;
-			text-decoration: none;
-			transition: background-color 0.3s ease, transform 0.2s ease;
-		}
-		#header .logo:hover {
-			background-color: #1f3b63;
-			transform: translateY(-2px);
-		}
-
-		article {
-			margin-bottom: 2.5em;
-			padding-bottom: 1.5em;
-			border-bottom: 1px solid #ddd;
-			transition: transform 0.2s ease;
-		}
-		article:hover {
-			transform: translateY(-3px);
-		}
-
-		/* Grille fluide et responsive */
-		section.posts {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-			gap: 2.5em;
-			align-items: start;
-		}
-
-		@media screen and (max-width: 900px) {
-			section.posts {
-				grid-template-columns: 1fr;
-			}
+		/* Supprime les puces uniquement pour la première liste */
+		.header-list {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
 	</style>
 </head>
