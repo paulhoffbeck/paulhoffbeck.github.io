@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fr">
+<html>
 <head>
 	<title>E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
@@ -22,59 +22,15 @@
 		.image-fit {
 			display: block;
 			margin: 1em auto;
-			max-width: 50%;
+			max-width: 50%; /* Taille réduite */
 			border-radius: 10px;
 			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 		}
-		h2 {
-			color: #1f3b63;
-			text-align: center;
-			margin-bottom: 0.6em;
-		}
-		h3 {
-			color: #2a6ebc;
-			margin-top: 1.2em;
-			font-size: 1.1em;
-		}
-		h6 {
-			text-align: center;
-			color: #666;
-			font-weight: normal;
-			margin-top: 0.5em;
-		}
-		p {
-			text-align: justify;
-			line-height: 1.6;
-			font-size: 1em;
-			color: #444;
-		}
-		.image.fit img {
-			border-radius: 10px;
-			box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-			transition: transform 0.3s ease;
-		}
-		.image.fit img:hover {
-			transform: scale(1.03);
-		}
-		article {
-			margin-bottom: 2.5em;
-			padding-bottom: 1.5em;
-			border-bottom: 1px solid #ddd;
-			transition: transform 0.2s ease;
-		}
-		article:hover {
-			transform: translateY(-3px);
-		}
-		section.posts {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-			gap: 2.5em;
-			align-items: start;
-		}
-		@media screen and (max-width: 900px) {
-			section.posts {
-				grid-template-columns: 1fr;
-			}
+		/* Supprime les puces uniquement pour la première liste */
+		.header-list {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
 	</style>
 </head>
@@ -109,7 +65,7 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Projets Scolaires -->
+			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
 					<h2>1. Projets Scolaires</h2>
@@ -174,7 +130,7 @@
 
 			</section>
 
-			<!-- Projets Professionnels -->
+			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
 					<h2>2. Projets Professionnels</h2>
@@ -212,7 +168,10 @@
 			<section class="split contact">
 				<section class="alt">
 					<h3>Contact</h3>
-					<p>hoffbeck.paul@gmail.com<br />paul.hoffbeck@etu.toulouse-inp.fr</p>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
 				</section>
 
 				<section>
@@ -226,7 +185,7 @@
 		</footer>
 
 		<div id="copyright">
-			<p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+			<li>Design par : <a href="https://html5up.net">HTML5 UP</a></li>
 		</div>
 
 	</div>
