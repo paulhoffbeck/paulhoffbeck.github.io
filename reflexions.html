@@ -1,251 +1,275 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>E-Portfolio Paul HOFFBECK</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-<style>
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-}
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  background-color: #bbb;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -2px;
-}
-.container {
-  padding: 15px 25px; /* réduit l'espace autour des blocs */
-  position: relative;
-  width: 50%;
-}
-.container::after {
-  content: '';
-  position: absolute;
-  width: 16px; /* plus petit point */
-  height: 16px;
-  right: -8px;
-  background-color: white;
-  border: 3px solid #8fbde2 ;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 1;
-}
-.left { left: 0; }
-.right { left: 50%; }
-.right::after { left: -8px; }
+<head>
+	<title>E-Portfolio Paul HOFFBECK</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-.content {
-  padding: 12px 15px; /* moins de vide à l'intérieur */
-  background-color: #8fbde2;
-  color: white;
-  border-radius: 6px;
-  font-size: 0.95em; /* texte légèrement réduit */
-  line-height: 1.4;  /* texte compact */
-}
+	<!-- Styles personnalisés -->
+	<style>
+		/* --- Timeline élégante --- */
+		.timeline {
+			position: relative;
+			max-width: 800px;
+			margin: 2em auto;
+		}
+		.timeline::after {
+			content: '';
+			position: absolute;
+			width: 3px;
+			background-color: #b3cce5;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -1.5px;
+		}
+		.container {
+			padding: 15px 25px;
+			position: relative;
+			width: 50%;
+		}
+		.container::after {
+			content: '';
+			position: absolute;
+			width: 14px;
+			height: 14px;
+			right: -7px;
+			background-color: white;
+			border: 3px solid #5b9bd5;
+			top: 22px;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		.left { left: 0; }
+		.right { left: 50%; }
+		.right::after { left: -7px; }
 
-/* Espaces réduits entre titres et textes */
-.timeline h3 {
-  margin: 0 0 4px 0;
-  font-size: 1.1em;
-}
-.timeline h6 {
-  margin: 0 0 4px 0;
-  font-size: 0.95em;
-  font-weight: normal;
-}
-.timeline p {
-  margin: 0;
-  font-size: 0.9em;
-}
+		.content {
+			padding: 15px 20px;
+			background-color: #5b9bd5;
+			color: white;
+			border-radius: 10px;
+			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+			transition: transform 0.2s ease;
+		}
+		.content:hover {
+			transform: translateY(-3px);
+			background-color: #4a8ac7;
+		}
 
-@media screen and (max-width: 600px) {
-  .timeline::after { left: 31px; }
-  .container { width: 100%; padding-left: 60px; padding-right: 25px; }
-  .right { left: 0; }
-}
+		.timeline h3 {
+			margin: 0 0 5px 0;
+			font-size: 1.1em;
+			font-weight: 600;
+		}
+		.timeline h6 {
+			margin: 0;
+			font-size: 0.9em;
+			font-weight: normal;
+		}
+
+		@media screen and (max-width: 600px) {
+			.timeline::after { left: 31px; }
+			.container { width: 100%; padding-left: 60px; padding-right: 25px; }
+			.right { left: 0; }
+		}
+
+		/* --- Mise en page du contenu --- */
 		.post.centered {
 			margin: 0 auto;
 			max-width: 900px;
 			text-align: justify;
 		}
-</style>
-	</head>
-	<body class="is-preload">
+		ul, li {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.skill-list h6 {
+			display: inline-block;
+			background-color: #5b9bd5;
+			color: white;
+			padding: 6px 14px;
+			margin: 5px;
+			border-radius: 20px;
+			font-size: 0.9em;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+			transition: background-color 0.2s ease;
+		}
+		.skill-list h6:hover {
+			background-color: #4a8ac7;
+		}
+		h2, h5 {
+			text-align: center;
+		}
+	</style>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<body class="is-preload">
 
-				<!-- Intro -->
+	<div id="wrapper" class="fade-in">
 
+		<!-- Header -->
+		<header id="header">
+			<a href="english/index.html" class="logo">English version</a>
+		</header>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="english/index.html" class="logo">English version</a>
+		<br>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li class="active"><a href="reflexions.html">Réflexion & Développement pro</a></li>
+				<li><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li><a href="rse.html">RSE</a></li>
+				<li><a href="mobilite.html">Mobilité</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="#">Réflexion personnelle et développement professionnel</a></h2>
+					<p>Cette page présente mes forces, mes axes d'amélioration ainsi que mon évolution professionnelle tels que je les perçois au début de ma formation d’ingénieur. Ces éléments évolueront tout au long de mon parcours.</p>
+				</header>
+			</article>
+
+			<section class="posts">
+
+				<article>
+					<header>
+						<h2>Mes forces</h2>
 					</header>
-					<br>
+					<p>Mon parcours académique m’a permis d’acquérir de solides compétences techniques en réseaux, en programmation et en télécommunication. En parallèle, j’ai développé des qualités humaines indispensables à mon futur métier d’ingénieur.</p>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="projets.html">Projets</a></li>
-							<li class="active" ><a href="reflexions.html">Réflexion & Développement pro</a></li>
-							<li><a href="cv_rzo.html">CV & Réseau</a></li>
-							<li><a href="rse.html">RSE</a></li>
-							<li><a href="mobilite.html">Mobilité</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+					<h5>Mes soft skills</h5>
+					<div class="skill-list">
+						<h6>Déterminé</h6>
+						<h6>Adaptatif</h6>
+						<h6>Curieux</h6>
+					</div>
+					<p>Ces qualités ont été renforcées au fil de mon expérience scolaire, associative et de mes voyages en semi-autonomie.</p>
+				</article>
 
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Réflexion personnelle et développement professionnel<br /></a></h2>
-									<p>Cette page est dédiée à mes forces, mes axes d'amélioration ainsi qu'à mon évolution professionnelle tels que je les vois en début de 1ère année. Elles seront amenées à évoluer tout le long de ma formation.</p>
-								</header>
-							</article>
-							<section class="posts">
+				<article>
+					<header>
+						<h2>Mes axes d'amélioration</h2>
+						<p>Ces axes représentent les points que j’ai identifiés comme nécessitant un travail particulier pour progresser dans ma carrière.</p>
+					</header>
+					<div class="skill-list">
+						<h6>Communication orale</h6>
+						<h6>Anglais oral</h6>
+					</div>
+				</article>
 
-					<article>
-						<header>
-							<h2><a href="#">Mes forces</a></h2>
-						</header>
-						<p>Mon parcours accadémique m'a donné de solides compétences techniques en réseaux, en programmation et en télécommunication.</p>
-						<h5>Mes soft skills</h5>
-									<ul>
-										<li><h6>Déterminé</h6></li>
-										<li><h6>Adaptatif</h6></li>
-										<li><h6>Curieux</h6></li>
-									</ul>
-						<p>Ces softs skills ont été développé tout au long de mon cursus scolaire et associatif ainsi que mes différents voyages en semi-autonomie.</p>
-					</article>
+				<article class="post centered">
+					<h2>Mon évolution professionnelle</h2>
 
-					<article>
-						<header>
-							<h2><a href="#">Mes Axes d'amélioration</a></h2>
-							<p>Ces derniers sont les points que j'ai identifiés qui nécessitent une attention particulière et un travail intensif.</p>
-						</header>
-							<ul>
-										<li><h6>Communication orale</h6></li>
-										<li><h6>Anglais oral</h6></li>
-									</ul>
-					</article>
-					<article class="post centered">		
-						<h2>Mon évolution professionnelle</h2>
-						<div class="timeline">
-							<div class="container left">
-								<div class="content">
+					<div class="timeline">
+						<div class="container left">
+							<div class="content">
 								<h3>Septembre 2023</h3>
-								<h6>Début BUT R&T</h6>
-								</div>
+								<h6>Début du BUT Réseaux & Télécommunications</h6>
 							</div>
-							<div class="container right">
-								<div class="content">
+						</div>
+						<div class="container right">
+							<div class="content">
 								<h3>Juillet 2024</h3>
-								<h6>Stage 1ère année - Modernisation réseau</h6>
-								</div>
+								<h6>Stage de 1ère année — Modernisation réseau</h6>
 							</div>
-							<div class="container left">
-								<div class="content">
+						</div>
+						<div class="container left">
+							<div class="content">
 								<h3>Avril 2025</h3>
-								<h6>Stage 2eme année - MCO & Modernisation réseau</h6>
-								</div>
+								<h6>Stage de 2e année — MCO & Modernisation réseau</h6>
 							</div>
-							<div class="container right">
-								<div class="content">
+						</div>
+						<div class="container right">
+							<div class="content">
 								<h3>Septembre 2025</h3>
 								<h6>Début de mon diplôme d’ingénieur</h6>
-								</div>
 							</div>
-							<div class="container left">
-								<div class="content">
+						</div>
+						<div class="container left">
+							<div class="content">
 								<h3>Septembre 2025</h3>
-								<h6>Alternance ingénieur - Orange Business</h6>
-								</div>
+								<h6>Alternance ingénieur — Orange Business</h6>
 							</div>
-							<div class="container right">
-								<div class="content">
+						</div>
+						<div class="container right">
+							<div class="content">
 								<h3>2027</h3>
-								<h6>Mobilité Internationale</h6>
-								</div>
+								<h6>Mobilité internationale</h6>
 							</div>
-							<div class="container left">
-								<div class="content">
+						</div>
+						<div class="container left">
+							<div class="content">
 								<h3>2028</h3>
-								<h6>Obtention de mon diplôme d'ingénieur</h6>
-								</div>
+								<h6>Obtention du diplôme d’ingénieur</h6>
 							</div>
-							<div class="container right">
-								<div class="content">
-								<h3>2028 - ?</h3>
-								<h6>Architecte Réseau en France ou à l'étranger.
-								</h6>
-								</div>
+						</div>
+						<div class="container right">
+							<div class="content">
+								<h3>2028 et au-delà</h3>
+								<h6>Architecte Réseau en France ou à l’étranger</h6>
 							</div>
-							<div class="container left">
-								<div class="content">
-								<h3>2028 - ?</h3>
-								<h6>Travail dans le secteur de la défense ?
-								</h6>
-								</div>
+						</div>
+						<div class="container left">
+							<div class="content">
+								<h3>2028 et au-delà</h3>
+								<h6>Possibilité de travailler dans le secteur de la défense</h6>
 							</div>
-							</div>
-							</article>
-						<!-- Footer -->
+						</div>
 					</div>
+				</article>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Contact</h3>
-								<p>hoffbeck.paul@gmail.com<br />
-								paul.hoffbeck@etu.toulouse-inp.fr</p>
-							</section>
-							<section>
-								<h3>Réseaux Sociaux</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+			</section>
+		</div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<li>Design par: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
+				</section>
+				<section>
+					<h3>Réseaux Sociaux</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
 
-			</div>
+		<div id="copyright">
+			<li>Design par : <a href="https://html5up.net">HTML5 UP</a></li>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
