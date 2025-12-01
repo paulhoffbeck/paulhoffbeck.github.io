@@ -1,122 +1,166 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>E-Portfolio Paul HOFFBECK</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="fr">
+<head>
+	<title>E-Portfolio Paul HOFFBECK</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+	<!-- Styles personnalisés -->
+	<style>
+		h2 {
+			text-align: center;
+			color: #1f3b63;
+			margin-bottom: 0.8em;
+		}
 
-				<!-- Intro -->
+		p {
+			text-align: justify;
+			line-height: 1.6;
+			color: #444;
+			font-size: 1em;
+		}
 
+		.image.fit img {
+			border-radius: 12px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="english/index.html" class="logo">English version</a>
+		.image.fit img:hover {
+			transform: scale(1.03);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+		}
+
+		.post.featured {
+			text-align: justify;
+			max-width: 950px;
+			margin: 0 auto;
+			padding-bottom: 2em;
+		}
+
+		section.posts {
+			display: flex;
+			flex-direction: column;
+			gap: 2.5em;
+			max-width: 950px;
+			margin: 0 auto;
+		}
+
+		h3 {
+			color: #2a6ebc;
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="english/index.html" class="logo">English version</a>
+		</header>
+		<br>
+
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projets.html">Projets</a></li>
+				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+				<li><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li class="active"><a href="rse.html">RSE</a></li>
+				<li><a href="mobilite.html">Mobilité</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<article class="post featured">
+				<a href="#" class="image fit"><img src="images/rse1.jpg" alt="Engagement RSE" /></a>
+				<h2>L'engagement RSE</h2>
+				<p>L’engagement RSE (Responsabilité Sociétale des Entreprises) prend une place de plus en plus prépondérante dans le métier d’ingénieur. Il oriente les pratiques professionnelles vers des décisions plus durables et responsables. En intégrant ces enjeux dès la conception des projets, l’ingénieur contribue à réduire les impacts environnementaux, à améliorer le bien-être des parties prenantes et à garantir une éthique de travail en phase avec les attentes sociétales actuelles.</p>
+				<p>Cette démarche renforce non seulement la qualité des solutions proposées, mais elle permet aussi de répondre aux exigences réglementaires et aux défis de la transition écologique.</p>
+			</article>
+
+			<!-- Engagements associatifs -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Mes engagements associatifs</h2>
+					<p>Au fil de mon parcours, je me suis investi dans plusieurs associations. Ces expériences m’ont sensibilisé aux enjeux humains, sociaux et environnementaux, et m’ont appris l’importance de l’engagement collectif pour un monde plus équitable.</p>
+				</header>
+			</article>
+
+			<section class="posts">
+				<article>
+					<header>
+						<h3>L'Hospitalité de Lourdes</h3>
 					</header>
-					<br>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Accueil</a></li>
-							<li><a href="projets.html">Projets</a></li>
-							<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-							<li><a href="cv_rzo.html">CV & Réseau</a></li>
-							<li class="active"><a href="rse.html">RSE</a></li>
-							<li><a href="mobilite.html">Mobilité</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<a href="#" class="image fit"><img src="images/rse1.jpg" alt="" /></a>
-									<h2>L'engagement RSE</h2>
-									<p>L’engagement RSE prend une place de plus en plus prépondérante dans le métier d’ingénieur, il oriente les pratiques professionnelles vers des décisions plus durables et responsables. En intégrant ces enjeux dès la conception des projets, l’ingénieur contribue à réduire les impacts environnementaux, à améliorer le bien-être des parties prenantes et à garantir une éthique de travail cohérente avec les attentes sociétales actuelles. Cette démarche renforce non seulement la qualité des solutions proposées, mais permet aussi de répondre aux exigences réglementaires et aux défis de la transition écologique.</p>
-									<p></p>
-									<p></p>
-							</article>
-				<article class="post featured">
-					<header class="major">
-						<h2>Mes engagements associatifs</h2>
-						<p>Durant mon parcours, j’ai déjà eu l’occasion de m’investir dans des engagements associatifs, ce qui m’a sensibilisé aux enjeux sociaux et environnementaux et m’a appris l’importance de contribuer, à mon échelle, à des actions responsables.</p>
-					</header>
+					<p>Lors de mon année de terminale, j’ai eu l’opportunité d’être hospitalier au sanctuaire de Lourdes pendant une semaine. Cette expérience m’a confronté de manière directe aux enjeux humains liés à la vulnérabilité et à la dépendance. En accompagnant des personnes malades ou en situation de handicap, j’ai développé un sens accru de l’écoute, de la patience et du service. Elle m’a également appris l’importance d’un engagement bénévole fondé sur le respect, la dignité et l’attention à autrui.</p>
+					<a href="images/hl.png" class="image fit"><img src="images/hl.png" alt="Hospitalité de Lourdes" /></a>
 				</article>
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">L'hospitalité de Lourdes<br />
-									</header>
-									<p>Lors de mon année de terminale, j’ai eu l’opportunité d’être, durant une semaine, un hospitalier au sanctuaire de Lourdes. Cette expérience m’a permis d’être confronté de manière directe aux enjeux humains liés à la vulnérabilité et à la dépendance. En accompagnant des personnes malades ou en situation de handicap, j’ai développé un sens accru de l’écoute, de la patience et du service. Elle m’a également sensibilisé à l’importance d’un engagement bénévole fondé sur le respect, la dignité et l’attention portée à chacun.</p>
-									<a href="images/hl.png" class="image fit"><img src="images/hl.png" alt="Schéma du projet de virtualisation" /></a>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Les resto du coeur<br />
-									</header>
-									<a href="#" class="image fit"><img src="images/rc.png" alt="" /></a>
-									<p>J’ai également été bénévole aux Restos du Cœur, où j’ai été sensibilisé de manière concrète aux problématiques de précarité alimentaire et de gaspillage. Cette expérience m’a amené à participer à la collecte, au tri et à la distribution de denrées, en veillant à une gestion rigoureuse des ressources afin d’optimiser leur utilisation et d’éviter toute perte inutile. Elle m’a permis de mesurer l’importance d’une organisation solidaire capable de lutter à la fois contre le manque et contre le gaspillage, tout en valorisant chaque produit distribué. Cet engagement a renforcé ma compréhension des enjeux sociaux liés à l’alimentation et l’importance d’initiatives collectives pour y répondre efficacement.</p>
-								</article>
 
-								<article class="post featured" style="align-items: center;">
-								<h2>Et après ?</h2>
-								<a href="#" class="image fit"><img src="images/rse.jpg" alt="" /></a>
-								<p>En tant que futur ingénieur, je souhaite inscrire mon action professionnelle dans une démarche de responsabilité sociétale. Conscient des impacts environnementaux, sociaux et éthiques associés aux choix techniques, j’ambitionne de contribuer au développement de solutions durables. Mon objectif est d’intégrer les principes de l’éco-conception, de favoriser l’innovation responsable et de veiller à ce que les projets auxquels je participerai répondent aux attentes des parties prenantes tout en limitant leur empreinte sur l’environnement. </p>
-								</article>
-								
-						<!-- Footer -->
-					</div>
+				<article>
+					<header>
+						<h3>Les Restos du Cœur</h3>
+					</header>
+					<a href="#" class="image fit"><img src="images/rc.png" alt="Les Restos du Cœur" /></a>
+					<p>J’ai également été bénévole aux Restos du Cœur, où j’ai été sensibilisé aux problématiques de précarité alimentaire et de gaspillage. J’ai participé à la collecte, au tri et à la distribution de denrées, en veillant à optimiser leur utilisation pour éviter toute perte. Cette expérience m’a permis de comprendre l’importance d’une organisation solidaire capable de lutter à la fois contre le manque et contre le gaspillage, tout en valorisant chaque produit distribué.</p>
+				</article>
+			</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Contact</h3>
-								<p>hoffbeck.paul@gmail.com<br />
-								paul.hoffbeck@etu.toulouse-inp.fr</p>
-							</section>
-							<section>
-								<h3>Réseaux Sociaux</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+			<!-- Conclusion -->
+			<article class="post featured" style="text-align: justify;">
+				<h2>Et après ?</h2>
+				<a href="#" class="image fit"><img src="images/rse.jpg" alt="RSE ingénieur" /></a>
+				<p>En tant que futur ingénieur, je souhaite inscrire mon action professionnelle dans une démarche de responsabilité sociétale. Conscient des impacts environnementaux, sociaux et éthiques associés aux choix techniques, j’ambitionne de contribuer au développement de solutions durables et innovantes.</p>
+				<p>Mon objectif est d’intégrer les principes de l’éco-conception, de favoriser l’innovation responsable et de veiller à ce que les projets auxquels je participerai répondent aux attentes des parties prenantes tout en limitant leur empreinte environnementale.</p>
+			</article>
+		</div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<li>Design par: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>hoffbeck.paul@gmail.com<br />
+					paul.hoffbeck@etu.toulouse-inp.fr</p>
+				</section>
+				<section>
+					<h3>Réseaux Sociaux</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
 
-			</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
