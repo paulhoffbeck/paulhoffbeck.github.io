@@ -20,6 +20,8 @@
 			border: none;
 			border-radius: 10px;
 			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			display: block;
+			margin: 0 auto;
 		}
 
 		/* Style des blocs ingénieurs */
@@ -30,7 +32,7 @@
 			margin: 20px auto;
 			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 			max-width: 800px;
-			text-align: justify;
+			text-align: center;
 			transition: transform 0.2s ease, box-shadow 0.2s ease;
 		}
 
@@ -59,18 +61,37 @@
 			font-size: 0.95em;
 			color: #2a6ebc;
 			font-weight: 600;
+			text-align: center;
 		}
 
 		.engineer-card p {
 			font-size: 0.95em;
 			line-height: 1.5;
 			color: #444;
+			text-align: center;
 		}
 
 		/* En-tête */
+		header.major {
+			text-align: center;
+		}
+
 		header.major h2 {
 			margin-top: 1.5em;
 			color: #1f3b63;
+			text-align: center;
+		}
+
+		header.major p {
+			text-align: center;
+		}
+
+		/* Centrage global */
+		#main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
 	</style>
 </head>
@@ -84,6 +105,8 @@
 		<header id="header">
 			<a href="english/cv_rzo.html" class="logo">English version</a>
 		</header>
+
+		<br>
 
 		<!-- Navigation -->
 		<nav id="nav">
@@ -117,7 +140,7 @@
 
 				<header class="major">
 					<h2>Ingénieurs contactés</h2>
-					<p>J’ai échangé avec plusieurs ingénieurs de mon entourage professionnel et personnel. Voici les réflexions les plus marquantes issues de nos discussions.</p>
+					<p>J'ai échangé avec plusieurs ingénieurs de mon entourage professionnel et personnel. Voici les réflexions les plus marquantes issues de nos discussions.</p>
 				</header>
 
 				<!-- Blocs d'ingénieurs -->
@@ -125,30 +148,55 @@
 					<h3>Fabien HILBERG</h3>
 					<p><strong>Ingénieur R&D chez KNDS Allemagne</strong></p>
 					<h6>Réflexion apportée :</h6>
-					<p>« Être ingénieur, c’est travailler sur des technologies de pointe dans des secteurs à fort impact. Ce métier ouvre de nombreuses portes à l’international grâce à la polyvalence et à l’esprit d’adaptation qu’il développe. »</p>
+					<p>« Être ingénieur, c'est travailler sur des technologies de pointe dans des secteurs à fort impact. Ce métier ouvre de nombreuses portes à l'international grâce à la polyvalence et à l'esprit d'adaptation qu'il développe. »</p>
 				</div>
 
 				<div class="engineer-card">
 					<h3>Denis GOUDAY</h3>
 					<p><strong>Ingénieur Projet chez MBDA</strong></p>
 					<h6>Réflexion apportée :</h6>
-					<p>« Ce qui me plaît dans le métier d’ingénieur, c’est la gestion de projets et d’équipes. Nous travaillons sur des missions variées, souvent à l’international. J’ai eu par exemple la chance de participer à plusieurs projets en Égypte et dans d’autres pays. »</p>
+					<p>« Ce qui me plaît dans le métier d'ingénieur, c'est la gestion de projets et d'équipes. Nous travaillons sur des missions variées, souvent à l'international. J'ai eu par exemple la chance de participer à plusieurs projets en Égypte et dans d'autres pays. »</p>
 				</div>
 
 				<div class="engineer-card">
 					<h3>Laurent COURTE</h3>
 					<p><strong>Ingénieur Solution chez Orange Business</strong></p>
 					<h6>Réflexion apportée :</h6>
-					<p>« Ce métier permet de choisir la voie que l’on souhaite emprunter : entre postes exigeants et carrières équilibrées. Être ingénieur, c’est aussi savoir faire évoluer sa trajectoire professionnelle selon les étapes de sa vie. »</p>
+					<p>« Ce métier permet de choisir la voie que l'on souhaite emprunter : entre postes exigeants et carrières équilibrées. Être ingénieur, c'est aussi savoir faire évoluer sa trajectoire professionnelle selon les étapes de sa vie. »</p>
 				</div>
 
 				<div class="engineer-card">
 					<h3>Sophian RUBEAU</h3>
 					<p><strong>Responsable des Ventes Réseaux IP & Cybersécurité chez Orange</strong></p>
 					<h6>Réflexion apportée :</h6>
-					<p>« Les diplômes d’ingénieur ouvrent des portes vers des postes à responsabilité, mais aussi vers l’enseignement. La curiosité et l’envie de se démarquer sont des qualités clés : beaucoup d’opportunités sont venues de ce que j’ai accompli en dehors du cadre académique. »</p>
+					<p>« Les diplômes d'ingénieur ouvrent des portes vers des postes à responsabilité, mais aussi vers l'enseignement. La curiosité et l'envie de se démarquer sont des qualités clés : beaucoup d'opportunités sont venues de ce que j'ai accompli en dehors du cadre académique. »</p>
 				</div>
 			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
+				</section>
+
+				<section>
+					<h3>Réseaux Sociaux</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<div id="copyright">
+			<li>Design par : <a href="https://html5up.net">HTML5 UP</a></li>
 		</div>
 
 	</div>
