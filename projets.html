@@ -15,14 +15,12 @@
 			text-align: justify;
 		}
 
-		/* Titres principaux */
 		h2 {
 			color: #1f3b63;
 			text-align: center;
 			margin-bottom: 0.6em;
 		}
 
-		/* Style des sous-titres */
 		h3 {
 			color: #2a6ebc;
 			margin-top: 1.2em;
@@ -36,7 +34,6 @@
 			margin-top: 0.5em;
 		}
 
-		/* Style des paragraphes */
 		p {
 			text-align: justify;
 			line-height: 1.6;
@@ -44,7 +41,6 @@
 			color: #444;
 		}
 
-		/* Encadrement des images */
 		.image.fit img {
 			border-radius: 10px;
 			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -54,7 +50,6 @@
 			transform: scale(1.03);
 		}
 
-		/* Lien GitHub stylisé */
 		a.logo {
 			display: inline-block;
 			margin-top: 0.5em;
@@ -70,20 +65,34 @@
 			background-color: #1f3b63;
 		}
 
-		/* Organisation visuelle */
 		article {
 			margin-bottom: 2.5em;
 			padding-bottom: 1.5em;
 			border-bottom: 1px solid #ddd;
 		}
 
+		/* --- Nouvelle disposition alternée --- */
 		section.posts {
-			display: flex;
-			flex-direction: column;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 			gap: 2.5em;
 		}
 
-		/* Animation légère sur les articles */
+		section.posts article:nth-child(odd) {
+			grid-column: 1;
+		}
+
+		section.posts article:nth-child(even) {
+			grid-column: 2;
+		}
+
+		/* Pour les écrans plus petits : tout en une colonne */
+		@media screen and (max-width: 900px) {
+			section.posts {
+				grid-template-columns: 1fr;
+			}
+		}
+
 		article:hover {
 			transform: translateY(-3px);
 			transition: 0.2s ease;
@@ -93,17 +102,15 @@
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
 
-		<!-- Header -->
-		<header id="header">
-			<a href="english/projets.html" class="logo">English version</a>
-		</header>
+	<!-- Header -->
+	<header id="header">
+		<a href="english/index.html" class="logo">English version</a>
+	</header>
+	<br>
 
-		<br>
 
-		<!-- Navigation -->
 		<nav id="nav">
 			<ul class="links">
 				<li><a href="index.html">Accueil</a></li>
@@ -119,7 +126,6 @@
 			</ul>
 		</nav>
 
-		<!-- Main -->
 		<div id="main">
 
 			<!-- Projets Scolaires -->
@@ -131,7 +137,6 @@
 			</article>
 
 			<section class="posts">
-				<!-- DevCloud -->
 				<article>
 					<header>
 						<h2>DevCloud</h2>
@@ -150,7 +155,6 @@
 					<a href="https://github.com/paulhoffbeck" class="logo">Voir sur GitHub</a>
 				</article>
 
-				<!-- Programmation -->
 				<article>
 					<header>
 						<h2>Programmation</h2>
@@ -169,8 +173,7 @@
 					<a href="https://github.com/paulhoffbeck" class="logo">Voir sur GitHub</a>
 				</article>
 
-				<!-- Réseau -->
-				<article class="post centered">
+				<article>
 					<header>
 						<h2>Réseau</h2>
 					</header>
@@ -185,18 +188,7 @@
 					<a href="images/tpr.png" class="image fit"><img src="images/tpr.png" alt="Schéma du réseau local" /></a>
 					<h6>Schéma du réseau local</h6>
 				</article>
-			</section>
 
-			<!-- Projets Professionnels -->
-			<article class="post featured">
-				<header class="major">
-					<h2>2. Projets Professionnels</h2>
-					<p>Ces projets ont été réalisés lors de mes stages et de mon alternance. Ils m’ont permis d’appliquer mes connaissances dans un cadre réel, d’améliorer mes compétences techniques et d’acquérir une véritable expérience en entreprise.</p>
-				</header>
-			</article>
-
-			<section class="posts">
-				<!-- Stage -->
 				<article>
 					<header>
 						<h2>Stage de 2ème année</h2>
@@ -206,7 +198,6 @@
 					<p>J’ai également configuré une solution SD-WAN pour le routage multisite, permettant d’améliorer la résilience et la flexibilité du réseau.</p>
 				</article>
 
-				<!-- Alternance -->
 				<article>
 					<header>
 						<h2>Alternance</h2>
@@ -217,13 +208,11 @@
 			</section>
 		</div>
 
-		<!-- Footer -->
 		<footer id="footer">
 			<section class="split contact">
 				<section class="alt">
 					<h3>Contact</h3>
-					<p>hoffbeck.paul@gmail.com<br />
-					paul.hoffbeck@etu.toulouse-inp.fr</p>
+					<p>hoffbeck.paul@gmail.com<br />paul.hoffbeck@etu.toulouse-inp.fr</p>
 				</section>
 				<section>
 					<h3>Réseaux Sociaux</h3>
@@ -240,7 +229,6 @@
 		</div>
 	</div>
 
-	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
