@@ -7,109 +7,204 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
+	<!-- Styles personnalisés -->
 	<style>
-		h2 { color: #1f3b63; text-align: center; margin-bottom: 0.6em; }
-		h3 { color: #2a6ebc; margin-top: 1.2em; font-size: 1.1em; }
-		h6 { text-align: center; color: #666; font-weight: normal; margin-top: 0.5em; }
-		p { text-align: justify; line-height: 1.6; font-size: 1em; color: #444; }
-		.image.fit img { border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.3s ease; }
-		.image.fit img:hover { transform: scale(1.03); }
-		article { margin-bottom: 2.5em; padding-bottom: 1.5em; border-bottom: 1px solid #ddd; transition: transform 0.2s ease; }
-		article:hover { transform: translateY(-3px); }
+		h2 {
+			color: #1f3b63;
+			text-align: center;
+			margin-bottom: 0.6em;
+		}
+		h3 {
+			color: #2a6ebc;
+			margin-top: 1.2em;
+			font-size: 1.1em;
+		}
+		h6 {
+			text-align: center;
+			color: #666;
+			font-weight: normal;
+			margin-top: 0.5em;
+		}
+		p {
+			text-align: justify;
+			line-height: 1.6;
+			font-size: 1em;
+			color: #444;
+		}
+		.image.fit img {
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+			transition: transform 0.3s ease;
+		}
+		.image.fit img:hover {
+			transform: scale(1.03);
+		}
 
-		/* Grille responsive automatique pour articles */
+		/* Bouton English version comme HTML5UP */
+		#header .logo {
+			display: inline-block;
+			background: #2a6ebc;
+			color: #fff !important;
+			padding: 0.6em 1.2em;
+			border-radius: 30px;
+			font-size: 0.9em;
+			text-decoration: none;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+		#header .logo:hover {
+			background-color: #1f3b63;
+			transform: translateY(-2px);
+		}
+
+		article {
+			margin-bottom: 2.5em;
+			padding-bottom: 1.5em;
+			border-bottom: 1px solid #ddd;
+			transition: transform 0.2s ease;
+		}
+		article:hover {
+			transform: translateY(-3px);
+		}
+
+		/* Grille fluide et responsive */
 		section.posts {
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 			gap: 2.5em;
+			align-items: start;
 		}
+
 		@media screen and (max-width: 900px) {
-			section.posts { grid-template-columns: 1fr; }
+			section.posts {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 </head>
+
 <body class="is-preload">
 
-<div id="wrapper" class="fade-in">
+	<div id="wrapper" class="fade-in">
 
-	<!-- Header -->
-	<header id="header">
-		<!-- Bouton HTML5 UP -->
-		<a href="english/index.html" class="button small">English version</a>
-	</header>
-	<br>
+		<!-- Header -->
+		<header id="header">
+			<a href="english/index.html" class="button small">English version</a>
+		</header>
 
-	<!-- Navigation -->
-	<nav id="nav">
-		<ul class="links">
-			<li><a href="index.html">Accueil</a></li>
-			<li class="active"><a href="projets.html">Projets</a></li>
-			<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-			<li><a href="cv_rzo.html">CV & Réseau</a></li>
-			<li><a href="rse.html">RSE</a></li>
-			<li><a href="mobilite.html">Mobilité</a></li>
-		</ul>
-		<ul class="icons">
-			<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-			<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-		</ul>
-	</nav>
+		<!-- Navigation -->
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Accueil</a></li>
+				<li class="active"><a href="projets.html">Projets</a></li>
+				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+				<li><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li><a href="rse.html">RSE</a></li>
+				<li><a href="mobilite.html">Mobilité</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
 
-	<div id="main">
+		<!-- Main -->
+		<div id="main">
 
-		<article class="post featured">
-			<header class="major">
-				<h2>1. Projets Scolaires</h2>
-				<p>Ces projets ont été réalisés dans le cadre de mon IUT afin de valider l’acquisition de compétences techniques et transversales. Ils combinent mise en œuvre pratique, rédaction de rapport et soutenance orale.</p>
-			</header>
-		</article>
-
-		<section class="posts">
-			<article>
-				<header><h2>DevCloud</h2></header>
-				<p>Le parcours Développement et Cloud choisi en deuxième année m’a permis de réaliser des projets centrés sur la virtualisation et la conteneurisation.</p>
-				<h3>1. Création d’un réseau virtualisé</h3>
-				<p>Conception et déploiement d’un réseau local comprenant un pare-feu, un serveur DNS/AD, un serveur web et plusieurs postes clients. Le projet a impliqué des compétences en virtualisation, sécurité et documentation technique.</p>
-				<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
-				<h6>Schéma du projet à réaliser</h6>
-				<h3>2. Application conteneurisée de gestion de projets</h3>
-				<p>Développement d’une application basée sur des micro-services conteneurisés (Docker) pour gérer et visualiser les SBOM des projets. L’objectif était de concevoir une architecture modulaire, sécurisée et évolutive.</p>
-				<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
-				<h6>Schéma des micro-services utilisés</h6>
-				<a href="https://github.com/paulhoffbeck" class="button small">Voir sur GitHub</a>
+			<!-- Projets Scolaires -->
+			<article class="post featured">
+				<header class="major">
+					<h2>1. Projets Scolaires</h2>
+					<p>Ces projets ont été réalisés dans le cadre de mon IUT afin de valider l’acquisition de compétences techniques et transversales. Ils combinent mise en œuvre pratique, rédaction de rapport et soutenance orale.</p>
+				</header>
 			</article>
 
-			<article>
-				<header><h2>Programmation</h2></header>
-				<h3>Site web dynamique avec gestion d’utilisateurs</h3>
-				<p>Création d’un site vitrine et d’un intranet en PHP/HTML/CSS. Le projet a intégré la gestion d’utilisateurs et la sécurité, tout en appliquant une approche collaborative via GitHub.</p>
-				<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture d'écran du site vitrine" /></a>
-				<h6>Capture d’écran du site vitrine</h6>
-				<a href="https://github.com/paulhoffbeck" class="button small">Voir sur GitHub</a>
-			</article>
+			<section class="posts">
 
-			<!-- Les autres articles suivent le même modèle -->
-		</section>
-	</div>
+				<!-- DevCloud -->
+				<article>
+					<header><h2>DevCloud</h2></header>
+					<p>Le parcours Développement et Cloud choisi en deuxième année m’a permis de réaliser des projets centrés sur la virtualisation et la conteneurisation.</p>
 
-	<footer id="footer">
-		<section class="split contact">
-			<section class="alt">
-				<h3>Contact</h3>
-				<p>hoffbeck.paul@gmail.com<br />paul.hoffbeck@etu.toulouse-inp.fr</p>
+					<h3>1. Création d’un réseau virtualisé</h3>
+					<p>Conception et déploiement d’un réseau local comprenant un pare-feu, un serveur DNS/AD, un serveur web et plusieurs postes clients.</p>
+					<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
+					<h6>Schéma du projet à réaliser</h6>
+
+					<h3>2. Application conteneurisée de gestion de projets</h3>
+					<p>Développement d’une application basée sur des micro-services conteneurisés (Docker) pour gérer et visualiser les SBOM des projets.</p>
+					<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
+					<h6>Schéma des micro-services utilisés</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Voir sur GitHub</a>
+				</article>
+
+				<!-- Programmation -->
+				<article>
+					<header><h2>Programmation</h2></header>
+					<h3>Site web dynamique avec gestion d’utilisateurs</h3>
+					<p>Création d’un site vitrine et d’un intranet en PHP/HTML/CSS avec gestion d’utilisateurs et sécurité intégrée.</p>
+					<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture du site vitrine" /></a>
+					<h6>Capture d’écran du site vitrine</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Voir sur GitHub</a>
+
+					<h3>Application Android de gestion de tâches</h3>
+					<p>Application Android en Java avec fonctions d’agenda et de suivi, développée dans une approche orientée ergonomie et conception logicielle.</p>
+					<a href="images/sae302.png" class="image fit"><img src="images/sae302.png" alt="Application Android" /></a>
+					<h6>Interface de l’application Android</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Voir sur GitHub</a>
+				</article>
+
+				<!-- Réseau -->
+				<article>
+					<header><h2>Réseau</h2></header>
+					<h3>Réseau multi-site avec MPLS et VPN</h3>
+					<p>Conception d’un réseau multi-site intégrant tunnels VPN, routage IPv6 et documentation technique complète.</p>
+					<a href="images/saer.png" class="image fit"><img src="images/saer.png" alt="Schéma du réseau multi-site" /></a>
+					<h6>Schéma du réseau</h6>
+
+					<h3>Réseau local d’entreprise</h3>
+					<p>Déploiement d’un réseau d’entreprise complet avec DNS/AD, pare-feu et serveur web virtualisé.</p>
+					<a href="images/tpr.png" class="image fit"><img src="images/tpr.png" alt="Schéma du réseau local" /></a>
+					<h6>Schéma du réseau local</h6>
+				</article>
+
+				<!-- Stage -->
+				<article>
+					<header><h2>Stage de 2ème année</h2></header>
+					<p>Modernisation du réseau d’un site industriel : remplacement de switchs, recâblage et mise à jour de documentation technique.</p>
+					<a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration du stage" /></a>
+					<p>Configuration d’une solution SD-WAN pour améliorer la résilience et la flexibilité réseau.</p>
+				</article>
+
+				<!-- Alternance -->
+				<article>
+					<header><h2>Alternance</h2></header>
+					<a href="#" class="image fit"><img src="images/ingeclient.jpg" alt="Alternance" /></a>
+					<p>En tant qu’ingénieur solution client, j’interviens sur la conception, le déploiement et le support d’infrastructures réseau, cloud et sécurité.</p>
+				</article>
 			</section>
-			<section>
-				<h3>Réseaux Sociaux</h3>
-				<ul class="icons alt">
-					<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-					<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				</ul>
-			</section>
-		</section>
-	</footer>
+		</div>
 
-	<div id="copyright">
-		<p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>hoffbeck.paul@gmail.com<br />paul.hoffbeck@etu.toulouse-inp.fr</p>
+				</section>
+				<section>
+					<h3>Réseaux Sociaux</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<div id="copyright">
+			<p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+		</div>
+
 	</div>
 
 	<script src="assets/js/jquery.min.js"></script>
@@ -119,7 +214,5 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
-</div>
 </body>
 </html>
