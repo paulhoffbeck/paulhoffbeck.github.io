@@ -1,113 +1,63 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
 <head>
 	<title>E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-	<!-- Custom Styles -->
+	<!-- Styles personnalisés -->
 	<style>
-		.post.centered {
-			margin: 0 auto;
-			max-width: 900px;
-			text-align: justify;
+		.no-bullets {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
-
-		h2 {
-			color: #1f3b63;
+		.subsection-title {
 			text-align: center;
-			margin-bottom: 0.6em;
+			margin-top: 1.5em;
+			margin-bottom: 0.7em;
 		}
-
-		h3 {
-			color: #2a6ebc;
-			margin-top: 1.2em;
-			font-size: 1.1em;
-		}
-
-		h6 {
-			text-align: center;
-			color: #666;
-			font-weight: normal;
-			margin-top: 0.5em;
-		}
-
-		p {
-			text-align: justify;
-			line-height: 1.6;
-			font-size: 1em;
-			color: #444;
-		}
-
-		.image.fit img {
+		.image-fit {
+			display: block;
+			margin: 1em auto;
+			max-width: 50%; /* Taille réduite */
 			border-radius: 10px;
-			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-			transition: transform 0.3s ease;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 		}
-		.image.fit img:hover {
-			transform: scale(1.03);
-		}
-
-		a.logo {
-			display: inline-block;
-			margin-top: 0.5em;
-			text-decoration: none;
-			background-color: #2a6ebc;
-			color: white;
-			padding: 8px 14px;
-			border-radius: 20px;
-			font-size: 0.9em;
-			transition: background-color 0.3s ease;
-		}
-		a.logo:hover {
-			background-color: #1f3b63;
-		}
-
-		article {
-			margin-bottom: 2.5em;
-			padding-bottom: 1.5em;
-			border-bottom: 1px solid #ddd;
-		}
-
-		section.posts {
-			display: flex;
-			flex-direction: column;
-			gap: 2.5em;
-		}
-
-		article:hover {
-			transform: translateY(-3px);
-			transition: 0.2s ease;
+		/* Supprime les puces uniquement pour la première liste */
+		.header-list {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
 		}
 	</style>
 </head>
 
 <body class="is-preload">
 
-	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
 
 		<!-- Header -->
 		<header id="header">
-			<a href="../projets.html" class="logo">Version française</a>
+			<a href="../projets.html" class="logo">French version</a>
 		</header>
 
 		<br>
 
 		<!-- Navigation -->
 		<nav id="nav">
-						<ul class="links">
-							<li><a href="../english/index.html">Home</a></li>
-							<li class="active"><a href="../english/projets.html">Projects</a></li>
-							<li><a href="../english/reflexions.html">Reflections & Professional Growth</a></li>
-							<li><a href="../english/cv_rzo.html">Resume & Network</a></li>
-							<li><a href="../english/rse.html">CSR</a></li>
-							<li><a href="../english/mobilite.html">Mobility</a></li>
-						</ul>
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="projets.html">Projects</a></li>
+				<li><a href="reflexions.html">Reflexion and professionnal developpment</a></li>
+				<li><a href="cv_rzo.html">Resume & Network</a></li>
+				<li><a href="rse.html">CSR</a></li>
+				<li><a href="mobilite.html">Mobility</a></li>
+			</ul>
 			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
@@ -115,11 +65,11 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Academic Projects -->
+			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
-					<h2>1. Academic Projects</h2>
-					<p>These projects were carried out during my DUT to validate the acquisition of both technical and transversal skills. They combine hands-on implementation, written reports, and oral presentations.</p>
+					<h2>School projects</h2>
+					<p>These projects were carried out as part of my university studies in order to validate the acquisition of technical and cross-disciplinary skills. They combine practical implementation, report writing, and oral defense.</p>
 				</header>
 			</article>
 
@@ -128,88 +78,89 @@
 				<!-- DevCloud -->
 				<article>
 					<header>
-						<h2>DevCloud</h2>
+						<h2>Devcloud specialty</h2>
 					</header>
-					<p>The Development and Cloud track chosen in my second year allowed me to complete projects focused on virtualization and containerization.</p>
+					<p>The Development and Cloud specialization I chose in my second year allowed me to carry out projects focused on virtualization and containerization.</p>
 
-					<h3>1. Creation of a Virtualized Network</h3>
-					<p>Design and deployment of a local network including a firewall, DNS/AD server, web server, and multiple client machines. The project required virtualization, network security, and technical documentation skills.</p>
-					<a href="../images/sae304.png" class="image fit"><img src="../images/sae304.png" alt="Virtualized network project diagram" /></a>
-					<h6>Project diagram</h6>
+					<h3>Creation of a virtualized network</h3>
+					<p>Design and deployment of a local area network comprising a firewall, a DNS/AD server, a web server, and several client workstations.</p>
+					<a href="../images/sae304.png" class="image fit"><img src="../images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
+					<h6>Project outline</h6>
 
-					<h3>2. Containerized Project Management Application</h3>
-					<p>Development of a microservice-based application (Docker) to manage and visualize project SBOMs. The goal was to design a modular, secure, and scalable architecture.</p>
-					<a href="../images/sae401.png" class="image fit"><img src="../images/sae401.png" alt="Microservices architecture diagram" /></a>
-					<h6>Microservices architecture</h6>
-					<a href="https://github.com/paulhoffbeck" class="logo">View on GitHub</a>
+					<h3>Containerized project management application</h3>
+					<p>Development of an application based on containerized microservices (Docker) to manage and visualize project SBOMs.</p>
+					<a href="../images/sae401.png" class="image fit"><img src="../images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
+					<h6>Diagram of microservices used</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Github Link</a>
 				</article>
 
-				<!-- Programming -->
+				<!-- Programmation -->
 				<article>
 					<header>
 						<h2>Programming</h2>
 					</header>
+					<h3>Dynamic website with user management</h3>
+					<p>Creation of a showcase website and intranet in PHP/HTML/CSS with user management and integrated security.</p>
+					<a href="../images/galet.png" class="image fit"><img src="../images/galet.png" alt="Capture du site vitrine" /></a>
+					<h6>Site's screenshot</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Github Link</a>
 
-					<h3>Dynamic Website with User Management</h3>
-					<p>Creation of a showcase website and an intranet using PHP/HTML/CSS. The project included user management and security while emphasizing teamwork through GitHub.</p>
-					<a href="../images/galet.png" class="image fit"><img src="../images/galet.png" alt="Showcase website screenshot" /></a>
-					<h6>Showcase website screenshot</h6>
-					<a href="https://github.com/paulhoffbeck" class="logo">View on GitHub</a>
-
-					<h3>Android Task Management Application</h3>
-					<p>Development of an Android application in Java with agenda and task tracking features. The focus was on user experience, software design, and documentation.</p>
-					<a href="../images/sae302.png" class="image fit"><img src="../images/sae302.png" alt="Android app screenshot" /></a>
-					<h6>Android app interface</h6>
-					<a href="https://github.com/paulhoffbeck" class="logo">View on GitHub</a>
+					<h3>Android task management application</h3>
+					<p>Android application in Java with calendar and tracking functions, developed with a focus on ergonomics and software design.</p>
+					<a href="../images/sae302.png" class="image fit"><img src="../images/sae302.png" alt="Application Android" /></a>
+					<h6>Android application interface</h6>
+					<a href="https://github.com/paulhoffbeck" class="button small">Github Link</a>
 				</article>
 
-				<!-- Networking -->
-				<article class="post centered">
+				<!-- Réseau -->
+				<article>
 					<header>
-						<h2>Networking</h2>
+						<h2>Network</h2>
 					</header>
-
-					<h3>Multi-Site Network with MPLS and VPN</h3>
-					<p>Design of a multi-site network integrating an operator and two clients. The project included implementing VPN tunnels, IPv6 evolution, and complete documentation.</p>
-					<a href="../images/saer.png" class="image fit"><img src="../images/saer.png" alt="Multi-site network diagram" /></a>
+					<h3>Multi-site network with MPLS and VPN</h3>
+					<p>Design of a multi-site network integrating VPN tunnels, IPv6 routing, and comprehensive technical documentation.</p>
+					<a href="../images/saer.png" class="image fit"><img src="../images/saer.png" alt="Schéma du réseau multi-site" /></a>
 					<h6>Network diagram</h6>
 
-					<h3>Corporate Local Network</h3>
-					<p>Deployment of a full local network with DNS/AD server, firewall, and web server. This project applied virtualization and security principles in a simulated enterprise environment.</p>
-					<a href="../images/tpr.png" class="image fit"><img src="../images/tpr.png" alt="Local network diagram" /></a>
-					<h6>Local network diagram</h6>
+					<h3>Corporate local area network</h3>
+					<p>Deployment of a complete corporate network with DNS/AD, firewall, and virtualized web server.</p>
+					<a href="../images/tpr.png" class="image fit"><img src="../images/tpr.png" alt="Schéma du réseau local" /></a>
+					<h6>Local Network Diagram</h6>
 				</article>
+
 			</section>
 
-			<!-- Professional Projects -->
+			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
-					<h2>2. Professional Projects</h2>
-					<p>These projects were completed during my internships and apprenticeship. They allowed me to apply my knowledge in real-world settings, strengthen my technical skills, and gain hands-on professional experience.</p>
+					<h2>Professional Projects</h2>
+					<p>These projects were carried out in companies as part of my second-year internship and my work-study program. They reflect my technical skills applied in a real professional context.</p>
 				</header>
 			</article>
 
 			<section class="posts">
 
-				<!-- Internship -->
+				<!-- Stage -->
 				<article>
 					<header>
-						<h2>Second-Year Internship</h2>
+						<h2>Second-year internship</h2>
 					</header>
-					<p>Participation in the modernization of an industrial site's network: replacing switches, recabling, optimizing port distribution, and updating technical documentation.</p>
-					<a href="../images/stage.png" class="image fit"><img src="../images/stage.png" alt="Internship illustration" /></a>
-					<p>I also configured an SD-WAN solution for multi-site routing, improving network resilience and flexibility.</p>
+					<p>Modernization of an industrial site's network: replacement of switches, rewiring, and updating of technical documentation.</p>
+					<a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration du stage" /></a>
+					<p>Configuring an SD-WAN solution to improve network resilience and flexibility.</p>
 				</article>
 
-				<!-- Apprenticeship -->
+				<!-- Alternance -->
 				<article>
 					<header>
-						<h2>Apprenticeship</h2>
+						<h2>Alternship</h2>
 					</header>
-					<a href="#" class="image fit"><img src="../images/ingeclient.jpg" alt="Apprenticeship illustration" /></a>
-					<p>As a Customer Solution Engineer in Network, Cloud, and Security, I contribute to the design, deployment, and support of infrastructures tailored to client needs. My responsibilities include configuring secure network solutions, implementing cloud architectures, and ensuring technical follow-up on strategic projects. This apprenticeship allows me to combine technical expertise with client relations.</p>
+					<a href="../images/ingeclient.jpg" class="image fit"><img src="../images/ingeclient.jpg" alt="Alternance" /></a>
+					<p>As a customer solutions engineer, I am involved in the design, deployment, and support of network, cloud, and security infrastructures. I will therefore be in contact with customers of different nationalities.</p>
 				</article>
+
 			</section>
+
 		</div>
 
 		<!-- Footer -->
@@ -217,13 +168,16 @@
 			<section class="split contact">
 				<section class="alt">
 					<h3>Contact</h3>
-					<p>hoffbeck.paul@gmail.com<br />
-					paul.hoffbeck@etu.toulouse-inp.fr</p>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
 				</section>
+
 				<section>
-					<h3>Social Media</h3>
+					<h3>Social Networks</h3>
 					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
 						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
@@ -231,18 +185,19 @@
 		</footer>
 
 		<div id="copyright">
-			<p>Design by: <a href="https://html5up.net">HTML5 UP</a></p>
+			<li>Design by : <a href="https://html5up.net">HTML5 UP</a></li>
 		</div>
+
 	</div>
 
 	<!-- Scripts -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrollex.min.js"></script>
-	<script src="../assets/js/jquery.scrolly.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 </html>
