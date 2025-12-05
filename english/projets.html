@@ -1,226 +1,285 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>E-Portfolio Paul HOFFBECK</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
     <style>
-        /* Centrage global de la page */
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
+      /* Centrage global de la page */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+      }
 
-        #wrapper {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      #wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        /* Centrage du contenu principal */
-        #main {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+      /* Centrage du contenu principal */
+      #main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-        /* Style des sections */
-        .post.featured {
-            width: 100%;
-            max-width: 1000px;
-            text-align: center;
-            margin: 0 auto;
-        }
+      /* Style des sections */
+      .post.featured {
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+        margin: 0 auto;
+      }
 
-        /* Style de l'iframe */
-        iframe {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            display: block;
-            margin: 20px auto;
-            width: 100%;
-            max-width: 800px;
-            height: 1200px;
-        }
+      /* Style de l'iframe */
+      iframe {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        max-width: 800px;
+        height: 1200px;
+      }
 
-        /* Style des cartes "engineer-card" */
-        .engineer-card {
-            background-color: #f2f7fb;
-            border-radius: 15px;
-            padding: 20px 25px;
-            margin: 20px auto;
-            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            width: 100%;
-        }
+      /* Style des cartes "engineer-card" */
+      .engineer-card {
+        background-color: #f2f7fb;
+        border-radius: 15px;
+        padding: 20px 25px;
+        margin: 20px auto;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 100%;
+      }
 
-        .engineer-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-            background-color: #e8f2fa;
-        }
+      .engineer-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        background-color: #e8f2fa;
+      }
 
-        .engineer-card h3 {
-            color: #2a6ebc;
-            margin-bottom: 0.2em;
-        }
+      .engineer-card h3 {
+        color: #2a6ebc;
+        margin-bottom: 0.2em;
+      }
 
-        .engineer-card p strong {
-            display: block;
-            margin-bottom: 0.6em;
-            color: #333;
-        }
+      .engineer-card p strong {
+        display: block;
+        margin-bottom: 0.6em;
+        color: #333;
+      }
 
-        .engineer-card h6 {
-            margin: 1em 0 0.3em;
-            font-size: 0.95em;
-            color: #2a6ebc;
-            font-weight: 600;
-        }
+      .engineer-card h6 {
+        margin: 1em 0 0.3em;
+        font-size: 0.95em;
+        color: #2a6ebc;
+        font-weight: 600;
+      }
 
-        .engineer-card p {
-            font-size: 0.95em;
-            line-height: 1.5;
-            color: #444;
-        }
+      .engineer-card p {
+        font-size: 0.95em;
+        line-height: 1.5;
+        color: #444;
+      }
 
-        /* Style des en-têtes */
-        header.major {
-            text-align: center;
-            margin: 20px 0;
-        }
+      /* Style des en-têtes */
+      header.major {
+        text-align: center;
+        margin: 20px 0;
+      }
 
-        header.major h2 {
-            color: #1f3b63;
-        }
+      header.major h2 {
+        color: #1f3b63;
+      }
 
-        /* Centrage du footer */
-        #footer {
-            width: 100%;
-            max-width: 1200px;
-            margin: 40px auto 0;
-            text-align: center;
-        }
+      /* Centrage du footer */
+      #footer {
+        width: 100%;
+        max-width: 1200px;
+        margin: 40px auto 0;
+        text-align: center;
+      }
 
-        .split.contact {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+      .split.contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
 
-        .split.contact > section {
-            flex: 1;
-            min-width: 300px;
-            margin: 10px;
-            text-align: center;
-        }
+      .split.contact > section {
+        flex: 1;
+        min-width: 300px;
+        margin: 10px;
+        text-align: center;
+      }
     </style>
-</head>
-<body class="is-preload">
+  </head>
+  <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
-        <!-- Header -->
-        <header id="header">
-            <a href="english/cv_rzo.html" class="logo">English version</a>
-        </header>
-        <br>
-        <!-- Navigation -->
-        <nav id="nav">
-            <ul class="links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-                <li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
-                <li><a href="rse.html">RSE</a></li>
-                <li><a href="mobilite.html">Mobilité</a></li>
+      <!-- Header -->
+      <header id="header">
+        <a href="english/cv_rzo.html" class="logo">English version</a>
+      </header>
+      <br />
+      <!-- Navigation -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="reflexions.html">Réflexion & Développement pro</a></li>
+          <li class="active"><a href="cv_rzo.html">CV & Réseau</a></li>
+          <li><a href="rse.html">RSE</a></li>
+          <li><a href="mobilite.html">Mobilité</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/paulhoffbeck"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <article class="post featured">
+          <header class="major">
+            <h2>Mon CV</h2>
+          </header>
+          <!-- CV intégré -->
+          <iframe
+            src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fpaulhoffbeck.github.io%2Fimages%2FCV%2520CAM.pdf"
+          ></iframe>
+          <header class="major">
+            <h2>Ingénieurs contactés</h2>
+            <p>
+              J'ai échangé avec plusieurs ingénieurs de mon entourage
+              professionnel et personnel. Voici les réflexions les plus
+              marquantes issues de nos discussions.
+            </p>
+          </header>
+
+          <!-- Cartes des ingénieurs -->
+          <div class="engineer-card">
+            <h3>Fabien HILBERG</h3>
+            <p><strong>Ingénieur R&D chez KNDS Allemagne</strong></p>
+            <h6>Réflexion apportée :</h6>
+            <p>
+              « Être ingénieur, c'est travailler sur des technologies de pointe
+              dans des secteurs à fort impact. Ce métier ouvre de nombreuses
+              portes à l'international grâce à la polyvalence et à l'esprit
+              d'adaptation qu'il développe. »
+            </p>
+          </div>
+
+          <div class="engineer-card">
+            <h3>Denis GOUDAY</h3>
+            <p><strong>Ingénieur Projet chez MBDA</strong></p>
+            <h6>Réflexion apportée :</h6>
+            <p>
+              « Ce qui me plaît dans le métier d'ingénieur, c'est la gestion de
+              projets et d'équipes. Nous travaillons sur des missions variées,
+              souvent à l'international. J'ai eu par exemple la chance de
+              participer à plusieurs projets en Égypte et dans d'autres pays. »
+            </p>
+          </div>
+
+          <div class="engineer-card">
+            <h3>Laurent COURTE</h3>
+            <p><strong>Ingénieur Solution chez Orange Business</strong></p>
+            <h6>Réflexion apportée :</h6>
+            <p>
+              « Ce métier permet de choisir la voie que l'on souhaite emprunter
+              : entre postes exigeants et carrières équilibrées. Être ingénieur,
+              c'est aussi savoir faire évoluer sa trajectoire professionnelle
+              selon les étapes de sa vie. »
+            </p>
+          </div>
+
+          <div class="engineer-card">
+            <h3>Sophian RUBEAU</h3>
+            <p>
+              <strong
+                >Responsable des Ventes Réseaux IP & Cybersécurité chez
+                Orange</strong
+              >
+            </p>
+            <h6>Réflexion apportée :</h6>
+            <p>
+              « Les diplômes d'ingénieur ouvrent des portes vers des postes à
+              responsabilité, mais aussi vers l'enseignement. La curiosité et
+              l'envie de se démarquer sont des qualités clés : beaucoup
+              d'opportunités sont venues de ce que j'ai accompli en dehors du
+              cadre académique. »
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Contact</h3>
+            <p>
+              hoffbeck.paul@gmail.com<br />
+              paul.hoffbeck@etu.toulouse-inp.fr
+            </p>
+          </section>
+          <section>
+            <h3>Réseaux Sociaux</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5"
+                  class="icon brands fa-linkedin"
+                  ><span class="label">Linkedin</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/paulhoffbeck"
+                  class="icon brands fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
             </ul>
-            <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </nav>
+          </section>
+        </section>
+      </footer>
 
-        <!-- Main -->
-        <div id="main">
-            <article class="post featured">
-                <header class="major">
-                    <h2>Mon CV</h2>
-                </header>
-                <!-- CV intégré -->
-                <iframe
-                    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fpaulhoffbeck.github.io%2Fimages%2FCV%2520CAM.pdf"
-                ></iframe>
-                <header class="major">
-                    <h2>Ingénieurs contactés</h2>
-                    <p>J'ai échangé avec plusieurs ingénieurs de mon entourage professionnel et personnel. Voici les réflexions les plus marquantes issues de nos discussions.</p>
-                </header>
-
-                <!-- Cartes des ingénieurs -->
-                <div class="engineer-card">
-                    <h3>Fabien HILBERG</h3>
-                    <p><strong>Ingénieur R&D chez KNDS Allemagne</strong></p>
-                    <h6>Réflexion apportée :</h6>
-                    <p>« Être ingénieur, c'est travailler sur des technologies de pointe dans des secteurs à fort impact. Ce métier ouvre de nombreuses portes à l'international grâce à la polyvalence et à l'esprit d'adaptation qu'il développe. »</p>
-                </div>
-
-                <div class="engineer-card">
-                    <h3>Denis GOUDAY</h3>
-                    <p><strong>Ingénieur Projet chez MBDA</strong></p>
-                    <h6>Réflexion apportée :</h6>
-                    <p>« Ce qui me plaît dans le métier d'ingénieur, c'est la gestion de projets et d'équipes. Nous travaillons sur des missions variées, souvent à l'international. J'ai eu par exemple la chance de participer à plusieurs projets en Égypte et dans d'autres pays. »</p>
-                </div>
-
-                <div class="engineer-card">
-                    <h3>Laurent COURTE</h3>
-                    <p><strong>Ingénieur Solution chez Orange Business</strong></p>
-                    <h6>Réflexion apportée :</h6>
-                    <p>« Ce métier permet de choisir la voie que l'on souhaite emprunter : entre postes exigeants et carrières équilibrées. Être ingénieur, c'est aussi savoir faire évoluer sa trajectoire professionnelle selon les étapes de sa vie. »</p>
-                </div>
-
-                <div class="engineer-card">
-                    <h3>Sophian RUBEAU</h3>
-                    <p><strong>Responsable des Ventes Réseaux IP & Cybersécurité chez Orange</strong></p>
-                    <h6>Réflexion apportée :</h6>
-                    <p>« Les diplômes d'ingénieur ouvrent des portes vers des postes à responsabilité, mais aussi vers l'enseignement. La curiosité et l'envie de se démarquer sont des qualités clés : beaucoup d'opportunités sont venues de ce que j'ai accompli en dehors du cadre académique. »</p>
-                </div>
-            </article>
-        </div>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <section class="split contact">
-                <section class="alt">
-                    <h3>Contact</h3>
-                    <p>
-                        hoffbeck.paul@gmail.com<br />
-                        paul.hoffbeck@etu.toulouse-inp.fr
-                    </p>
-                </section>
-                <section>
-                    <h3>Réseaux Sociaux</h3>
-                    <ul class="icons alt">
-                        <li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-                        <li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    </ul>
-                </section>
-            </section>
-        </footer>
-
-        <div id="copyright">
-            <p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
-        </div>
+      <div id="copyright">
+        <p>Design par : <a href="https://html5up.net">HTML5 UP</a></p>
+      </div>
     </div>
 
     <!-- Scripts -->
@@ -229,5 +288,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
