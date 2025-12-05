@@ -1,298 +1,401 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>E-Portfolio Paul HOFFBECK</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+  <head>
+    <title>E-Portfolio Paul HOFFBECK</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
 
-	<!-- Custom Styles -->
-	<style>
-		/* --- Elegant Timeline --- */
-		.timeline {
-			position: relative;
-			max-width: 800px;
-			margin: 2em auto;
-		}
-		.timeline::after {
-			content: '';
-			position: absolute;
-			width: 3px;
-			background-color: #b3cce5;
-			top: 0;
-			bottom: 0;
-			left: 50%;
-			margin-left: -1.5px;
-		}
-		.container {
-			padding: 15px 25px;
-			position: relative;
-			width: 50%;
-		}
-		.container::after {
-			content: '';
-			position: absolute;
-			width: 14px;
-			height: 14px;
-			right: -7px;
-			background-color: white;
-			border: 3px solid #5b9bd5;
-			top: 22px;
-			border-radius: 50%;
-			z-index: 1;
-		}
-		.left { left: 0; }
-		.right { left: 50%; }
-		.right::after { left: -7px; }
+    <!-- Custom Styles -->
+    <style>
+      /* --- Elegant Timeline --- */
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 2em auto;
+      }
+      .timeline::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        background-color: #b3cce5;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1.5px;
+      }
+      .container {
+        padding: 15px 25px;
+        position: relative;
+        width: 50%;
+      }
+      .container::after {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        right: -7px;
+        background-color: white;
+        border: 3px solid #5b9bd5;
+        top: 22px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      .left {
+        left: 0;
+      }
+      .right {
+        left: 50%;
+      }
+      .right::after {
+        left: -7px;
+      }
 
-		.content {
-			padding: 15px 20px;
-			background-color: #5b9bd5;
-			color: white;
-			border-radius: 10px;
-			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-			transition: transform 0.2s ease;
-		}
-		.content:hover {
-			transform: translateY(-3px);
-			background-color: #4a8ac7;
-		}
+      .content {
+        padding: 15px 20px;
+        background-color: #5b9bd5;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s ease;
+      }
+      .content:hover {
+        transform: translateY(-3px);
+        background-color: #4a8ac7;
+      }
 
-		.timeline h3 {
-			margin: 0 0 5px 0;
-			font-size: 1.1em;
-			font-weight: 600;
-		}
-		.timeline h6 {
-			margin: 0;
-			font-size: 0.9em;
-			font-weight: normal;
-		}
+      .timeline h3 {
+        margin: 0 0 5px 0;
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+      .timeline h6 {
+        margin: 0;
+        font-size: 0.9em;
+        font-weight: normal;
+      }
 
-		@media screen and (max-width: 600px) {
-			.timeline::after { left: 31px; }
-			.container { width: 100%; padding-left: 60px; padding-right: 25px; }
-			.right { left: 0; }
-		}
+      @media screen and (max-width: 600px) {
+        .timeline::after {
+          left: 31px;
+        }
+        .container {
+          width: 100%;
+          padding-left: 60px;
+          padding-right: 25px;
+        }
+        .right {
+          left: 0;
+        }
+      }
 
-		/* --- Layout --- */
-		.post.centered {
-			margin: 0 auto;
-			max-width: 900px;
-			text-align: justify;
-		}
-		ul, li {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-		.skill-list h6 {
-			display: inline-block;
-			background-color: #5b9bd5;
-			color: white;
-			padding: 6px 14px;
-			margin: 5px;
-			border-radius: 20px;
-			font-size: 0.9em;
-			box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-			transition: background-color 0.2s ease;
-		}
-		.skill-list h6:hover {
-			background-color: #4a8ac7;
-		}
-		h2, h5 {
-			text-align: center;
-		}
-	</style>
-</head>
+      /* --- Layout --- */
+      .post.centered {
+        margin: 0 auto;
+        max-width: 900px;
+        text-align: justify;
+      }
+      ul,
+      li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .skill-list h6 {
+        display: inline-block;
+        background-color: #5b9bd5;
+        color: white;
+        padding: 6px 14px;
+        margin: 5px;
+        border-radius: 20px;
+        font-size: 0.9em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s ease;
+      }
+      .skill-list h6:hover {
+        background-color: #4a8ac7;
+      }
+      h2,
+      h5 {
+        text-align: center;
+      }
+    </style>
+  </head>
 
-<body class="is-preload">
+  <body class="is-preload">
+    <div id="wrapper" class="fade-in">
+      <!-- Header -->
+      <header id="header">
+        <a href="../reflexions.html" class="logo">French Version</a>
+      </header>
 
-	<div id="wrapper" class="fade-in">
+      <br />
 
-		<!-- Header -->
-		<header id="header">
-			<a href="../reflexions.html" class="logo">French Version</a>
-		</header>
+      <!-- Navigation -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="../english/index.html">Home</a></li>
+          <li><a href="../english/projets.html">Projects</a></li>
+          <li class="active">
+            <a href="../english/reflexions.html"
+              >Reflections & Professional Growth</a
+            >
+          </li>
+          <li><a href="../english/cv_rzo.html">Resume & Network</a></li>
+          <li><a href="../english/rse.html">CSR</a></li>
+          <li><a href="../english/mobilite.html">Mobility</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5"
+              class="icon brands fa-linkedin"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/paulhoffbeck"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
 
-		<br>
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
+        <article class="post featured">
+          <header class="major">
+            <h2>Personal Reflection and Professional Development</h2>
+            <p>
+              This page presents my strengths, areas for improvement, and
+              professional evolution as I perceive them at the beginning of my
+              engineering journey. These elements will continue to evolve
+              throughout my studies and career.
+            </p>
+          </header>
+        </article>
 
-		<!-- Navigation -->
-		<nav id="nav">
-						<ul class="links">
-							<li><a href="../english/index.html">Home</a></li>
-							<li><a href="../english/projets.html">Projects</a></li>
-							<li class="active"><a href="../english/reflexions.html">Reflections & Professional Growth</a></li>
-							<li><a href="../english/cv_rzo.html">Resume & Network</a></li>
-							<li><a href="../english/rse.html">CSR</a></li>
-							<li><a href="../english/mobilite.html">Mobility</a></li>
-						</ul>
-			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-			</ul>
-		</nav>
+        <section class="posts">
+          <article>
+            <header>
+              <h2>My Strengths</h2>
+            </header>
+            <p>
+              My academic background has allowed me to acquire strong technical
+              skills in networking, programming, and telecommunications. At the
+              same time, I have developed human qualities essential to my future
+              career as an engineer.
+            </p>
 
-		<!-- Main -->
-		<div id="main">
+            <h5>My Soft Skills</h5>
+            <div class="skill-list">
+              <h6>Autonomous</h6>
+              <h6>Sens of responsability</h6>
+              <h6>Team spirit</h6>
+            </div>
+            <p>
+              <b>Autonomy:</b> My autonomy has been enhanced through the various
+              internships I completed during my studies. Additionally, most of
+              my work-study projects were carried out semi-independently.
+              Outside of school, I have also undertaken solo travel experiences.
+            </p>
 
-			<!-- Featured Post -->
-			<article class="post featured">
-				<header class="major">
-					<h2>Personal Reflection and Professional Development</h2>
-					<p>This page presents my strengths, areas for improvement, and professional evolution as I perceive them at the beginning of my engineering journey. These elements will continue to evolve throughout my studies and career.</p>
-				</header>
-			</article>
+            <p>
+              <b>Responsibility:</b> My sense of responsibility has been tested
+              through my various associative commitments and the projects I
+              prepared during my internship. Indeed, I was solely responsible
+              for this project, which had potential impacts on users.
+            </p>
 
-			<section class="posts">
+            <p>
+              <b>Team Spirit:</b> My team spirit has been developed through my
+              basketball club experiences and group projects completed at the
+              IUT or during internships.
+            </p>
+          </article>
 
-				<article>
-					<header>
-						<h2>My Strengths</h2>
-					</header>
-					<p>My academic background has allowed me to acquire strong technical skills in networking, programming, and telecommunications. At the same time, I have developed human qualities essential to my future career as an engineer.</p>
+          <article>
+            <header>
+              <h2>My Areas for Improvement</h2>
+              <p>
+                These represent the aspects I have identified as requiring
+                particular attention to progress further in my career.
+              </p>
+            </header>
+            <div class="skill-list">
+              <h6>Public Speaking</h6>
+              <h6>Oral English</h6>
+            </div>
+            <p>
+              I was able to identify these areas for improvement throughout my
+              academic career. Indeed, although I am very competent in writing
+              (in French or English), I have always had weaknesses in speaking
+              (in English or French). These are the points I would like to work
+              on, as these two related skills are essential for the engineering
+              profession.
+            </p>
+          </article>
+          <article class="post centered">
+            <header>
+              <h2>My Role Models:</h2>
+            </header>
+            <h3>My former networking teacher:</h3>
+            <p>
+              This first role model might seem surprising, but it is thanks to
+              him that I developed such a passion for networking. Moreover,
+              despite his advanced knowledge, he always managed to make it
+              accessible to students of all levels.
+            </p>
 
-					<h5>My Soft Skills</h5>
-					<div class="skill-list">
-						<h6>Autonomous</h6>
-						<h6>Sens of responsability</h6>
-						<h6>Team spirit</h6>
-					</div>
-					<p><b>Autonomy:</b> My autonomy has been enhanced through the various internships I completed during my studies. Additionally, most of my work-study projects were carried out semi-independently. Outside of school, I have also undertaken solo travel experiences.</p>
+            <h3>Linus Torvalds:</h3>
+            <p>
+              The second role model I found is Linus Torvalds. Beyond the fact
+              that he created the Linux kernel and Git, which revolutionized the
+              approach to computing, it is his contribution to the open-source
+              domain, as well as his rigor and pragmatism, that make him
+              admirable in my eyes. Additionally, his stance on AI seems to me
+              entirely reasonable.
+            </p>
 
-<p><b>Responsibility:</b> My sense of responsibility has been tested through my various associative commitments and the projects I prepared during my internship. Indeed, I was solely responsible for this project, which had potential impacts on users.</p>
+            <h3>Grace Hopper:</h3>
+            <p>
+              The last role model on this list is Grace Hopper, a visionary who
+              invented the first compiler. Beyond the technical achievement,
+              this made computing—and especially programming—more accessible to
+              the general public: it was no longer necessary to know assembly
+              language or machine code to work in computing.
+            </p>
 
-<p><b>Team Spirit:</b> My team spirit has been developed through my basketball club experiences and group projects completed at the IUT or during internships.</p>
+            <a href="../images/gracehopper.jpg" class="image fit"
+              ><img src="../images/gracehopper.jpg" alt="Application Android"
+            /></a>
+            <h6>
+              Here is a photo of Grace Hopper, who, in my opinion, is too
+              unknown
+            </h6>
+          </article>
 
-				</article>
+          <article class="post centered">
+            <h2>My Professional Journey</h2>
 
-				<article>
-					<header>
-						<h2>My Areas for Improvement</h2>
-						<p>These represent the aspects I have identified as requiring particular attention to progress further in my career.</p>
-					</header>
-					<div class="skill-list">
-						<h6>Public Speaking</h6>
-						<h6>Oral English</h6>
-					</div>
-<p>I was able to identify these areas for improvement throughout my academic career. Indeed, although I am very competent in writing (in French or English), I have always had weaknesses in speaking (in English or French). These are the points I would like to work on, as these two related skills are essential for the engineering profession.</p>
+            <div class="timeline">
+              <div class="container left">
+                <div class="content">
+                  <h3>September 2023</h3>
+                  <h6>
+                    Start of the Bachelor's Degree in Networks &
+                    Telecommunications
+                  </h6>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h3>July 2024</h3>
+                  <h6>1st Year Internship — Network Modernization</h6>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h3>April 2025</h3>
+                  <h6>
+                    2nd Year Internship — Network Maintenance & Modernization
+                  </h6>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h3>September 2025</h3>
+                  <h6>Start of my Engineering Degree</h6>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h3>September 2025</h3>
+                  <h6>Engineering Apprenticeship — Orange Business</h6>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h3>2027</h3>
+                  <h6>International Mobility</h6>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h3>2028</h3>
+                  <h6>Engineering Degree Graduation</h6>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <h3>2028 and beyond</h3>
+                  <h6>Network Architect in France or Abroad</h6>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <h3>2028 and beyond</h3>
+                  <h6>Possibility to work in the Defense Sector</h6>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
 
-				</article>
-								<article class="post centered">
-    <header>
-        <h2>My Role Models:</h2>
-    </header>
-    <h3>My former networking teacher:</h3>
-    <p>This first role model might seem surprising, but it is thanks to him that I developed such a passion for networking. Moreover, despite his advanced knowledge, he always managed to make it accessible to students of all levels.</p>
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt">
+            <h3>Contact</h3>
+            <p>
+              hoffbeck.paul@gmail.com<br />
+              paul.hoffbeck@etu.toulouse-inp.fr
+            </p>
+          </section>
+          <section>
+            <h3>Social Media</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5"
+                  class="icon brands fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/paulhoffbeck"
+                  class="icon brands fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
 
-    <h3>Linus Torvalds:</h3>
-    <p>The second role model I found is Linus Torvalds. Beyond the fact that he created the Linux kernel and Git, which revolutionized the approach to computing, it is his contribution to the open-source domain, as well as his rigor and pragmatism, that make him admirable in my eyes. Additionally, his stance on AI seems to me entirely reasonable.</p>
+      <div id="copyright">
+        <li>Design by: <a href="https://html5up.net">HTML5 UP</a></li>
+      </div>
+    </div>
 
-    <h3>Grace Hopper:</h3>
-    <p>The last role model on this list is Grace Hopper, a visionary who invented the first compiler. Beyond the technical achievement, this made computing—and especially programming—more accessible to the general public: it was no longer necessary to know assembly language or machine code to work in computing.</p>
-
-    <a href="../images/gracehopper.jpg" class="image fit"><img src="../images/gracehopper.jpg" alt="Application Android" /></a>
-    <h6>Here is a photo of Grace Hopper, who, in my opinion, is too unknown</h6>
-</article>
-
-				<article class="post centered">
-					<h2>My Professional Journey</h2>
-
-					<div class="timeline">
-						<div class="container left">
-							<div class="content">
-								<h3>September 2023</h3>
-								<h6>Start of the Bachelor's Degree in Networks & Telecommunications</h6>
-							</div>
-						</div>
-						<div class="container right">
-							<div class="content">
-								<h3>July 2024</h3>
-								<h6>1st Year Internship — Network Modernization</h6>
-							</div>
-						</div>
-						<div class="container left">
-							<div class="content">
-								<h3>April 2025</h3>
-								<h6>2nd Year Internship — Network Maintenance & Modernization</h6>
-							</div>
-						</div>
-						<div class="container right">
-							<div class="content">
-								<h3>September 2025</h3>
-								<h6>Start of my Engineering Degree</h6>
-							</div>
-						</div>
-						<div class="container left">
-							<div class="content">
-								<h3>September 2025</h3>
-								<h6>Engineering Apprenticeship — Orange Business</h6>
-							</div>
-						</div>
-						<div class="container right">
-							<div class="content">
-								<h3>2027</h3>
-								<h6>International Mobility</h6>
-							</div>
-						</div>
-						<div class="container left">
-							<div class="content">
-								<h3>2028</h3>
-								<h6>Engineering Degree Graduation</h6>
-							</div>
-						</div>
-						<div class="container right">
-							<div class="content">
-								<h3>2028 and beyond</h3>
-								<h6>Network Architect in France or Abroad</h6>
-							</div>
-						</div>
-						<div class="container left">
-							<div class="content">
-								<h3>2028 and beyond</h3>
-								<h6>Possibility to work in the Defense Sector</h6>
-							</div>
-						</div>
-					</div>
-				</article>
-
-			</section>
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<section class="split contact">
-				<section class="alt">
-					<h3>Contact</h3>
-					<p>
-						hoffbeck.paul@gmail.com<br />
-						paul.hoffbeck@etu.toulouse-inp.fr
-					</p>
-				</section>
-				<section>
-					<h3>Social Media</h3>
-					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
-				</section>
-			</section>
-		</footer>
-
-		<div id="copyright">
-			<li>Design by: <a href="https://html5up.net">HTML5 UP</a></li>
-		</div>
-	</div>
-
-	<!-- Scripts -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrollex.min.js"></script>
-	<script src="../assets/js/jquery.scrolly.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
-
-</body>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
