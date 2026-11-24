@@ -1,165 +1,229 @@
 <!DOCTYPE HTML>
-<html>
-<head lang="en">
-	<title>E-Portfolio Paul HOFFBECK</title>
+<html lang="en">
+<head>
+	<title>Mobility - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+
 	<!-- Custom styles -->
 	<style>
-		.no-bullets {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
-		}
-		.subsection-title {
-			text-align: center;
-			margin-top: 1.5em;
-			margin-bottom: 0.7em;
-		}
-		.image-fit {
-			display: block;
-			margin: 1em auto;
-			max-width: 50%; /* Reduced size */
-			border-radius: 10px;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-		}
-		/* Removes bullets only for the first list */
 		.header-list {
 			list-style: none;
 			padding-left: 0;
 			margin-left: 0;
 		}
-
+		.uni-logo {
+			display: block;
+			margin: 1.25em auto;
+			max-height: 110px;
+			max-width: 65%;
+			width: auto;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+			padding: 8px;
+			background: #ffffff;
+		}
+		.flags-row {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+			margin: 1.25em 0;
+		}
+		.flags-row img {
+			width: 42%;
+			max-width: 160px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+		}
+		.posts article h3 {
+			margin-top: 1.2em;
+			margin-bottom: 0.5em;
+			font-size: 1.05em;
+			color: #1f3b63;
+			text-align: left;
+		}
+		.posts article p,
+		.posts article ul {
+			text-align: left;
+		}
+		.posts article ul {
+			padding-left: 1.2em;
+		}
+		.posts article ul li {
+			margin-bottom: 0.45em;
+		}
+		.proof-list {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+		.proof-list li {
+			margin-bottom: 2.5rem;
+		}
+		.proof-list li p {
+			font-weight: 600;
+			margin-bottom: 0.75rem;
+			text-align: center;
+		}
+		.proof-img {
+			display: block;
+			margin: 0 auto;
+			max-width: 75%;
+			border-radius: 10px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		}
+		@media screen and (max-width: 736px) {
+			.proof-img {
+				max-width: 100%;
+			}
+		}
 	</style>
 </head>
+
 <body class="is-preload">
+
 	<div id="wrapper" class="fade-in">
+
 		<!-- Header -->
 		<header id="header">
 			<a href="../mobilite.html" class="logo">French version</a>
 		</header>
+
 		<br>
+
 		<!-- Navigation -->
 		<nav id="nav">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="projets.html">Projects</a></li>
-				<li><a href="reflexions.html">Reflection & Professional Growth</a></li>
-				<li><a href="cv_rzo.html">CV</a></li>
 				<li><a href="rse.html">CSR</a></li>
+				<li><a href="cv_rzo.html">CV &amp; Network</a></li>
+				<li><a href="cep.html">CEP</a></li>
 				<li class="active"><a href="mobilite.html">Mobility</a></li>
 			</ul>
 			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
+
 		<!-- Main -->
 		<div id="main">
+
 			<!-- Featured post -->
 			<article class="post featured">
 				<header class="major">
 					<h2>International Mobility</h2>
-					<p>The engineering program includes 9 to 12 months of international mobility. It allows students to:</p>
+					<p>As part of my Digital Sciences engineering degree at ENSEEIHT, and in line with my apprenticeship at <strong>Orange Business</strong> (Network, Cloud, and Security Solutions Engineer), I plan to complete an exchange semester abroad to further specialize in <strong>cybersecurity</strong> and <strong>cloud computing</strong>.</p>
+					<p>This international experience will notably allow me to:</p>
 					<ul class="header-list">
-						<li>evolve in a culturally different environment;</li>
-						<li>develop an open-mindedness essential to the engineering profession;</li>
-						<li>build adaptability skills;</li>
-						<li>explore new working methods;</li>
-						<li>understand the global challenges faced by companies.</li>
+						<li>deepen my technical skills in secure, cloud-native architectures;</li>
+						<li>discover new teaching methodologies focused on hands-on projects and applied research;</li>
+						<li>thrive in an international and multicultural environment;</li>
+						<li>strengthen my adaptability to European digital challenges.</li>
 					</ul>
-					<p>Here are some ideas and evidence of research on international mobility:</p>
 				</header>
 			</article>
+
+			<!-- Target Destinations & Universities Grid -->
 			<section class="posts">
-				<!-- TARGET COUNTRIES -->
+
+				<!-- COUNTRY SELECTION -->
 				<article>
 					<header>
-						<h2>Target Countries</h2>
+						<h2>Why Switzerland and Austria?</h2>
 					</header>
-					<h3>Taiwan</h3>
-					<img src="../images/taiwan.jpg" alt="Taiwan" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Global high-tech ecosystem (networks, cloud, semiconductors, IoT, 5G).</li>
-						<li>Numerous R&D centers and university-industry collaborations.</li>
-						<li>Ideal environment to develop technical and intercultural skills.</li>
-					</ul>
-					<h3>Austria</h3>
-					<img src="../images/autriche.jpg" alt="Austria" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Dynamic in networks, cybersecurity, IoT.</li>
-						<li>Concrete projects through industrial partnerships.</li>
-						<li>Advanced digital infrastructure.</li>
-					</ul>
-					<h3>Switzerland</h3>
-					<img src="../images/suisse.png" alt="Switzerland" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Leading technological ecosystem.</li>
-						<li>R&D centers, international companies, renowned universities (EPFL, ETH Zürich).</li>
-						<li>High technical standards and industrial excellence.</li>
+					<div class="flags-row">
+						<img src="../images/suisse.png" alt="Switzerland" />
+						<img src="../images/autriche.jpg" alt="Austria" />
+					</div>
+					<h3>A Demanding Technological Ecosystem</h3>
+					<p>Switzerland and Austria boast cutting-edge digital infrastructures, a dense industrial network, and a strong culture of information systems security and data protection.</p>
+					<h3>Continuity with My Apprenticeship</h3>
+					<ul>
+						<li><strong>Alignment with European standards:</strong> regulations, digital sovereignty, and critical architectures.</li>
+						<li><strong>English-taught programs:</strong> international curricula allowing me to earn ECTS credits while strengthening my technical English.</li>
+						<li><strong>Applied approach:</strong> strong connections between university laboratories and real-world industry needs.</li>
 					</ul>
 				</article>
-				<!-- UNIVERSITY MOBILITY -->
+
+				<!-- FHNW -->
 				<article>
 					<header>
-						<h2>University Mobility</h2>
+						<h2>FHNW — Switzerland</h2>
 					</header>
-					<h3>NCKU – National Cheng Kung University (Taiwan)</h3>
-					<img src="../images/L_NCKU.jpg" alt="National Cheng Kung University" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Excellence in engineering, computer science, and applied research.</li>
-						<li>Advanced laboratories + industrial partnerships.</li>
-						<li>Projects focused on semiconductors, networks, IoT, embedded systems.</li>
-					</ul>
-					<h3>NTHU – National Tsing Hua University (Taiwan)</h3>
-					<img src="../images/nthu.jpg" alt="National Tsing Hua University" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Prestigious research university in Asia.</li>
-						<li>Specialized in AI, electronics, advanced networks.</li>
-						<li>Strong links with Hsinchu Science Park.</li>
-					</ul>
-					<h3>AAU – Alpen-Adria-Universität Klagenfurt (Austria)</h3>
-					<img src="../images/aau.png" alt="Alpen-Adria Universität Klagenfurt" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Recognized for networks, cybersecurity, autonomous systems.</li>
-						<li>Modern laboratories and applied R&D projects.</li>
-						<li>Programs available in English.</li>
-					</ul>
-					<h3 class="subsection-title">Computing Program – FHNW (Switzerland)</h3>
-					<img src="../images/fnhw.png" alt="FHNW Computing" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Practical, industry-oriented approach.</li>
-						<li>Concrete projects and professional technologies.</li>
-					</ul>
-					<h3 class="subsection-title">Engineering Program – FHNW (Switzerland)</h3>
-					<ul class="no-bullets">
-						<li>Electronics, embedded systems, automation, telecommunications.</li>
-						<li>Modern laboratories and real-world problem-solving.</li>
+					<img src="../images/fnhw.png" alt="FHNW Logo" class="uni-logo" />
+					<h3>Why This University?</h3>
+					<p>The <em>Fachhochschule Nordwestschweiz</em> (FHNW) is recognized for its practice-oriented teaching and close ties with the Swiss business ecosystem (Basel / Brugg-Windisch region). It emphasizes solving real-world engineering problems in laboratory settings.</p>
+					<h3>Target Courses (Cyber &amp; Cloud)</h3>
+					<ul>
+						<li><strong>Cloud Computing &amp; Distributed Architectures:</strong> virtualization, containerization, and cloud infrastructure deployment.</li>
+						<li><strong>Network and System Security:</strong> infrastructure hardening, intrusion detection, and network defense.</li>
+						<li><strong>Applied Computer Engineering Projects:</strong> team-based implementation of secure solutions.</li>
 					</ul>
 				</article>
-				<!-- INTERNSHIP -->
+
+				<!-- BFH -->
 				<article>
 					<header>
-						<h2>Internship in a Company</h2>
+						<h2>BFH — Switzerland</h2>
 					</header>
-					<p>I currently do not have any specific companies in mind for my internship, as I would prefer to spend my time abroad at a university.</p>
+					<img src="../images/bfh.png" alt="Berner Fachhochschule Logo" class="uni-logo" />
+					<h3>Why This University?</h3>
+					<p>The <em>Berner Fachhochschule</em> (Bern University of Applied Sciences) enjoys an outstanding reputation in applied computer science and digital security, right at the heart of the Swiss federal capital where reliability and confidentiality standards are exceptionally high.</p>
+					<h3>Target Courses (Cyber &amp; Cloud)</h3>
+					<ul>
+						<li><strong>Information &amp; Cyber Security:</strong> vulnerability analysis, penetration testing, and risk management.</li>
+						<li><strong>Cloud Infrastructure &amp; DevSecOps:</strong> automation, cloud platform administration, and security by design.</li>
+						<li><strong>Applied Cryptography:</strong> securing communications and Identity &amp; Access Management (IAM).</li>
+					</ul>
 				</article>
+
+				<!-- AAU -->
+				<article>
+					<header>
+						<h2>AAU Klagenfurt — Austria</h2>
+					</header>
+					<img src="../images/aau.png" alt="Alpen-Adria-Universität Klagenfurt Logo" class="uni-logo" />
+					<h3>Why This University?</h3>
+					<p>The <em>Alpen-Adria-Universität Klagenfurt</em> stands out for the quality of its computer science and networking programs, as well as its close integration with the <em>Lakeside Science &amp; Technology Park</em>, an innovation hub bringing together tech companies and R&amp;D centers.</p>
+					<h3>Target Courses (Cyber &amp; Cloud)</h3>
+					<ul>
+						<li><strong>System &amp; Network Security:</strong> protocol security, infrastructure protection, and threat analysis.</li>
+						<li><strong>Cloud &amp; Distributed Systems:</strong> designing resilient distributed services and scalable architectures.</li>
+						<li><strong>Privacy &amp; Data Protection:</strong> technical and regulatory challenges of data protection in cloud environments.</li>
+					</ul>
+				</article>
+
 			</section>
+
 			<!-- PROOFS -->
-			<header class="major">
-				<h2>Evidence of Mobility Research</h2>
-				<ul class="no-bullets">
-					<li>Contact with my HR</li>
-					<a href="../images/m_rh.png" class="image fit"><img src="../images/m_rh.png" alt="HR Contact" class="image-fit" /></a>
-					<li>Participation in Orange calls on international mobility</li>
-					<a href="../images/p_mobilite.png" class="image fit"><img src="../images/p_mobilite.png" alt="Orange Mobility Call" class="image-fit" /></a>
-					<li>Participation in the MeetYourSchool event: "Finding an Internship in the USA/UK"</li>
-					<a href="../images/mys.png" class="image fit"><img src="../images/mys.png" alt="MeetYourSchool" class="image-fit" /></a>
+			<article class="post">
+				<header class="major">
+					<h2>Evidence of Mobility Search</h2>
+				</header>
+				<ul class="proof-list">
+					<li>
+						<p>Contact with my HR representative at Orange Business</p>
+						<a href="../images/m_rh.png" target="_blank"><img src="../images/m_rh.png" alt="HR Contact" class="proof-img" /></a>
+					</li>
+					<li>
+						<p>Participation in Orange international mobility calls</p>
+						<a href="../images/p_mobilite.png" target="_blank"><img src="../images/p_mobilite.png" alt="Orange Mobility Call" class="proof-img" /></a>
+					</li>
+					<li>
+						<p>Participation in the MeetYourSchool event: "Finding an Internship in the USA/UK"</p>
+						<a href="../images/mys.png" target="_blank"><img src="../images/mys.png" alt="MeetYourSchool" class="proof-img" /></a>
+					</li>
 				</ul>
-			</header>
+			</article>
+
 		</div>
+
 		<!-- Footer -->
 		<footer id="footer">
 			<section class="split contact">
@@ -170,19 +234,24 @@
 						paul.hoffbeck@etu.toulouse-inp.fr
 					</p>
 				</section>
+
 				<section>
-					<h3>Social Media</h3>
+					<h3>Social Networks</h3>
 					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
 			</section>
 		</footer>
+
+		<!-- Copyright -->
 		<div id="copyright">
-			<li>Design by: <a href="https://html5up.net">HTML5 UP</a></li>
+			<ul><li>Design by: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
+
 	</div>
+
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
@@ -192,6 +261,5 @@
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
 
-	
 </body>
 </html>

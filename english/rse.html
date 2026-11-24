@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>E-Portfolio Paul HOFFBECK</title>
+	<title>CSR &amp; Green Data Centers - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
@@ -9,36 +9,68 @@
 	<style>
 		/* --- Image size and style --- */
 		.image.fit img {
-			width: 60%;
+			width: 70%;
 			margin: 0 auto;
 			display: block;
 			border-radius: 10px;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 		.image.fit img:hover {
 			transform: scale(1.03);
-			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+		}
+		.posts article p {
+			text-align: left;
+		}
+		.kpi-banner {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			margin: 2rem 0 1rem 0;
+			padding: 1.5rem;
+			background: #f4f8fb;
+			border-radius: 12px;
+			border-left: 4px solid #2e7d32;
+		}
+		.kpi-item {
+			flex: 1;
+			min-width: 180px;
+			text-align: center;
+		}
+		.kpi-item strong {
+			display: block;
+			font-size: 1.6rem;
+			color: #2e7d32;
+			margin-bottom: 0.3rem;
+		}
+		.kpi-item span {
+			font-size: 0.9rem;
+			color: #444;
 		}
 	</style>
 </head>
 <body class="is-preload">
 
+	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
 
+		<!-- Header -->
 		<header id="header">
-			<a href="../rse.html" class="logo">French Version</a>
+			<a href="../rse.html" class="logo">French version</a>
 		</header>
 
 		<br>
 
+		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="projets.html">Projects</a></li>
-				<li><a href="reflexions.html">Reflection & Professional Development</a></li>
-				<li><a href="cv_rzo.html">CV & Network</a></li>
 				<li class="active"><a href="rse.html">CSR</a></li>
+				<li><a href="cv_rzo.html">CV &amp; Network</a></li>
+				<li><a href="cep.html">CEP</a></li>
 				<li><a href="mobilite.html">Mobility</a></li>
 			</ul>
 			<ul class="icons">
@@ -47,49 +79,90 @@
 			</ul>
 		</nav>
 
+		<!-- Main -->
 		<div id="main">
 
-			<article class="post featured">
-				<a href="#" class="image fit"><img src="../images/rse1.jpg" alt="" /></a>
-				<h2>CSR Commitment</h2>
-				<p>CSR commitment is becoming increasingly important in the engineering profession, guiding professional practices toward more sustainable and responsible decisions. By integrating these challenges from the very beginning of project design, engineers help reduce environmental impact, improve stakeholder well-being, and ensure ethical standards aligned with today's societal expectations. This approach not only strengthens the quality of proposed solutions but also helps meet regulatory requirements and address the challenges of ecological transition.</p>
-			</article>
-
+			<!-- Featured Post 1: CSR Vision -->
 			<article class="post featured">
 				<header class="major">
-					<h2>My Community Engagements</h2>
-					<p>Throughout my journey, I have had the opportunity to take part in various community engagements, which have made me aware of social and environmental issues and taught me the importance of contributing—at my own level—to responsible actions.</p>
+					<h2>CSR Commitment in the Digital Sector</h2>
+					<p>Corporate Social Responsibility (CSR) plays a central role in the work of a Digital Sciences engineer. As digital transformation, cloud computing, and artificial intelligence drive up computing and bandwidth demands, designing high-performance infrastructures is no longer enough: we must ensure their <strong>energy sobriety</strong>, <strong>resilience</strong>, and <strong>sustainability</strong> right from the architecture phase.</p>
 				</header>
+				<a href="../images/rse1.jpg" class="image fit"><img src="../images/rse1.jpg" alt="CSR commitment and responsible digital practices" /></a>
 			</article>
 
+			<!-- Featured Post 2: Green Data Centers Focus -->
+			<article class="post featured">
+				<header class="major">
+					<h2>The Green Future of Data Centers</h2>
+					<p>As the nerve centers of cloud computing and networks, data centers face a dual challenge: absorbing the exponential growth of data traffic while drastically reducing their carbon and water footprints. As a Client Solutions Engineer apprentice in network, cloud, and security at <strong>Orange Business</strong>, I am particularly interested in the technological levers transforming these critical infrastructures toward a sustainable model.</p>
+				</header>
+
+				<div class="kpi-banner">
+					<div class="kpi-item">
+						<strong>PUE &lt; 1.2</strong>
+						<span>Energy efficiency target for next-generation data centers</span>
+					</div>
+					<div class="kpi-item">
+						<strong>100% Renewables</strong>
+						<span>Sourcing via green contracts (PPAs) and low-carbon workload scheduling</span>
+					</div>
+					<div class="kpi-item">
+						<strong>Waste Heat</strong>
+						<span>Thermal recovery fed back into district heating networks</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- Posts: The 4 Pillars of Sustainable Data Centers -->
 			<section class="posts">
 
 				<article>
 					<header>
-						<h2>The Lourdes Hospitality</h2>
+						<h2>Innovative Cooling &amp; Energy Efficiency</h2>
 					</header>
-					<p>During my final year of high school, I had the opportunity to serve for a week as a volunteer caregiver at the Lourdes sanctuary. This experience gave me direct insight into the human challenges associated with vulnerability and dependency. By supporting sick or disabled individuals, I developed a heightened sense of listening, patience, and service. It also made me aware of the importance of volunteer work grounded in respect, dignity, and attention to each person.</p>
-					<a href="../images/hl.png" class="image fit"><img src="../images/hl.png" alt="Project virtualisation diagram" /></a>
+					<a href="../images/dc_cooling.jpg" class="image fit"><img src="../images/dc_cooling.jpg" alt="Liquid cooling and free cooling" /></a>
+					<p>Cooling has historically accounted for a major share of a data center's electricity consumption. Next-generation infrastructures replace traditional air conditioning with <strong>free cooling</strong> (using outside air), <strong>direct-to-chip liquid cooling</strong>, and immersion cooling. Combined with IoT sensors and AI to adjust airflow in real time, these technologies drive down the <em>PUE</em> (Power Usage Effectiveness) while minimizing water consumption (<em>WUE</em>).</p>
 				</article>
 
 				<article>
 					<header>
-						<h2>Restos du Cœur</h2>
+						<h2>Carbon-Free Energy &amp; Smart Scheduling</h2>
 					</header>
-					<a href="#" class="image fit"><img src="../images/rc.png" alt="" /></a>
-					<p>I also volunteered at the Restos du Cœur, where I became concretely aware of issues related to food insecurity and waste. This experience involved collecting, sorting and distributing food, ensuring rigorous resource management to optimise use and avoid unnecessary losses. It taught me the importance of a solidarity-based organisation capable of fighting both scarcity and waste while valuing every product distributed. This engagement strengthened my understanding of social issues linked to food and the importance of collective initiatives to address them effectively.</p>
+					<a href="../images/dc_energie.jpg" class="image fit"><img src="../images/dc_energie.jpg" alt="Renewable energy and data centers" /></a>
+					<p>The transition to green data centers relies on direct funding of renewable energy through <em>Power Purchase Agreements</em> (PPAs) and strategic siting close to low-carbon power sources. Beyond energy sourcing, <strong>carbon-aware computing</strong> now enables scheduling non-urgent workloads (backups, AI model training) at times and in regions where the electricity grid has the lowest carbon intensity.</p>
 				</article>
 
-				<article class="post featured" style="align-items: center;">
-					<h2>What Comes Next?</h2>
-					<a href="#" class="image fit"><img src="../images/rse.jpg" alt="" /></a>
-					<p>As a future engineer, I aim to ground my professional actions in a societal responsibility approach. Aware of the environmental, social, and ethical impacts tied to technical choices, I aspire to contribute to the development of sustainable solutions. My goal is to incorporate eco-design principles, promote responsible innovation, and ensure that the projects I take part in meet stakeholder expectations while minimizing their environmental footprint.</p>
+				<article>
+					<header>
+						<h2>Waste Heat Recovery &amp; Circular Economy</h2>
+					</header>
+					<a href="../images/dc_chaleur.jpg" class="image fit"><img src="../images/dc_chaleur.jpg" alt="Waste heat recovery and circular economy" /></a>
+					<p>Rather than dissipating thermal energy into the atmosphere, modern data centers are becoming true digital boilers. <strong>Waste heat</strong> captured from servers directly supplies urban district heating networks, residential buildings, agricultural greenhouses, or municipal swimming pools. At the same time, the <strong>circular economy</strong> is gaining ground in hardware management: extending server lifespans, refurbishing network equipment, and recycling critical metals.</p>
+				</article>
+
+				<article>
+					<header>
+						<h2>Cloud &amp; Network Sobriety &amp; GreenOps</h2>
+					</header>
+					<a href="../images/dc_greenops.jpg" class="image fit"><img src="../images/dc_greenops.jpg" alt="Eco-designed cloud architecture and GreenOps" /></a>
+					<p>A green data center only makes sense if the hosted architectures themselves are eco-designed. The <strong>GreenOps</strong> approach focuses on optimizing cloud resource allocation (virtualization, containerization, automated shutdown of idle environments) and streamlining network traffic to prevent over-provisioning. Reducing the volume of transferred and stored data directly lowers hardware strain and overall environmental impact.</p>
 				</article>
 
 			</section>
 
+			<!-- Featured Post 3: What Comes Next? -->
+			<article class="post featured">
+				<header class="major">
+					<h2>What Comes Next? My Vision as a Future Engineer</h2>
+				</header>
+				<a href="../images/rse.jpg" class="image fit"><img src="../images/rse.jpg" alt="Future responsible digital engineer" /></a>
+				<p>Building on my apprenticeship at <strong>Orange Business</strong> and my upcoming specialization in cybersecurity and cloud computing, I aim to systematically integrate environmental criteria into my technical architecture decisions. Whether selecting sovereign, low-carbon hosting providers, optimizing network infrastructure energy consumption, or applying digital sobriety principles by design, my goal is to reconcile <strong>high availability, security, and environmental responsibility</strong>.</p>
+			</article>
+
 		</div>
 
+		<!-- Footer -->
 		<footer id="footer">
 			<section class="split contact">
 				<section class="alt">
@@ -107,12 +180,14 @@
 			</section>
 		</footer>
 
+		<!-- Copyright -->
 		<div id="copyright">
-			<li>Design by: <a href="https://html5up.net">HTML5 UP</a></li>
+			<ul><li>Design by: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
 
 	</div>
 
+	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
 	<script src="../assets/js/jquery.scrollex.min.js"></script>
 	<script src="../assets/js/jquery.scrolly.min.js"></script>
@@ -120,5 +195,6 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+
 </body>
 </html>

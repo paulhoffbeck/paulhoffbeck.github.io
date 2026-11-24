@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
 <head>
-	<title>E-Portfolio Paul HOFFBECK</title>
+	<title>Mobilité - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -9,28 +9,77 @@
 
 	<!-- Styles personnalisés -->
 	<style>
-		.no-bullets {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
-		}
-		.subsection-title {
-			text-align: center;
-			margin-top: 1.5em;
-			margin-bottom: 0.7em;
-		}
-		.image-fit {
-			display: block;
-			margin: 1em auto;
-			max-width: 50%; /* Taille réduite */
-			border-radius: 10px;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-		}
-		/* Supprime les puces uniquement pour la première liste */
 		.header-list {
 			list-style: none;
 			padding-left: 0;
 			margin-left: 0;
+		}
+		.uni-logo {
+			display: block;
+			margin: 1.25em auto;
+			max-height: 110px;
+			max-width: 65%;
+			width: auto;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+			padding: 8px;
+			background: #ffffff;
+		}
+		.flags-row {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+			margin: 1.25em 0;
+		}
+		.flags-row img {
+			width: 42%;
+			max-width: 160px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+		}
+		.posts article h3 {
+			margin-top: 1.2em;
+			margin-bottom: 0.5em;
+			font-size: 1.05em;
+			color: #1f3b63;
+			text-align: left;
+		}
+		.posts article p,
+		.posts article ul {
+			text-align: left;
+		}
+		.posts article ul {
+			padding-left: 1.2em;
+		}
+		.posts article ul li {
+			margin-bottom: 0.45em;
+		}
+		.proof-list {
+			list-style: none;
+			padding-left: 0;
+			margin-left: 0;
+		}
+		.proof-list li {
+			margin-bottom: 2.5rem;
+		}
+		.proof-list li p {
+			font-weight: 600;
+			margin-bottom: 0.75rem;
+			text-align: center;
+		}
+		.proof-img {
+			display: block;
+			margin: 0 auto;
+			max-width: 75%;
+			border-radius: 10px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		}
+		@media screen and (max-width: 736px) {
+			.proof-img {
+				max-width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -47,20 +96,20 @@
 		<br>
 
 		<!-- Navigation -->
-		<nav id="nav">
-			<ul class="links">
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="projets.html">Projets</a></li>
-				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-				<li><a href="cv_rzo.html">CV & Réseau</a></li>
-				<li><a href="rse.html">RSE</a></li>
-				<li class="active"><a href="mobilite.html">Mobilité</a></li>
-			</ul>
-			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-			</ul>
-		</nav>
+<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="projets.html">Projets</a></li>
+							<li><a href="rse.html">RSE</a></li>
+							<li><a href="cv_rzo.html">CV & Réseau</a></li>
+							<li><a href="cep.html">CEP</a></li>
+							<li class="active"><a href="mobilite.html">Mobilité</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
 		<!-- Main -->
 		<div id="main">
@@ -69,118 +118,109 @@
 			<article class="post featured">
 				<header class="major">
 					<h2>Mobilité internationale</h2>
-					<p>La formation d’ingénieur comporte entre 9 et 12 mois de mobilité internationale. Elle permet notamment :</p>
+					<p>Dans le cadre de ma formation d’ingénieur en Sciences du Numérique à l’ENSEEIHT et en cohérence avec mon alternance chez <strong>Orange Business</strong> (ingénieur solutions réseau, cloud et sécurité), je souhaite réaliser un semestre d’échange universitaire à l’étranger afin de me spécialiser davantage en <strong>cybersécurité</strong> et en <strong>cloud computing</strong>.</p>
+					<p>Cette mobilité me permettra notamment :</p>
 					<ul class="header-list">
-						<li>d’évoluer dans un environnement culturellement différent ;</li>
-						<li>d’acquérir une ouverture d’esprit indispensable au métier d’ingénieur ;</li>
-						<li>de développer des compétences d’adaptabilité ;</li>
-						<li>d’explorer de nouvelles méthodes de travail ;</li>
-						<li>de comprendre les enjeux globaux auxquels les entreprises sont confrontées.</li>
+						<li>d’approfondir mes compétences techniques sur des architectures sécurisées et cloud-native ;</li>
+						<li>de découvrir de nouvelles méthodes d’enseignement orientées projets et recherche appliquée ;</li>
+						<li>d’évoluer dans un environnement international et multiculturel ;</li>
+						<li>de renforcer mon adaptabilité face aux enjeux numériques européens.</li>
 					</ul>
-					<p>Voici quelques pistes et preuves de recherche sur la mobilité internationale :</p>
 				</header>
 			</article>
 
+			<!-- Grille des destinations et universités ciblées -->
 			<section class="posts">
 
-				<!-- PAYS VISÉS -->
+				<!-- CHOIX DES PAYS -->
 				<article>
 					<header>
-						<h2>Pays visés</h2>
+						<h2>Pourquoi la Suisse et l'Autriche ?</h2>
 					</header>
-
-					<h3>Taïwan</h3>
-					<img src="images/taiwan.jpg" alt="Taïwan" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Écosystème high-tech mondial (réseaux, cloud, semi-conducteurs, IoT, 5G).</li>
-						<li>Nombreux centres de R&D et collaborations universités–industrie.</li>
-						<li>Environnement idéal pour développer compétences techniques et interculturelles.</li>
-					</ul>
-
-					<h3>Autriche</h3>
-					<img src="images/autriche.jpg" alt="Autriche" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Dynamique en réseaux, cybersécurité, IoT.</li>
-						<li>Projets concrets grâce aux partenariats industriels.</li>
-						<li>Infrastructures numériques avancées.</li>
-					</ul>
-
-					<h3>Suisse</h3>
-					<img src="images/suisse.png" alt="Suisse" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Écosystème technologique de premier plan.</li>
-						<li>Centres R&D, entreprises internationales, hautes écoles reconnues (EPFL, ETH Zürich).</li>
-						<li>Exigence technique élevée et standards industriels.</li>
+					<div class="flags-row">
+						<img src="images/suisse.png" alt="Suisse" />
+						<img src="images/autriche.jpg" alt="Autriche" />
+					</div>
+					<h3>Un écosystème technologique exigeant</h3>
+					<p>La Suisse et l'Autriche disposent d'infrastructures numériques de pointe, d'un tissu industriel dense et d'une forte culture de la sécurité des systèmes d'information et de la protection des données.</p>
+					<h3>Continuité avec mon alternance</h3>
+					<ul>
+						<li><strong>Proximité avec les standards européens :</strong> réglementations, souveraineté numérique et architectures critiques.</li>
+						<li><strong>Formation en anglais :</strong> cursus internationaux permettant de valider des crédits ECTS tout en consolidant mon anglais technique.</li>
+						<li><strong>Approche appliquée :</strong> fort lien entre les laboratoires universitaires et les besoins concrets des entreprises.</li>
 					</ul>
 				</article>
 
-				<!-- MOBILITÉ UNIVERSITAIRE -->
+				<!-- FHNW -->
 				<article>
 					<header>
-						<h2>Mobilité en université</h2>
+						<h2>FHNW — Suisse</h2>
 					</header>
-
-					<h3>NCKU – National Cheng Kung University (Taïwan)</h3>
-					<img src="images/L_NCKU.jpg" alt="National Cheng Kung University" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Excellence en ingénierie, informatique et recherche appliquée.</li>
-						<li>Laboratoires avancés + partenariats industriels.</li>
-						<li>Projets orientés semi-conducteurs, réseaux, IoT, systèmes embarqués.</li>
+					<img src="images/fnhw.png" alt="Logo FHNW" class="uni-logo" />
+					<h3>Pourquoi cette université ?</h3>
+					<p>La <em>Fachhochschule Nordwestschweiz</em> (FHNW) est reconnue pour sa pédagogie très orientée pratique et ses liens étroits avec le tissu économique suisse (région de Bâle / Brugg-Windisch). Elle privilégie la résolution de cas concrets en laboratoire.</p>
+					<h3>Matières visées (Cyber & Cloud)</h3>
+					<ul>
+						<li><strong>Cloud Computing & Architectures distribuées :</strong> virtualisation, conteneurisation et déploiement d'infrastructures cloud.</li>
+						<li><strong>Sécurité des réseaux et des systèmes :</strong> durcissement d'infrastructures, détection d'intrusion et défense réseau.</li>
+						<li><strong>Projets appliqués d'ingénierie informatique :</strong> mise en œuvre de solutions sécurisées en équipe.</li>
 					</ul>
-
-					<h3>NTHU – National Tsing Hua University (Taïwan)</h3>
-					<img src="images/nthu.jpg" alt="National Tsing Hua University" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Université de recherche prestigieuse en Asie.</li>
-						<li>Spécialisée en IA, électronique, réseaux avancés.</li>
-						<li>Liens forts avec le parc scientifique de Hsinchu.</li>
-					</ul>
-
-					<h3>AAU – Alpen-Adria-Universität Klagenfurt (Autriche)</h3>
-					<img src="images/aau.png" alt="Alpen-Adria Universität Klagenfurt" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Reconnaissance en réseaux, cybersécurité, systèmes autonomes.</li>
-						<li>Laboratoires modernes et projets R&D appliqués.</li>
-						<li>Programmes accessibles en anglais.</li>
-					</ul>
-
-					<h3 class="subsection-title">Filière Computing – FHNW (Suisse)</h3>
-					<img src="images/fnhw.png" alt="FHNW Computing" class="image-fit" />
-					<ul class="no-bullets">
-						<li>Approche pratique orientée industrie.</li>
-						<li>Projets concrets et technologies professionnelles.</li>
-					</ul>
-
-					<h3 class="subsection-title">Filière Engineering – FHNW (Suisse)</h3>
-					<ul class="no-bullets">
-						<li>Électronique, systèmes embarqués, automatique, télécoms.</li>
-						<li>Laboratoires modernes et résolution de problèmes réels.</li>
-					</ul>
-
 				</article>
 
-				<!-- STAGE -->
+				<!-- BFH -->
 				<article>
 					<header>
-						<h2>Stage en entreprise</h2>
+						<h2>BFH — Suisse</h2>
 					</header>
-					<p>Je n'ai pour l'instant pas d'idées d'entreprises dans lesquelles faire mon stage car je privilégirais faire mes semaines à l'étranger en université.</p>
+					<img src="images/bfh.png" alt="Logo Berner Fachhochschule" class="uni-logo" />
+					<h3>Pourquoi cette université ?</h3>
+					<p>La <em>Berner Fachhochschule</em> (Haute école spécialisée bernoise) bénéficie d'une excellente réputation en informatique appliquée et en sécurité numérique, au cœur de la capitale fédérale où les exigences de fiabilité et de confidentialité sont particulièrement élevées.</p>
+					<h3>Matières visées (Cyber & Cloud)</h3>
+					<ul>
+						<li><strong>Information & Cyber Security :</strong> analyse de vulnérabilités, tests d'intrusion et gestion des risques.</li>
+						<li><strong>Cloud Infrastructure & DevSecOps :</strong> automatisation, administration de plateformes cloud et sécurité dès la conception.</li>
+						<li><strong>Cryptographie appliquée :</strong> sécurisation des communications et gestion des identités et accès (IAM).</li>
+					</ul>
+				</article>
+
+				<!-- AAU -->
+				<article>
+					<header>
+						<h2>AAU Klagenfurt — Autriche</h2>
+					</header>
+					<img src="images/aau.png" alt="Logo Alpen-Adria-Universität Klagenfurt" class="uni-logo" />
+					<h3>Pourquoi cette université ?</h3>
+					<p>L’<em>Alpen-Adria-Universität Klagenfurt</em> se distingue par la qualité de ses enseignements en informatique et réseaux, ainsi que par son adossement au <em>Lakeside Science & Technology Park</em>, un pôle d'innovation regroupant entreprises tech et centres de R&D.</p>
+					<h3>Matières visées (Cyber & Cloud)</h3>
+					<ul>
+						<li><strong>System & Network Security :</strong> sécurité des protocoles, protection des infrastructures et analyse de menaces.</li>
+						<li><strong>Cloud & Distributed Systems :</strong> conception de services distribués résilients et passage à l'échelle.</li>
+						<li><strong>Privacy & Data Protection :</strong> enjeux techniques et réglementaires de la protection des données en environnement cloud.</li>
+					</ul>
 				</article>
 
 			</section>
 
 			<!-- PREUVES -->
-			<header class="major">
-				<h2>Preuves de recherches de mobilité</h2>
-				<ul class="no-bullets">
-					<li>Contact avec ma RH</li>
-					<a href="images/m_rh.png" class="image fit"><img src="images/m_rh.png" alt="Contact RH" class="image-fit" /></a>
-					<li>Participation aux calls Orange sur la mobilité internationale</li>
-					<a href="images/p_mobilite.png" class="image fit"><img src="images/p_mobilite.png" alt="Call Mobilité Orange" class="image-fit" /></a>
-					<li>Participation à l’évènement MeetYourSchool : “Trouver son stage aux USA/UK”</li>
-					<a href="images/mys.png" class="image fit"><img src="images/mys.png" alt="MeetYourSchool" class="image-fit" /></a>
+			<article class="post">
+				<header class="major">
+					<h2>Preuves de recherches de mobilité</h2>
+				</header>
+				<ul class="proof-list">
+					<li>
+						<p>Contact avec ma RH chez Orange Business</p>
+						<a href="images/m_rh.png" target="_blank"><img src="images/m_rh.png" alt="Contact RH" class="proof-img" /></a>
+					</li>
+					<li>
+						<p>Participation aux calls Orange sur la mobilité internationale</p>
+						<a href="images/p_mobilite.png" target="_blank"><img src="images/p_mobilite.png" alt="Call Mobilité Orange" class="proof-img" /></a>
+					</li>
+					<li>
+						<p>Participation à l’événement MeetYourSchool : « Trouver son stage aux USA/UK »</p>
+						<a href="images/mys.png" target="_blank"><img src="images/mys.png" alt="MeetYourSchool" class="proof-img" /></a>
+					</li>
 				</ul>
-			</header>
+			</article>
 
 		</div>
 
@@ -205,8 +245,9 @@
 			</section>
 		</footer>
 
+		<!-- Copyright -->
 		<div id="copyright">
-			<li>Design par : <a href="https://html5up.net">HTML5 UP</a></li>
+			<ul><li>Design par : <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
 
 	</div>

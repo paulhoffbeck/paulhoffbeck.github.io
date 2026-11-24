@@ -1,28 +1,39 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>E-Portfolio Paul HOFFBECK</title>
+	<title>CV &amp; Network - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 
-	<!-- Custom Styles -->
+	<!-- Custom styles -->
 	<style>
 		/* Main section */
 		.post.featured {
 			text-align: center;
+			width: 100%;
 			max-width: 1000px;
 			margin: 0 auto;
 		}
 
-		iframe {
+		.pdf-viewer {
+			width: 100%;
+			height: 1100px;
 			border: none;
 			border-radius: 10px;
 			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			display: block;
+			margin: 0 auto 2rem auto;
 		}
 
-		/* Engineer cards */
+		@media screen and (max-width: 736px) {
+			.pdf-viewer {
+				height: 600px;
+			}
+		}
+
+		/* Engineer cards style */
 		.engineer-card {
 			background-color: #f2f7fb;
 			border-radius: 15px;
@@ -30,7 +41,7 @@
 			margin: 20px auto;
 			box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 			max-width: 800px;
-			text-align: justify;
+			text-align: center;
 			transition: transform 0.2s ease, box-shadow 0.2s ease;
 		}
 
@@ -59,17 +70,37 @@
 			font-size: 0.95em;
 			color: #2a6ebc;
 			font-weight: 600;
+			text-align: center;
 		}
 
 		.engineer-card p {
 			font-size: 0.95em;
 			line-height: 1.5;
 			color: #444;
+			text-align: center;
+		}
+
+		/* Header */
+		header.major {
+			text-align: center;
 		}
 
 		header.major h2 {
-			margin-top: 1.5em;
+			margin-top: 0.5em;
 			color: #1f3b63;
+			text-align: center;
+		}
+
+		header.major p {
+			text-align: center;
+		}
+
+		/* Global centering */
+		#main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
 		}
 	</style>
 </head>
@@ -81,18 +112,20 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a href="../cv_rzo.html" class="logo">Version française</a>
+			<a href="../cv_rzo.html" class="logo">French version</a>
 		</header>
+
+		<br>
 
 		<!-- Navigation -->
 		<nav id="nav">
 			<ul class="links">
-				<li><a href="../english/index.html">Home</a></li>
-				<li><a href="../english/projets.html">Projects</a></li>
-				<li><a href="../english/reflexions.html">Reflections & Professional Growth</a></li>
-				<li class="active"><a href="../english/cv_rzo.html">Resume & Network</a></li>
-				<li><a href="../english/rse.html">CSR</a></li>
-				<li><a href="../english/mobilite.html">Mobility</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projets.html">Projects</a></li>
+				<li><a href="rse.html">CSR</a></li>
+				<li class="active"><a href="cv_rzo.html">CV &amp; Network</a></li>
+				<li><a href="cep.html">CEP</a></li>
+				<li><a href="mobilite.html">Mobility</a></li>
 			</ul>
 			<ul class="icons">
 				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -107,53 +140,52 @@
 					<h2>My Resume</h2>
 				</header>
 
-				<!-- Embedded CV -->
+				<!-- Embedded English CV -->
 				<iframe 
+					class="pdf-viewer"
 					src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https%3A%2F%2Fpaulhoffbeck.github.io%2Fimages%2FCV%2520English.pdf"
-					width="100%" 
-					height="1200px">
+					title="Resume Paul HOFFBECK">
 				</iframe>
 
-				<header class="major">
-					<h2>Engineers Contacted</h2>
-					<p>I had the opportunity to talk with several engineers from my professional and personal network. Here are the insights that struck me the most from our discussions.</p>
-				</header>
-
-				<!-- Engineer Cards -->
-				<div class="engineer-card">
-					<h3>Fabien HILBERG</h3>
-					<p><strong>R&D Engineer at KNDS Germany</strong></p>
-					<h6>Key Insight:</h6>
-					<p>“Being an engineer means working with cutting-edge technologies in fields that truly matter. It’s a profession that opens many doors worldwide thanks to the adaptability and versatility it develops.”</p>
-				</div>
-
-				<div class="engineer-card">
-					<h3>Denis GOUDAY</h3>
-					<p><strong>Project Engineer at MBDA</strong></p>
-					<h6>Key Insight:</h6>
-					<p>“What I enjoy most about engineering is project and team management. We work on diverse missions, often abroad. For instance, I’ve had the chance to take part in projects in Egypt and several other countries.”</p>
-				</div>
-
-				<div class="engineer-card">
-					<h3>Laurent COURTE</h3>
-					<p><strong>Solution Engineer at Orange Business</strong></p>
-					<h6>Key Insight:</h6>
-					<p>“This career allows you to choose your path — between high-demand positions or those offering better work-life balance. Being an engineer also means knowing how to adapt your professional journey to each stage of your life.”</p>
-				</div>
-
-				<div class="engineer-card">
-					<h3>Sophian RUBEAU</h3>
-					<p><strong>Head of IP Networks & Cybersecurity Sales at Orange</strong></p>
-					<h6>Key Insight:</h6>
-					<p>“Engineering degrees open doors to positions of responsibility and even teaching opportunities. Curiosity and the willingness to stand out are key: many professional opportunities came from what I did outside of academics.”</p>
-				</div>
+				<ul class="actions special">
+					<li><a href="../images/CV English.pdf" class="button" target="_blank">Download Resume (English)</a></li>
+					<li><a href="../images/CV CAM.pdf" class="button" target="_blank">Download CV (French)</a></li>
+				</ul>
 			</article>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<h3>Contact</h3>
+					<p>
+						hoffbeck.paul@gmail.com<br />
+						paul.hoffbeck@etu.toulouse-inp.fr
+					</p>
+				</section>
+
+				<section>
+					<h3>Social Networks</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul><li>Design by: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
 
 	</div>
 
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
 	<script src="../assets/js/browser.min.js"></script>
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>

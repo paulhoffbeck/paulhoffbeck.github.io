@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="fr">
 <head>
-	<title>E-Portfolio Paul HOFFBECK</title>
+	<title>Projets - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -9,28 +9,46 @@
 
 	<!-- Styles personnalisés -->
 	<style>
-		.no-bullets {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
+		.posts article {
+			display: flex;
+			flex-direction: column;
 		}
-		.subsection-title {
-			text-align: center;
-			margin-top: 1.5em;
-			margin-bottom: 0.7em;
+		.posts article p {
+			text-align: left;
+			margin-bottom: 1em;
 		}
-		.image-fit {
+		.posts article h3 {
+			margin-top: 1.4em;
+			margin-bottom: 0.5em;
+			font-size: 1.05em;
+			color: #1f3b63;
+			text-align: left;
+		}
+		.project-img {
 			display: block;
-			margin: 1em auto;
-			max-width: 50%; /* Taille réduite */
+			margin: 1em auto 0.4em auto;
+			max-width: 75%;
+			height: auto;
 			border-radius: 10px;
-			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+			transition: transform 0.25s ease, box-shadow 0.25s ease;
 		}
-		/* Supprime les puces uniquement pour la première liste */
-		.header-list {
-			list-style: none;
-			padding-left: 0;
-			margin-left: 0;
+		.project-img:hover {
+			transform: scale(1.02);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+		}
+		.img-caption {
+			display: block;
+			text-align: center;
+			font-size: 0.85em;
+			font-style: italic;
+			color: #666;
+			margin-bottom: 1.2em;
+		}
+		.posts article .button {
+			align-self: center;
+			margin-top: 0.5em;
+			margin-bottom: 1em;
 		}
 	</style>
 </head>
@@ -51,9 +69,9 @@
 			<ul class="links">
 				<li><a href="index.html">Accueil</a></li>
 				<li class="active"><a href="projets.html">Projets</a></li>
-				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-				<li><a href="cv_rzo.html">CV & Réseau</a></li>
 				<li><a href="rse.html">RSE</a></li>
+				<li><a href="cv_rzo.html">CV & Réseau</a></li>
+				<li><a href="cep.html">CEP</a></li>
 				<li><a href="mobilite.html">Mobilité</a></li>
 			</ul>
 			<ul class="icons">
@@ -65,112 +83,39 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Featured post -->
-			<article class="post featured">
-				<header class="major">
-					<h2>Projets Scolaires</h2>
-					<p>Ces projets ont été réalisés dans le cadre de mon IUT afin de valider l'acquisition de compétences techniques et transversales. Ils combinent mise en œuvre pratique, rédaction de rapport et soutenance orale.</p>
-				</header>
-			</article>
-
-			<section class="posts">
-
-				<!-- DevCloud -->
-				<article>
-					<header>
-						<h2>DevCloud</h2>
-					</header>
-					<p>Le parcours Développement et Cloud choisi en deuxième année m'a permis de réaliser des projets centrés sur la virtualisation et la conteneurisation.</p>
-
-					<h3>1. Création d'un réseau virtualisé</h3>
-					<p>Conception et déploiement d'un réseau local comprenant un pare-feu, un serveur DNS/AD, un serveur web et plusieurs postes clients.</p>
-					<a href="images/sae304.png" class="image fit"><img src="images/sae304.png" alt="Schéma du projet de virtualisation" /></a>
-					<h6>Schéma du projet à réaliser</h6>
-
-					<h3>2. Application conteneurisée de gestion de projets</h3>
-					<p>Développement d'une application basée sur des micro-services conteneurisés (Docker) pour gérer et visualiser les SBOM des projets.</p>
-					<a href="images/sae401.png" class="image fit"><img src="images/sae401.png" alt="Schéma des micro-services utilisés" /></a>
-					<h6>Schéma des micro-services utilisés</h6>
-					<a href="https://github.com/paulhoffbeck/TaskManager" class="button small">Voir sur GitHub</a>
-				</article>
-
-				<!-- Programmation -->
-				<article>
-					<header>
-						<h2>Programmation</h2>
-					</header>
-					<h3>Site web dynamique avec gestion d'utilisateurs</h3>
-					<p>Création d'un site vitrine et d'un intranet en PHP/HTML/CSS avec gestion d'utilisateurs et sécurité intégrée.</p>
-					<a href="images/galet.png" class="image fit"><img src="images/galet.png" alt="Capture du site vitrine" /></a>
-					<h6>Capture d'écran du site vitrine</h6>
-					<a href="https://github.com/paulhoffbeck/SAE203galettezen" class="button small">Voir sur GitHub</a>
-
-					<h3>Application Android de gestion de tâches</h3>
-					<p>Application Android en Java avec fonctions d'agenda et de suivi, développée dans une approche orientée ergonomie et conception logicielle.</p>
-					<a href="images/sae302.png" class="image fit"><img src="images/sae302.png" alt="Application Android" /></a>
-					<h6>Interface de l'application Android</h6>
-					<a href="https://github.com/paulhoffbeck/TaskManager" class="button small">Voir sur GitHub</a>
-				</article>
-
-				<!-- Réseau -->
-				<article>
-					<header>
-						<h2>Réseau</h2>
-					</header>
-					<h3>Réseau multi-site avec MPLS et VPN</h3>
-					<p>Conception d'un réseau multi-site intégrant tunnels VPN, routage IPv6 et documentation technique complète.</p>
-					<a href="images/saer.png" class="image fit"><img src="images/saer.png" alt="Schéma du réseau multi-site" /></a>
-					<h6>Schéma du réseau</h6>
-
-					<h3>Réseau local d'entreprise</h3>
-					<p>Déploiement d'un réseau d'entreprise complet avec DNS/AD, pare-feu et serveur web virtualisé.</p>
-					<a href="images/tpr.png" class="image fit"><img src="images/tpr.png" alt="Schéma du réseau local" /></a>
-					<h6>Schéma du réseau local</h6>
-				</article>
-
-			</section>
-
-			<!-- Featured post -->
+			<!-- En-tête Projets Professionnels -->
 			<article class="post featured">
 				<header class="major">
 					<h2>Projets Professionnels</h2>
-					<p>Ces projets ont été réalisés en entreprise dans le cadre de mon stage de 2ème année et de mon alternance. Ils reflètent mes compétences techniques appliquées en contexte professionnel réel.</p>
+					<p>Réalisés dans le cadre de mon alternance chez <strong>Orange Business</strong> en tant qu'ingénieur solutions client en réseau, cloud et sécurité (présentés selon la méthode PORTE).</p>
 				</header>
 			</article>
 
 			<section class="posts">
 
-				<!-- Stage -->
-<!-- Stage -->
-<article>
-    <header>
-        <h2>Stage de deuxième année</h2>
-    </header>
-    <p><b>Problème / Objectifs :</b> L’infrastructure d’un site industriel devenait obsolète, ce qui causait des problèmes à la fois en termes de sécurité et de performance. J’ai donc été chargé de la moderniser.</p>
-    <p><b>Résultat / Indicateur :</b> 4 commutateurs et plus de 200 ports à configurer et connecter.</p>
-    <p><b>Rôle :</b> J’ai réalisé tout le projet en autonomie.</p>
-    <p><b>Technique :</b> J’ai commencé par lister les ports utilisés, puis j’ai étudié les configurations des anciens commutateurs avant de réorganiser et reconfigurer les nouveaux. Il y a également eu beaucoup de travail lié au remplacement des commutateurs car il s’agit d’un site industriel.</p>
-    <p><b>Résumé :</b> Modernisation du réseau d’un site industriel : remplacement des commutateurs, recâblage et mise à jour de la documentation technique.</p>
-    <a href="images/stage.png" class="image fit"><img src="images/stage.png" alt="Illustration du stage" /></a>
-    <p>Configuration d’une solution SD-WAN pour améliorer la résilience et la flexibilité du réseau.</p>
-</article>
+				<!-- Projet Pro 1 : Design de réseau côté client -->
+				<article>
+					<header>
+						<h2>Design d'architectures réseau côté client</h2>
+					</header>
+					<p><b>Problème / Objectifs :</b> Concevoir, adapter ou faire évoluer l'architecture réseau de sites clients (interconnexion multi-sites, rationalisation des liens WAN/SD-WAN, amélioration de la résilience et de la sécurité des flux).</p>
+					<p><b>Rôle :</b> Analyse des besoins fonctionnels et techniques du client, audit des configurations existantes, conception de l'architecture cible et préparation des livrables techniques.</p>
+					<p><b>Technique :</b> Élaboration des schémas d'architecture (HLD/LLD), plans d'adressage IP, segmentation VLAN, choix des protocoles de routage (BGP, OSPF), intégration SD-WAN/VPN et rédaction des fichiers de configuration avant déploiement.</p>
+					<p><b>Résultat / Indicateur :</b> Solutions réseau validées et prêtes à être déployées en production, garantissant haute disponibilité, conformité sécurité et continuité de service pour les sites clients.</p>
+					<a href="images/ingeclient.jpg" target="_blank"><img src="images/ingeclient.jpg" alt="Design réseau client" class="project-img" /></a>
+				</article>
 
-<!-- Alternance -->
-<article>
-    <header>
-        <h2>Alternance</h2>
-        <p>J’utiliserai la méthode PORTE pour illustrer un court projet que j’ai réalisé lors de ma première période.</p>
-    </header>
-    <p><b>Problème / Objectifs :</b> Un client possède un site avec deux fonctions distinctes, ce qui entraîne deux connexions internet fibre séparées. Pour des raisons économiques, le client nous a demandé de fusionner ces deux connexions.</p>
-    <p><b>Résultat / Indicateur :</b> Près d’une centaine de routeurs et 300 sites migrés</p>
-    <p><b>Rôle :</b> J’ai réalisé la partie analyse de configuration et la partie conception de la solution : le plan, le protocole utilisé et le fichier de configuration qui sera appliqué sur les sites distants.</p>
-    <p><b>Technique :</b> J’ai étudié les rôles des différents sites et leur configuration. J’ai ensuite exploré ce qui pouvait être fusionné tout en les laissant tels qu’ils étaient. Ensuite, j’ai conçu le schéma et enfin le fichier de configuration. L’aspect déploiement est géré par un service distinct.</p>
-    <p>Ceci est un court exemple de ce que je peux réaliser en première année.</p>
-    <a href="images/ingeclient.jpg" class="image fit"><img src="images/ingeclient.jpg" alt="Alternance" /></a>
-    <p>En tant qu’ingénieur solutions clients, je participe à la conception, au déploiement et au support des infrastructures réseau, cloud et sécurité. Je serai donc en contact avec des clients de différentes nationalités.</p>
-</article>
-
-
+				<!-- Projet Pro 2 : Remise en état, MàJ & Hardening lab interne -->
+				<article>
+					<header>
+						<h2>Remise en état, MàJ &amp; Hardening d'un lab interne</h2>
+					</header>
+					<p><b>Problème / Objectifs :</b> Une plateforme de test interne (lab) présentait des équipements obsolètes, des versions logicielles datées et un niveau de sécurité insuffisant pour maquetter sereinement des architectures clients.</p>
+					<p><b>Rôle :</b> Pilotage complet de la remise en condition opérationnelle, de la montée de version et du durcissement sécuritaire (<em>hardening</em>) de l'environnement.</p>
+					<p><b>Technique :</b> Inventaire et remise à plat du câblage et de la topologie, mise à jour des firmwares et systèmes (routeurs, commutateurs, pare-feux, serveurs), désactivation des protocoles et services non sécurisés, cloisonnement des VLAN d'administration et renforcement des contrôles d'accès (SSH, ACL, gestion des comptes).</p>
+					<p><b>Résultat / Indicateur :</b> Lab interne 100 % opérationnel, à jour et conforme aux bonnes pratiques de cybersécurité, permettant de valider des POC et des configurations complexes en conditions réelles.</p>
+					<a href="images/stage.png" target="_blank"><img src="images/stage.png" alt="Remise en état et hardening du lab interne" class="project-img" /></a>
+				</article>
 
 			</section>
 
@@ -197,8 +142,9 @@
 			</section>
 		</footer>
 
+		<!-- Copyright -->
 		<div id="copyright">
-			<li>Design par : <a href="https://html5up.net">HTML5 UP</a></li>
+			<ul><li>Design par : <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
 
 	</div>

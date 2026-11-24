@@ -1,87 +1,167 @@
 <!DOCTYPE HTML>
 <html lang="fr">
 <head>
-	<title>E-Portfolio Paul HOFFBECK</title>
+	<title>RSE &amp; Datacenters Verts - E-Portfolio Paul HOFFBECK</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="../assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<style>
 		/* --- Taille et style des images --- */
 		.image.fit img {
-			width: 60%;              /* Réduit la taille des images à 60% de la largeur */
-			margin: 0 auto;          /* Centre les images */
+			width: 70%;
+			margin: 0 auto;
 			display: block;
-			border-radius: 10px;     /* Coins légèrement arrondis */
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 		.image.fit img:hover {
 			transform: scale(1.03);
-			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+		}
+		.posts article p {
+			text-align: left;
+		}
+		.kpi-banner {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			margin: 2rem 0 1rem 0;
+			padding: 1.5rem;
+			background: #f4f8fb;
+			border-radius: 12px;
+			border-left: 4px solid #2e7d32;
+		}
+		.kpi-item {
+			flex: 1;
+			min-width: 180px;
+			text-align: center;
+		}
+		.kpi-item strong {
+			display: block;
+			font-size: 1.6rem;
+			color: #2e7d32;
+			margin-bottom: 0.3rem;
+		}
+		.kpi-item span {
+			font-size: 0.9rem;
+			color: #444;
 		}
 	</style>
 </head>
 <body class="is-preload">
+
 	<!-- Wrapper -->
 	<div id="wrapper" class="fade-in">
+
 		<!-- Header -->
 		<header id="header">
 			<a href="english/rse.html" class="logo">English version</a>
 		</header>
+
 		<br>
+
 		<!-- Nav -->
 		<nav id="nav">
 			<ul class="links">
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="projets.html">Projets</a></li>
-				<li><a href="reflexions.html">Réflexion & Développement pro</a></li>
-				<li><a href="cv_rzo.html">CV & Réseau</a></li>
 				<li class="active"><a href="rse.html">RSE</a></li>
+				<li><a href="cv_rzo.html">CV &amp; Réseau</a></li>
+				<li><a href="cep.html">CEP</a></li>
 				<li><a href="mobilite.html">Mobilité</a></li>
 			</ul>
 			<ul class="icons">
-				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+				<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 				<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 			</ul>
 		</nav>
+
 		<!-- Main -->
 		<div id="main">
-			<!-- Featured Post -->
-			<article class="post featured">
-				<a href="#" class="image fit"><img src="../images/rse1.jpg" alt="" /></a>
-				<h2>L'engagement RSE</h2>
-				<p>L’engagement RSE prend une place de plus en plus prépondérante dans le métier d’ingénieur, il oriente les pratiques professionnelles vers des décisions plus durables et responsables. En intégrant ces enjeux dès la conception des projets, l’ingénieur contribue à réduire les impacts environnementaux, à améliorer le bien-être des parties prenantes et à garantir une éthique de travail cohérente avec les attentes sociétales actuelles. Cette démarche renforce non seulement la qualité des solutions proposées, mais permet aussi de répondre aux exigences réglementaires et aux défis de la transition écologique.</p>
-			</article>
+
+			<!-- Featured Post 1 : Vision RSE -->
 			<article class="post featured">
 				<header class="major">
-					<h2>Mes engagements associatifs</h2>
-					<p>Durant mon parcours, j’ai déjà eu l’occasion de m’investir dans des engagements associatifs, ce qui m’a sensibilisé aux enjeux sociaux et environnementaux et m’a appris l’importance de contribuer, à mon échelle, à des actions responsables.</p>
+					<h2>L'engagement RSE dans le numérique</h2>
+					<p>La Responsabilité Sociétale des Entreprises (RSE) joue un rôle central dans le métier d’ingénieur en Sciences du Numérique. Alors que la transformation numérique, le cloud computing et l’intelligence artificielle accroissent les besoins en calcul et en bande passante, concevoir des infrastructures performantes ne suffit plus : nous devons garantir leur <strong>sobriété énergétique</strong>, leur <strong>résilience</strong> et leur <strong>durabilité</strong> dès la phase d’architecture.</p>
 				</header>
+				<a href="images/rse1.jpg" class="image fit"><img src="images/rse1.jpg" alt="Engagement RSE et pratiques numériques responsables" /></a>
 			</article>
-			<!-- Posts -->
+
+			<!-- Featured Post 2 : Focus Datacenters Verts -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Le futur vert des datacenters</h2>
+					<p>Centres névralgiques du cloud computing et des réseaux, les datacenters font face à un double défi : absorber la croissance exponentielle du trafic de données tout en réduisant drastiquement leur empreinte carbone et hydrique. En tant qu’alternant ingénieur solutions client en réseau, cloud et sécurité chez <strong>Orange Business</strong>, je m’intéresse particulièrement aux leviers technologiques qui transforment ces infrastructures critiques vers un modèle durable.</p>
+				</header>
+
+				<div class="kpi-banner">
+					<div class="kpi-item">
+						<strong>PUE &lt; 1,2</strong>
+						<span>Objectif d'efficacité énergétique pour les datacenters de nouvelle génération</span>
+					</div>
+					<div class="kpi-item">
+						<strong>100 % Renouvelable</strong>
+						<span>Approvisionnement via contrats verts (PPA) et ordonnancement bas-carbone des charges</span>
+					</div>
+					<div class="kpi-item">
+						<strong>Chaleur fatale</strong>
+						<span>Récupération thermique réinjectée dans les réseaux de chaleur urbains</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- Posts : Les 4 piliers du Datacenter Durable -->
 			<section class="posts">
+
 				<article>
 					<header>
-						<h2>L'hospitalité de Lourdes</h2>
+						<h2>Refroidissement innovant &amp; Efficacité énergétique</h2>
 					</header>
-					<p>Lors de mon année de terminale, j’ai eu l’opportunité d’être, durant une semaine, un hospitalier au sanctuaire de Lourdes. Cette expérience m’a permis d’être confronté de manière directe aux enjeux humains liés à la vulnérabilité et à la dépendance. En accompagnant des personnes malades ou en situation de handicap, j’ai développé un sens accru de l’écoute, de la patience et du service. Elle m’a également sensibilisé à l’importance d’un engagement bénévole fondé sur le respect, la dignité et l’attention portée à chacun.</p>
-					<a href="../images/hl.png" class="image fit"><img src="../images/hl.png" alt="Schéma du projet de virtualisation" /></a>
+					<a href="images/dc_cooling.jpg" class="image fit"><img src="images/dc_cooling.jpg" alt="Refroidissement liquide et free cooling" /></a>
+					<p>Le refroidissement représente historiquement une part majeure de la consommation électrique d’un datacenter. Les infrastructures de nouvelle génération remplacent la climatisation traditionnelle par le <strong>free cooling</strong> (utilisation de l’air extérieur), le <strong>refroidissement liquide direct-to-chip</strong> et le refroidissement par immersion. Combinées à des capteurs IoT et à l’IA pour ajuster les flux d’air en temps réel, ces technologies font baisser le <em>PUE</em> (Power Usage Effectiveness) tout en minimisant la consommation d’eau (<em>WUE</em>).</p>
 				</article>
+
 				<article>
 					<header>
-						<h2>Les Restos du Cœur</h2>
+						<h2>Énergie décarbonée &amp; Ordonnancement intelligent</h2>
 					</header>
-					<a href="#" class="image fit"><img src="../images/rc.png" alt="" /></a>
-					<p>J’ai également été bénévole aux Restos du Cœur, où j’ai été sensibilisé de manière concrète aux problématiques de précarité alimentaire et de gaspillage. Cette expérience m’a amené à participer à la collecte, au tri et à la distribution de denrées, en veillant à une gestion rigoureuse des ressources afin d’optimiser leur utilisation et d’éviter toute perte inutile. Elle m’a permis de mesurer l’importance d’une organisation solidaire capable de lutter à la fois contre le manque et contre le gaspillage, tout en valorisant chaque produit distribué. Cet engagement a renforcé ma compréhension des enjeux sociaux liés à l’alimentation et l’importance d’initiatives collectives pour y répondre efficacement.</p>
+					<a href="images/dc_energie.jpg" class="image fit"><img src="images/dc_energie.jpg" alt="Énergies renouvelables et datacenters" /></a>
+					<p>La transition vers des datacenters verts repose sur le financement direct des énergies renouvelables via des <em>Power Purchase Agreements</em> (PPA) et sur une implantation stratégique à proximité de sources électriques bas-carbone. Au-delà de l’approvisionnement énergétique, le <strong>carbon-aware computing</strong> permet désormais de planifier les charges de travail non urgentes (sauvegardes, entraînement de modèles d’IA) aux heures et dans les régions où le réseau électrique affiche la plus faible intensité carbone.</p>
 				</article>
-				<article class="post featured" style="align-items: center;">
-					<h2>Et après ?</h2>
-					<a href="#" class="image fit"><img src="../images/rse.jpg" alt="" /></a>
-					<p>En tant que futur ingénieur, je souhaite inscrire mon action professionnelle dans une démarche de responsabilité sociétale. Conscient des impacts environnementaux, sociaux et éthiques associés aux choix techniques, j’ambitionne de contribuer au développement de solutions durables. Mon objectif est d’intégrer les principes de l’éco-conception, de favoriser l’innovation responsable et de veiller à ce que les projets auxquels je participerai répondent aux attentes des parties prenantes tout en limitant leur empreinte sur l’environnement. </p>
+
+				<article>
+					<header>
+						<h2>Récupération de chaleur fatale &amp; Économie circulaire</h2>
+					</header>
+					<a href="images/dc_chaleur.jpg" class="image fit"><img src="images/dc_chaleur.jpg" alt="Récupération de chaleur fatale et économie circulaire" /></a>
+					<p>Plutôt que de dissiper l’énergie thermique dans l’atmosphère, les datacenters modernes deviennent de véritables chaudières numériques. La <strong>chaleur fatale</strong> captée sur les serveurs alimente directement des réseaux de chauffage urbain, des immeubles résidentiels, des serres agricoles ou des piscines municipales. Parallèlement, l’<strong>économie circulaire</strong> gagne du terrain dans la gestion du matériel : allongement de la durée de vie des serveurs, reconditionnement des équipements réseau et recyclage des métaux critiques.</p>
 				</article>
+
+				<article>
+					<header>
+						<h2>Sobriété Cloud &amp; Réseau &amp; GreenOps</h2>
+					</header>
+					<a href="images/dc_greenops.jpg" class="image fit"><img src="images/dc_greenops.jpg" alt="Architecture cloud éco-conçue et GreenOps" /></a>
+					<p>Un datacenter vert n’a de sens que si les architectures hébergées sont elles-mêmes éco-conçues. L’approche <strong>GreenOps</strong> vise à optimiser l’allocation des ressources cloud (virtualisation, conteneurisation, extinction automatique des environnements inactifs) et à rationaliser le trafic réseau pour éviter le surdimensionnement. Réduire le volume de données transférées et stockées diminue directement la sollicitation matérielle et l’impact environnemental global.</p>
+				</article>
+
 			</section>
+
+			<!-- Featured Post 3 : Et après ? -->
+			<article class="post featured">
+				<header class="major">
+					<h2>Et après ? Ma vision de futur ingénieur</h2>
+				</header>
+				<a href="images/rse.jpg" class="image fit"><img src="images/rse.jpg" alt="Futur ingénieur numérique responsable" /></a>
+				<p>Dans la continuité de mon alternance chez <strong>Orange Business</strong> et de ma future spécialisation en cybersécurité et cloud computing, je souhaite intégrer systématiquement les critères environnementaux dans mes choix d’architecture technique. Qu’il s’agisse de sélectionner des hébergeurs souverains et bas-carbone, d’optimiser la consommation énergétique des infrastructures réseau ou d’appliquer les principes de sobriété numérique dès la conception, mon objectif est de concilier <strong>haute disponibilité, sécurité et responsabilité environnementale</strong>.</p>
+			</article>
+
 		</div>
+
 		<!-- Footer -->
 		<footer id="footer">
 			<section class="split contact">
@@ -93,24 +173,28 @@
 				<section>
 					<h3>Réseaux Sociaux</h3>
 					<ul class="icons alt">
-						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.linkedin.com/in/paul-hoffbeck-58214a2b5" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 						<li><a href="https://github.com/paulhoffbeck" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 					</ul>
 				</section>
 			</section>
 		</footer>
+
 		<!-- Copyright -->
 		<div id="copyright">
-			<li>Design par: <a href="https://html5up.net">HTML5 UP</a></li>
+			<ul><li>Design par : <a href="https://html5up.net">HTML5 UP</a></li></ul>
 		</div>
+
 	</div>
+
 	<!-- Scripts -->
-	<script src="../assets/js/jquery.min.js"></script>
-	<script src="../assets/js/jquery.scrollex.min.js"></script>
-	<script src="../assets/js/jquery.scrolly.min.js"></script>
-	<script src="../assets/js/browser.min.js"></script>
-	<script src="../assets/js/breakpoints.min.js"></script>
-	<script src="../assets/js/util.js"></script>
-	<script src="../assets/js/main.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 </html>
